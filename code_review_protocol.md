@@ -246,3 +246,212 @@ _- Clarification on whether this requires a database migration"_
 **LOCATION RULE (CRITICAL):** Never provide feedback without exact file paths and line numbers. Vague references like "in the API code" or "the database layer" are PROHIBITED. If you cannot determine the exact location, explicitly state: "Unable to locate this issue without seeing [specific file/module]."
 
 **GOLDEN RULE:** Review code as you'd want your code reviewed—thoroughly, kindly, and with the goal of shipping excellent software together.
+
+---
+
+## 🌐 Language-Specific Code Review Patterns
+
+### Python Code Review Checklist
+
+```yaml
+style_and_formatting:
+  - "Follows PEP 8 style guide"
+  - "Uses type hints (PEP 484)"
+  - "Docstrings follow Google/NumPy style"
+  - "Imports organized (standard, third-party, local)"
+
+anti_patterns:
+  - pattern: "Bare except clause"
+    bad: "except:"
+    good: "except SpecificException:"
+    severity: 🟠 MAJOR
+    
+  - pattern: "Mutable default argument"
+    bad: "def func(items=[]):"
+    good: "def func(items=None): items = items or []"
+    severity: 🔴 CRITICAL
+    
+  - pattern: "Using == for None comparison"
+    bad: "if x == None:"
+    good: "if x is None:"
+    severity: 🟡 MINOR
+    
+  - pattern: "Missing type hints"
+    bad: "def process(data):"
+    good: "def process(data: dict[str, Any]) -> Result:"
+    severity: 🟡 MINOR
+
+best_practices:
+  - "Use context managers for resources (with statement)"
+  - "Prefer list comprehensions over map/filter for readability"
+  - "Use pathlib instead of os.path"
+  - "Use dataclasses or Pydantic for data containers"
+  - "Async functions for I/O-bound operations"
+```
+
+### Go Code Review Checklist
+
+```yaml
+style_and_formatting:
+  - "Follows Effective Go guidelines"
+  - "Uses gofmt/goimports"
+  - "Exported names have documentation"
+  - "Package names are lowercase, single word"
+
+anti_patterns:
+  - pattern: "Ignoring errors"
+    bad: "result, _ := dangerousFunc()"
+    good: "result, err := dangerousFunc(); if err != nil { return err }"
+    severity: 🔴 CRITICAL
+    
+  - pattern: "Naked returns in long functions"
+    bad: "func process() (result int, err error) { ... return }"
+    good: "return result, err"
+    severity: 🟠 MAJOR
+    
+  - pattern: "Using panic for error handling"
+    bad: "panic(err)"
+    good: "return fmt.Errorf('operation failed: %w', err)"
+    severity: 🔴 CRITICAL
+    
+  - pattern: "Mutex not using defer"
+    bad: "mu.Lock() ... mu.Unlock()"
+    good: "mu.Lock(); defer mu.Unlock()"
+    severity: 🟠 MAJOR
+
+best_practices:
+  - "Accept interfaces, return structs"
+  - "Use context.Context for cancellation"
+  - "Prefer channels for communication, mutexes for state"
+  - "Use table-driven tests"
+  - "Return early to reduce nesting"
+```
+
+### Rust Code Review Checklist
+
+```yaml
+style_and_formatting:
+  - "Follows Rust API guidelines"
+  - "Uses rustfmt"
+  - "Public items have documentation"
+  - "Uses clippy lints"
+
+anti_patterns:
+  - pattern: "Unnecessary unwrap"
+    bad: "value.unwrap()"
+    good: "value? or value.unwrap_or_default()"
+    severity: 🔴 CRITICAL
+    
+  - pattern: "Clone instead of borrow"
+    bad: "process(data.clone())"
+    good: "process(&data)"
+    severity: 🟠 MAJOR
+    
+  - pattern: "Ignoring Result"
+    bad: "let _ = file.write(data);"
+    good: "file.write(data)?;"
+    severity: 🟠 MAJOR
+    
+  - pattern: "Using String when &str works"
+    bad: "fn process(s: String)"
+    good: "fn process(s: &str)"
+    severity: 🟡 MINOR
+
+best_practices:
+  - "Use Result for recoverable errors"
+  - "Implement From for custom error types"
+  - "Use #[derive] macros for common traits"
+  - "Prefer iterators over index loops"
+  - "Use ? operator for error propagation"
+  - "Make invalid states unrepresentable with types"
+```
+
+### Java/Kotlin Code Review Checklist
+
+```yaml
+java_style:
+  - "Follows Google Java Style Guide"
+  - "Uses Optional for nullable returns"
+  - "Exceptions documented with @throws"
+  - "Descriptive variable and method names"
+
+kotlin_style:
+  - "Uses Kotlin idioms (data classes, sealed classes)"
+  - "Null safety utilized properly"
+  - "Extension functions used appropriately"
+  - "Coroutines for async operations"
+
+anti_patterns:
+  - pattern: "Catching generic Exception"
+    bad: "catch (Exception e)"
+    good: "catch (SpecificException e)"
+    severity: 🟠 MAJOR
+    
+  - pattern: "Null checks instead of Optional (Java)"
+    bad: "if (value != null) { ... }"
+    good: "Optional.ofNullable(value).ifPresent(...)"
+    severity: 🟡 MINOR
+    
+  - pattern: "Platform types ignored (Kotlin)"
+    bad: "val result = javaMethod() // result: String!"
+    good: "val result: String? = javaMethod()"
+    severity: 🟠 MAJOR
+    
+  - pattern: "Hardcoded secrets"
+    bad: "String apiKey = \"sk-123...\""
+    good: "String apiKey = System.getenv(\"API_KEY\")"
+    severity: 🔴 CRITICAL
+
+best_practices:
+  java:
+    - "Use records for immutable data (Java 16+)"
+    - "Use sealed classes for type hierarchies (Java 17+)"
+    - "Prefer composition over inheritance"
+    - "Use dependency injection"
+    
+  kotlin:
+    - "Use data classes for DTOs"
+    - "Use sealed classes for state"
+    - "Prefer val over var"
+    - "Use scope functions appropriately"
+    - "Use sequence for large collections"
+```
+
+---
+
+## 🔧 Review Commands by Language
+
+```yaml
+review_commands:
+  python:
+    linting: "ruff check . && mypy . --strict"
+    formatting: "black --check . && isort --check ."
+    security: "bandit -r src/"
+    
+  go:
+    linting: "golangci-lint run"
+    formatting: "gofmt -d ."
+    security: "gosec ./..."
+    race: "go test -race ./..."
+    
+  rust:
+    linting: "cargo clippy -- -D warnings"
+    formatting: "cargo fmt -- --check"
+    security: "cargo audit"
+    
+  java:
+    linting: "./gradlew check"
+    formatting: "./gradlew spotlessCheck"
+    security: "./gradlew dependencyCheckAnalyze"
+    
+  kotlin:
+    linting: "./gradlew detekt"
+    formatting: "ktlint --relative ."
+```
+
+---
+
+*Related Protocols:*
+- [debug_protocol.md](debug_protocol.md) - Debug identified issues
+- [test_automation_protocol.md](test_automation_protocol.md) - Test coverage for reviewed code
+- [Back to Master Protocol](MASTER_PROTOCOL.md)

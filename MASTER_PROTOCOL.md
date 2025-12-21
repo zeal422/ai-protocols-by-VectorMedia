@@ -1,3 +1,9 @@
+---
+protocol_version: "1.1.0"
+last_updated: "2025-12-22"
+status: "stable"
+---
+
 # MASTER_PROTOCOL.md - Unified AI Development Protocol
 
 ## Purpose
@@ -229,6 +235,128 @@ Use this decision tree to determine which protocol(s) to activate:
 
 ---
 
+### 10. Security Audit Requests
+**Triggers:** "security audit", "vulnerability scan", "check for security issues", "OWASP"
+
+**Primary Protocol:** `security_audit_protocol.md`
+
+**Secondary Protocols:**
+- `code_review_protocol.md` - For security-focused review
+- `api_design_protocol.md` - For API security patterns
+
+**Approach:**
+1. Apply OWASP Top 10 checklist
+2. Scan for secret detection patterns
+3. Review authentication/authorization logic
+4. Check for injection vulnerabilities (SQL, XSS, Command)
+5. Verify security headers and configurations
+6. Generate security audit report with CVSS scores
+
+**Special Mode:** If user says "SECAUDIT", activate full security scan:
+- Complete OWASP Top 10 verification
+- Secret detection in code and git history
+- Dependency vulnerability scanning
+- API endpoint security testing
+
+---
+
+### 11. Accessibility Testing Requests
+**Triggers:** "accessibility", "a11y", "WCAG", "screen reader", "keyboard navigation"
+
+**Primary Protocol:** `accessibility_protocol.md`
+
+**Secondary Protocols:**
+- `moreFRONTend-PROTOCOL.md` - For accessible component patterns
+- `test_automation_protocol.md` - For accessibility testing automation
+
+**Approach:**
+1. Apply WCAG 2.1 Level AA checklist
+2. Test keyboard navigation
+3. Verify screen reader compatibility
+4. Check color contrast ratios
+5. Review ARIA implementation
+6. Generate accessibility audit report
+
+**Special Mode:** If user says "A11YCHECK", activate full accessibility audit:
+- Complete WCAG 2.1 verification (Level A, AA, AAA)
+- Automated testing with axe-core
+- Manual screen reader testing checklist
+- Focus management review
+
+---
+
+### 12. Git Workflow / Version Control Requests
+**Triggers:** "git", "commit", "branch", "PR", "merge strategy"
+
+**Primary Protocol:** `git_workflow_protocol.md`
+
+**Approach:**
+1. Analyze current git workflow
+2. Recommend branching strategy (GitHub Flow, GitFlow, Trunk-based)
+3. Configure commit message conventions (Conventional Commits)
+4. Setup git hooks (pre-commit, commit-msg)
+5. Configure CI/CD integration
+
+**Special Mode:** If user says "GITFLOW", provide comprehensive git workflow setup:
+- Complete branching strategy
+- PR/MR templates
+- Commit linting configuration
+- CI/CD pipeline examples
+
+---
+
+### 13. API Design Requests
+**Triggers:** "API design", "REST", "GraphQL", "endpoint", "API documentation"
+
+**Primary Protocol:** `api_design_protocol.md`
+
+**Secondary Protocols:**
+- `security_audit_protocol.md` - For API security
+- `test_automation_protocol.md` - For API testing
+
+**Approach:**
+1. Follow REST conventions or GraphQL best practices
+2. Design consistent error handling
+3. Implement pagination, filtering, sorting
+4. Configure rate limiting
+5. Generate OpenAPI/GraphQL documentation
+6. Apply versioning strategy
+
+**Special Mode:** If user says "APIDESIGN", provide complete API design:
+- Full schema design
+- Error handling patterns
+- Authentication/authorization setup
+- Rate limiting configuration
+- Documentation generation
+
+---
+
+### 14. Performance Optimization Requests
+**Triggers:** "performance", "slow", "optimize", "Core Web Vitals", "speed"
+
+**Primary Protocol:** `performance_protocol.md`
+
+**Secondary Protocols:**
+- `codebase_indexing_protocol.md` - To identify hotspots
+- `moreFRONTend-PROTOCOL.md` - For frontend performance
+
+**Approach:**
+1. Measure Core Web Vitals (LCP, INP, CLS)
+2. Profile frontend bundle size
+3. Analyze database queries (N+1, missing indexes)
+4. Review caching strategies
+5. Set performance budgets
+6. Configure monitoring and alerting
+
+**Special Mode:** If user says "PERFAUDIT", activate full performance audit:
+- Complete Core Web Vitals analysis
+- Bundle analysis with recommendations
+- Database query profiling
+- Caching strategy review
+- Performance budget setup
+
+---
+
 ## 🔄 Multi-Protocol Workflows
 
 Some requests require multiple protocols working in sequence:
@@ -441,6 +569,74 @@ After completing a request using MASTER_PROTOCOL, verify:
 
 ---
 
+## 🌐 Framework Detection & Protocol Routing
+
+### Language Detection
+
+| File Indicator | Language | Primary Protocols |
+|----------------|----------|-------------------|
+| `package.json` | JavaScript/TypeScript | `moreFRONTend-PROTOCOL.md`, `FRONTandBACKend-PROTOCOL.md` |
+| `requirements.txt`, `pyproject.toml` | Python | `api_design_protocol.md`, `test_automation_protocol.md` |
+| `go.mod` | Go | `api_design_protocol.md`, `performance_protocol.md` |
+| `Cargo.toml` | Rust | `performance_protocol.md`, `security_audit_protocol.md` |
+| `build.gradle`, `pom.xml` | Java/Kotlin | `api_design_protocol.md`, `test_automation_protocol.md` |
+
+### Frontend Frameworks
+
+| Detection | Framework | Protocol | Special Notes |
+|-----------|-----------|----------|---------------|
+| `package.json: "react"` | React | `moreFRONTend-PROTOCOL.md` | Use hooks, functional components |
+| `package.json: "vue"` | Vue | `moreFRONTend-PROTOCOL.md` | Composition API preferred |
+| `package.json: "svelte"` | Svelte | `moreFRONTend-PROTOCOL.md` | Reactive declarations |
+| `package.json: "@angular/core"` | Angular | `moreFRONTend-PROTOCOL.md` | TypeScript strict mode |
+| `package.json: "next"` | Next.js | `FRONTandBACKend-PROTOCOL.md` | SSR/SSG patterns |
+| `package.json: "nuxt"` | Nuxt | `FRONTandBACKend-PROTOCOL.md` | Vue SSR patterns |
+
+### Backend Frameworks
+
+| Detection | Framework | Protocol | Special Notes |
+|-----------|-----------|----------|---------------|
+| `package.json: "express"` | Express.js | `api_design_protocol.md` | Middleware patterns |
+| `package.json: "fastify"` | Fastify | `api_design_protocol.md` | Schema validation |
+| `package.json: "nestjs"` | NestJS | `FRONTandBACKend-PROTOCOL.md` | Decorators, DI |
+| `requirements.txt: "django"` | Django | `api_design_protocol.md` | ORM, MVT pattern |
+| `requirements.txt: "fastapi"` | FastAPI | `api_design_protocol.md` | Type hints, async |
+| `requirements.txt: "flask"` | Flask | `api_design_protocol.md` | Minimal framework |
+| `go.mod: "gin-gonic/gin"` | Gin | `api_design_protocol.md` | Middleware chain |
+| `go.mod: "gofiber/fiber"` | Fiber | `api_design_protocol.md` | Express-like API |
+| `Cargo.toml: "actix-web"` | Actix | `api_design_protocol.md` | Actor model |
+| `Cargo.toml: "axum"` | Axum | `api_design_protocol.md` | Tower middleware |
+| `build.gradle: "spring-boot"` | Spring Boot | `api_design_protocol.md` | Annotations, DI |
+| `build.gradle: "ktor"` | Ktor | `api_design_protocol.md` | Kotlin coroutines |
+
+### Database/ORM Detection
+
+| Detection | Technology | Special Considerations |
+|-----------|------------|------------------------|
+| `package.json: "prisma"` | Prisma | Type-safe queries, migrations |
+| `package.json: "typeorm"` | TypeORM | Decorators, active record |
+| `package.json: "drizzle-orm"` | Drizzle | SQL-like, migrations |
+| `requirements.txt: "sqlalchemy"` | SQLAlchemy | ORM/Core modes |
+| `requirements.txt: "django"` | Django ORM | Built-in migrations |
+| `go.mod: "gorm.io/gorm"` | GORM | Callbacks, hooks |
+| `Cargo.toml: "diesel"` | Diesel | Type-safe, compile-time |
+| `Cargo.toml: "sqlx"` | SQLx | Async, compile-time checks |
+
+### Testing Framework Detection
+
+| Detection | Framework | Test Command |
+|-----------|-----------|--------------|
+| `package.json: "jest"` | Jest | `npm test` |
+| `package.json: "vitest"` | Vitest | `npm test` |
+| `package.json: "mocha"` | Mocha | `npm test` |
+| `requirements.txt: "pytest"` | pytest | `pytest` |
+| `go.mod` (any) | go test | `go test ./...` |
+| `Cargo.toml` (any) | cargo test | `cargo test` |
+| `build.gradle: "junit"` | JUnit | `./gradlew test` |
+| `build.gradle: "kotest"` | Kotest | `./gradlew test` |
+
+---
+
 ## Meta-Protocol Rule
 
 **When in doubt, ask the user for clarification rather than making assumptions.**
@@ -449,5 +645,12 @@ This MASTER_PROTOCOL is designed to reduce hallucinations, respect existing code
 
 ---
 
-*Last Updated: 2025-12-21*
-*Protocol Version: 1.0*
+*Last Updated: 2025-12-22*
+*Protocol Version: 1.1.0*
+
+---
+
+*Related Protocols:*
+- [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - One-page cheat sheet
+- [AGENTS.md](AGENTS.md) - AI assistant instructions
+- [CHANGELOG.md](CHANGELOG.md) - Version history

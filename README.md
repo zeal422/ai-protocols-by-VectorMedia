@@ -1,10 +1,12 @@
 # AI Development Protocols
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/yourusername/ai-dev-protocols)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Protocols](https://img.shields.io/badge/protocols-10-purple.svg)](#-protocol-files)
+[![Protocols](https://img.shields.io/badge/protocols-15-purple.svg)](#-protocol-files)
 [![AI Ready](https://img.shields.io/badge/AI-ready-orange.svg)](#-quick-start)
 [![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](#-documentation)
+[![WCAG](https://img.shields.io/badge/WCAG-2.1%20AA-green.svg)](accessibility_protocol.md)
+[![OWASP](https://img.shields.io/badge/OWASP-Top%2010-red.svg)](security_audit_protocol.md)
 
 A comprehensive collection of protocols and guidelines designed to help AI assistants (LLMs) deliver consistent, high-quality software development assistance while reducing hallucinations and maintaining code quality.
 
@@ -42,18 +44,44 @@ The master protocol automatically routes to the appropriate specialized protocol
 
 ## 📚 Protocol Files
 
-| Protocol | Purpose |
-|----------|---------|
-| **MASTER_PROTOCOL.md** | Main orchestrator - start here |
-| `code_review_protocol.md` | Code review using Four Pillars framework |
-| `debug_protocol.md` | Scientific debugging methodology |
-| `error_fix_protocol.md` | Auto-fix errors with severity classification |
-| `test_automation_protocol.md` | Test coverage and quality standards |
-| `moreFRONTend-PROTOCOL.md` | Frontend architecture and UI design |
-| `FRONTandBACKend-PROTOCOL.md` | Full-stack development guidelines |
-| `bigpappa_protocol_reviewANDfixes.md` | Comprehensive code audit and remediation |
-| `codebase_indexing_protocol.md` | Codebase intelligence and mapping |
-| `OPTIMIZED_LINT_SETUP.md` | Linting setup for React/TypeScript/Tailwind |
+### Core Protocols
+
+| Protocol | Purpose | Trigger |
+|----------|---------|---------|
+| **[MASTER_PROTOCOL.md](MASTER_PROTOCOL.md)** | Main orchestrator - start here | — |
+| [code_review_protocol.md](code_review_protocol.md) | Code review using Four Pillars framework | `COMPREHENSIVE` |
+| [debug_protocol.md](debug_protocol.md) | Scientific debugging methodology | `DEEPDIVE` |
+| [error_fix_protocol.md](error_fix_protocol.md) | Auto-fix errors with severity classification | `AUTODEBUG` |
+| [test_automation_protocol.md](test_automation_protocol.md) | Test coverage and quality standards | `FULLSPEC` |
+
+### Specialized Protocols
+
+| Protocol | Purpose | Trigger |
+|----------|---------|---------|
+| [moreFRONTend-PROTOCOL.md](moreFRONTend-PROTOCOL.md) | Frontend architecture and UI design | `ULTRATHINK` |
+| [FRONTandBACKend-PROTOCOL.md](FRONTandBACKend-PROTOCOL.md) | Full-stack development guidelines | `ANTI-GENERIC` |
+| [bigpappa_protocol_reviewANDfixes.md](bigpappa_protocol_reviewANDfixes.md) | Comprehensive code audit and remediation | `BIGPAPPA` |
+| [codebase_indexing_protocol.md](codebase_indexing_protocol.md) | Codebase intelligence and mapping | `FULLINDEX` |
+
+### New Protocols (v1.1.0)
+
+| Protocol | Purpose | Trigger |
+|----------|---------|---------|
+| [security_audit_protocol.md](security_audit_protocol.md) | Security auditing with OWASP Top 10 | `SECAUDIT` |
+| [accessibility_protocol.md](accessibility_protocol.md) | WCAG 2.1 compliance testing | `A11YCHECK` |
+| [git_workflow_protocol.md](git_workflow_protocol.md) | Git conventions and CI/CD integration | `GITFLOW` |
+| [api_design_protocol.md](api_design_protocol.md) | REST/GraphQL API design patterns | `APIDESIGN` |
+| [performance_protocol.md](performance_protocol.md) | Core Web Vitals and optimization | `PERFAUDIT` |
+
+### Reference & Setup
+
+| File | Purpose |
+|------|---------|
+| [QUICK_REFERENCE.md](QUICK_REFERENCE.md) | One-page cheat sheet |
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
+| [OPTIMIZED_LINT_SETUP.md](OPTIMIZED_LINT_SETUP.md) | Linting setup for React/TypeScript/Tailwind |
+| [examples/](examples/) | Integration examples |
+| [configurations/](configurations/) | AI tool configurations |
 
 ## 🛡️ Core Principles
 

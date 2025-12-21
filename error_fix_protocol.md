@@ -556,3 +556,273 @@ Before declaring "all errors fixed," verify:
 **SAFETY RULE:** When in doubt about a fix, document the issue and suggest manual review rather than applying a potentially breaking change.
 
 **GOLDEN RULE:** Leave the codebase better than you found it, but don't introduce new problems while fixing old ones. Surgical precision over aggressive refactoring.
+
+---
+
+## 🌐 Language-Specific Error Patterns
+
+### Python Error Patterns
+
+```yaml
+common_errors:
+  - type: "ImportError / ModuleNotFoundError"
+    detection: "No module named 'x'"
+    causes:
+      - "Virtual environment not activated"
+      - "Package not installed"
+      - "Circular import"
+    fixes:
+      - "Activate venv: source venv/bin/activate"
+      - "Install package: pip install <package>"
+      - "Restructure imports to avoid circular dependency"
+    auto_fix: 🟡 LOW-RISK
+
+  - type: "TypeError"
+    detection: "'NoneType' object is not subscriptable"
+    causes:
+      - "Function returns None unexpectedly"
+      - "Variable is None before access"
+    fixes:
+      - "Add None check: if result is not None"
+      - "Use Optional type hint and handle None case"
+    auto_fix: 🟠 MODERATE
+
+  - type: "AttributeError"
+    detection: "'X' object has no attribute 'Y'"
+    causes:
+      - "Typo in attribute name"
+      - "Wrong object type"
+      - "Attribute not initialized"
+    fixes:
+      - "Use hasattr() check"
+      - "Verify object type with isinstance()"
+    auto_fix: 🟠 MODERATE
+
+  - type: "IndentationError"
+    detection: "expected an indented block"
+    auto_fix: 🟢 SAFE
+
+linting_commands:
+  - "mypy . --strict"
+  - "flake8 ."
+  - "pylint src/"
+  - "ruff check ."
+```
+
+### Go Error Patterns
+
+```yaml
+common_errors:
+  - type: "Nil pointer dereference"
+    detection: "panic: runtime error: invalid memory address"
+    causes:
+      - "Uninitialized pointer"
+      - "Method called on nil receiver"
+      - "Error not checked before using result"
+    fixes:
+      - "Always check errors before using return values"
+      - "Initialize structs properly"
+      - "Use pointer receiver checks"
+    auto_fix: 🟠 MODERATE
+
+  - type: "Unused variable/import"
+    detection: "declared but not used"
+    causes:
+      - "Removed usage but not declaration"
+      - "Import for side effects without blank identifier"
+    fixes:
+      - "Remove unused declaration"
+      - "Use blank identifier: import _ \"pkg\""
+    auto_fix: 🟢 SAFE
+
+  - type: "Type mismatch"
+    detection: "cannot use X (type A) as type B"
+    causes:
+      - "Wrong type passed to function"
+      - "Interface not satisfied"
+    fixes:
+      - "Cast or convert type"
+      - "Implement missing interface methods"
+    auto_fix: 🟠 MODERATE
+
+  - type: "Data race"
+    detection: "WARNING: DATA RACE"
+    causes:
+      - "Concurrent access without synchronization"
+    fixes:
+      - "Use mutex or channels"
+      - "Use sync/atomic for simple operations"
+    auto_fix: 🔴 HIGH-RISK
+
+linting_commands:
+  - "go vet ./..."
+  - "golangci-lint run"
+  - "staticcheck ./..."
+  - "go build -race ./..."
+```
+
+### Rust Error Patterns
+
+```yaml
+common_errors:
+  - type: "Borrow checker error"
+    detection: "cannot borrow * as mutable because it is also borrowed as immutable"
+    causes:
+      - "Simultaneous mutable and immutable borrows"
+      - "Lifetime not long enough"
+    fixes:
+      - "Clone data if ownership needed"
+      - "Restructure code to avoid simultaneous borrows"
+      - "Use RefCell for interior mutability"
+    auto_fix: 🔴 HIGH-RISK
+
+  - type: "Move error"
+    detection: "value borrowed after move"
+    causes:
+      - "Using a value after it was moved"
+    fixes:
+      - "Clone before move"
+      - "Use references instead of moving"
+      - "Implement Copy trait if appropriate"
+    auto_fix: 🟠 MODERATE
+
+  - type: "Trait bound not satisfied"
+    detection: "the trait * is not implemented for *"
+    causes:
+      - "Missing derive macro"
+      - "Need to implement trait manually"
+    fixes:
+      - "Add derive macro: #[derive(Clone, Debug)]"
+      - "Implement trait: impl Trait for Type"
+    auto_fix: 🟡 LOW-RISK
+
+  - type: "Lifetime error"
+    detection: "lifetime * does not live long enough"
+    causes:
+      - "Reference outlives its source"
+    fixes:
+      - "Add explicit lifetime annotations"
+      - "Consider using owned types instead"
+    auto_fix: 🔴 HIGH-RISK
+
+  - type: "Unused result"
+    detection: "unused Result that must be used"
+    fixes:
+      - "Handle with match or if let"
+      - "Propagate with ?"
+      - "Explicitly ignore: let _ = result"
+    auto_fix: 🟢 SAFE
+
+linting_commands:
+  - "cargo clippy -- -D warnings"
+  - "cargo check"
+  - "cargo fmt -- --check"
+```
+
+### Java/Kotlin Error Patterns
+
+```yaml
+common_errors:
+  - type: "NullPointerException"
+    detection: "java.lang.NullPointerException"
+    causes:
+      - "Calling method on null reference"
+      - "Uninitialized field access"
+    fixes:
+      java:
+        - "Use Optional<T>"
+        - "Add null checks"
+        - "Use Objects.requireNonNull()"
+      kotlin:
+        - "Use nullable types with ?"
+        - "Use safe call operator: ?."
+        - "Use Elvis operator: ?:"
+    auto_fix: 🟠 MODERATE
+
+  - type: "ClassCastException"
+    detection: "cannot be cast to"
+    causes:
+      - "Invalid type casting"
+    fixes:
+      - "Use instanceof before casting"
+      - "Use proper generic types"
+    auto_fix: 🟠 MODERATE
+
+  - type: "ConcurrentModificationException"
+    detection: "ConcurrentModificationException"
+    causes:
+      - "Modifying collection while iterating"
+    fixes:
+      - "Use Iterator.remove()"
+      - "Use ConcurrentHashMap"
+      - "Create copy before modification"
+    auto_fix: 🔴 HIGH-RISK
+
+  - type: "OutOfMemoryError"
+    detection: "java.lang.OutOfMemoryError"
+    causes:
+      - "Memory leak"
+      - "Too much data in memory"
+    fixes:
+      - "Increase heap size: -Xmx"
+      - "Fix memory leaks"
+      - "Use streaming for large data"
+    auto_fix: 🔴 HIGH-RISK
+
+kotlin_specific:
+  - type: "lateinit property not initialized"
+    detection: "UninitializedPropertyAccessException"
+    fixes:
+      - "Initialize before use"
+      - "Use lazy { } for lazy initialization"
+      - "Use nullable type instead"
+    auto_fix: 🟠 MODERATE
+
+linting_commands:
+  java:
+    - "./gradlew check"
+    - "mvn checkstyle:check"
+    - "spotbugs"
+  kotlin:
+    - "./gradlew detekt"
+    - "ktlint"
+```
+
+---
+
+## 🔧 Auto-Fix Commands by Language
+
+```yaml
+auto_fix_commands:
+  javascript_typescript:
+    - "npx eslint --fix ."
+    - "npx prettier --write ."
+    
+  python:
+    - "ruff check --fix ."
+    - "black ."
+    - "isort ."
+    
+  go:
+    - "gofmt -w ."
+    - "goimports -w ."
+    
+  rust:
+    - "cargo fmt"
+    - "cargo clippy --fix"
+    
+  java:
+    - "./gradlew spotlessApply"
+    - "google-java-format -i *.java"
+    
+  kotlin:
+    - "ktlint --format"
+    - "./gradlew ktlintFormat"
+```
+
+---
+
+*Related Protocols:*
+- [debug_protocol.md](debug_protocol.md) - Debug root causes
+- [test_automation_protocol.md](test_automation_protocol.md) - Prevent regressions
+- [Back to Master Protocol](MASTER_PROTOCOL.md)

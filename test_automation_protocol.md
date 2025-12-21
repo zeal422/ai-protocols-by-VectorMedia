@@ -468,3 +468,385 @@ Estimated Time: 4-6 hours for complete test suite
 **LOCATION RULE (CRITICAL):** Every test file must include a 📍 comment at the top specifying exactly what code is being tested (file path + line range + function/class name).
 
 **GOLDEN RULE:** Write tests you'd want to debug at 3 AM. Clear names, obvious inputs, specific assertions, helpful error messages.
+
+---
+
+## 🌐 Language-Specific Testing Patterns
+
+### Python Testing
+
+```yaml
+frameworks:
+  unit_testing:
+    - pytest (recommended)
+    - unittest (stdlib)
+    
+  mocking:
+    - pytest-mock
+    - unittest.mock
+    
+  fixtures:
+    - pytest fixtures
+    - factory_boy
+    
+  coverage:
+    - pytest-cov
+    - coverage.py
+
+test_structure:
+  file_pattern: "test_*.py or *_test.py"
+  class_pattern: "Test*"
+  function_pattern: "test_*"
+  
+  example: |
+    # tests/test_user_service.py
+    # 📍 Testing: src/services/user_service.py:L15-45 (UserService class)
+    
+    import pytest
+    from unittest.mock import Mock, patch
+    from src.services.user_service import UserService
+    
+    class TestUserService:
+        @pytest.fixture
+        def user_service(self):
+            return UserService(db=Mock())
+        
+        def test_create_user_success(self, user_service):
+            # Arrange
+            user_data = {"email": "test@example.com", "name": "Test"}
+            
+            # Act
+            result = user_service.create_user(user_data)
+            
+            # Assert
+            assert result.email == "test@example.com"
+            user_service.db.save.assert_called_once()
+        
+        def test_create_user_duplicate_email_raises(self, user_service):
+            user_service.db.find_by_email.return_value = {"id": 1}
+            
+            with pytest.raises(ValueError, match="Email already exists"):
+                user_service.create_user({"email": "existing@example.com"})
+
+commands:
+  - "pytest -v"
+  - "pytest --cov=src --cov-report=html"
+  - "pytest -k 'test_create' (run specific tests)"
+  - "pytest --pdb (debug on failure)"
+```
+
+### Go Testing
+
+```yaml
+frameworks:
+  unit_testing:
+    - testing (stdlib)
+    - testify (assertions, mocks)
+    
+  mocking:
+    - gomock
+    - testify/mock
+    
+  fixtures:
+    - testfixtures
+    
+  coverage:
+    - go test -cover
+
+test_structure:
+  file_pattern: "*_test.go"
+  function_pattern: "Test*"
+  
+  example: |
+    // user_service_test.go
+    // 📍 Testing: user_service.go:L15-45 (UserService methods)
+    
+    package services
+    
+    import (
+        "testing"
+        "github.com/stretchr/testify/assert"
+        "github.com/stretchr/testify/mock"
+    )
+    
+    type MockDB struct {
+        mock.Mock
+    }
+    
+    func (m *MockDB) Save(user *User) error {
+        args := m.Called(user)
+        return args.Error(0)
+    }
+    
+    func TestUserService_CreateUser_Success(t *testing.T) {
+        // Arrange
+        mockDB := new(MockDB)
+        mockDB.On("Save", mock.Anything).Return(nil)
+        svc := NewUserService(mockDB)
+        
+        // Act
+        user, err := svc.CreateUser("test@example.com", "Test")
+        
+        // Assert
+        assert.NoError(t, err)
+        assert.Equal(t, "test@example.com", user.Email)
+        mockDB.AssertExpectations(t)
+    }
+    
+    func TestUserService_CreateUser_DuplicateEmail(t *testing.T) {
+        mockDB := new(MockDB)
+        mockDB.On("FindByEmail", "existing@example.com").Return(&User{}, nil)
+        svc := NewUserService(mockDB)
+        
+        _, err := svc.CreateUser("existing@example.com", "Test")
+        
+        assert.ErrorContains(t, err, "email already exists")
+    }
+
+table_driven_tests: |
+    func TestValidateEmail(t *testing.T) {
+        tests := []struct {
+            name    string
+            email   string
+            wantErr bool
+        }{
+            {"valid email", "test@example.com", false},
+            {"missing @", "testexample.com", true},
+            {"empty string", "", true},
+        }
+        
+        for _, tt := range tests {
+            t.Run(tt.name, func(t *testing.T) {
+                err := ValidateEmail(tt.email)
+                if (err != nil) != tt.wantErr {
+                    t.Errorf("ValidateEmail(%q) error = %v, wantErr %v", 
+                        tt.email, err, tt.wantErr)
+                }
+            })
+        }
+    }
+
+commands:
+  - "go test -v ./..."
+  - "go test -cover -coverprofile=coverage.out ./..."
+  - "go tool cover -html=coverage.out"
+  - "go test -race ./..."
+  - "go test -bench=. ./..."
+```
+
+### Rust Testing
+
+```yaml
+frameworks:
+  unit_testing:
+    - Built-in test framework
+    
+  mocking:
+    - mockall
+    - mockito
+    
+  fixtures:
+    - rstest
+    
+  coverage:
+    - cargo-tarpaulin
+    - grcov
+
+test_structure:
+  file_pattern: "tests/*.rs or #[cfg(test)] modules"
+  function_pattern: "#[test] fn test_*"
+  
+  example: |
+    // src/services/user_service.rs
+    // 📍 Testing: UserService impl (lines 15-45)
+    
+    #[cfg(test)]
+    mod tests {
+        use super::*;
+        use mockall::predicate::*;
+        
+        #[test]
+        fn test_create_user_success() {
+            // Arrange
+            let mut mock_db = MockDatabase::new();
+            mock_db
+                .expect_save()
+                .times(1)
+                .returning(|_| Ok(()));
+            
+            let service = UserService::new(Box::new(mock_db));
+            
+            // Act
+            let result = service.create_user("test@example.com", "Test");
+            
+            // Assert
+            assert!(result.is_ok());
+            let user = result.unwrap();
+            assert_eq!(user.email, "test@example.com");
+        }
+        
+        #[test]
+        fn test_create_user_duplicate_email() {
+            let mut mock_db = MockDatabase::new();
+            mock_db
+                .expect_find_by_email()
+                .returning(|_| Some(User::default()));
+            
+            let service = UserService::new(Box::new(mock_db));
+            
+            let result = service.create_user("existing@example.com", "Test");
+            
+            assert!(result.is_err());
+            assert!(result.unwrap_err().to_string().contains("already exists"));
+        }
+    }
+
+integration_tests: |
+    // tests/integration_test.rs
+    use your_crate::UserService;
+    
+    #[tokio::test]
+    async fn test_full_user_workflow() {
+        let service = setup_test_service().await;
+        
+        let user = service.create_user("test@example.com", "Test").await.unwrap();
+        let found = service.find_by_id(user.id).await.unwrap();
+        
+        assert_eq!(found.email, user.email);
+    }
+
+commands:
+  - "cargo test"
+  - "cargo test -- --nocapture (show println!)"
+  - "cargo tarpaulin --out Html"
+  - "cargo test --doc (doctest only)"
+```
+
+### Java/Kotlin Testing
+
+```yaml
+frameworks:
+  unit_testing:
+    - JUnit 5 (Jupiter)
+    - TestNG
+    - Kotest (Kotlin)
+    
+  mocking:
+    - Mockito
+    - MockK (Kotlin)
+    
+  fixtures:
+    - @BeforeEach / @AfterEach
+    
+  coverage:
+    - JaCoCo
+
+test_structure:
+  file_pattern: "*Test.java or *Spec.kt"
+  class_pattern: "*Test or *Spec"
+  
+  java_example: |
+    // src/test/java/com/example/UserServiceTest.java
+    // 📍 Testing: UserService.java:L15-45
+    
+    import org.junit.jupiter.api.*;
+    import org.mockito.*;
+    import static org.mockito.Mockito.*;
+    import static org.assertj.core.api.Assertions.*;
+    
+    class UserServiceTest {
+        @Mock
+        private UserRepository userRepository;
+        
+        @InjectMocks
+        private UserService userService;
+        
+        @BeforeEach
+        void setUp() {
+            MockitoAnnotations.openMocks(this);
+        }
+        
+        @Test
+        @DisplayName("Should create user successfully")
+        void createUser_Success() {
+            // Arrange
+            var userData = new CreateUserDto("test@example.com", "Test");
+            when(userRepository.save(any())).thenReturn(new User(1L, "test@example.com"));
+            
+            // Act
+            var result = userService.createUser(userData);
+            
+            // Assert
+            assertThat(result.getEmail()).isEqualTo("test@example.com");
+            verify(userRepository).save(any());
+        }
+        
+        @Test
+        @DisplayName("Should throw when email already exists")
+        void createUser_DuplicateEmail_ThrowsException() {
+            when(userRepository.findByEmail("existing@example.com"))
+                .thenReturn(Optional.of(new User()));
+            
+            assertThatThrownBy(() -> 
+                userService.createUser(new CreateUserDto("existing@example.com", "Test")))
+                .isInstanceOf(DuplicateEmailException.class)
+                .hasMessageContaining("already exists");
+        }
+    }
+
+  kotlin_example: |
+    // src/test/kotlin/com/example/UserServiceSpec.kt
+    // 📍 Testing: UserService.kt:L15-45
+    
+    import io.kotest.core.spec.style.DescribeSpec
+    import io.kotest.matchers.shouldBe
+    import io.mockk.*
+    
+    class UserServiceSpec : DescribeSpec({
+        val userRepository = mockk<UserRepository>()
+        val userService = UserService(userRepository)
+        
+        beforeTest {
+            clearMocks(userRepository)
+        }
+        
+        describe("createUser") {
+            it("should create user successfully") {
+                // Arrange
+                every { userRepository.save(any()) } returns User(1, "test@example.com")
+                
+                // Act
+                val result = userService.createUser("test@example.com", "Test")
+                
+                // Assert
+                result.email shouldBe "test@example.com"
+                verify { userRepository.save(any()) }
+            }
+            
+            it("should throw when email exists") {
+                every { userRepository.findByEmail("existing@example.com") } returns User()
+                
+                shouldThrow<DuplicateEmailException> {
+                    userService.createUser("existing@example.com", "Test")
+                }
+            }
+        }
+    })
+
+commands:
+  java:
+    - "./gradlew test"
+    - "./gradlew jacocoTestReport"
+    - "mvn test"
+    - "mvn jacoco:report"
+  kotlin:
+    - "./gradlew test"
+    - "./gradlew koverReport"
+```
+
+---
+
+*Related Protocols:*
+- [debug_protocol.md](debug_protocol.md) - Debug test failures
+- [code_review_protocol.md](code_review_protocol.md) - Review test quality
+- [Back to Master Protocol](MASTER_PROTOCOL.md)

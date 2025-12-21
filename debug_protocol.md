@@ -125,3 +125,173 @@ _When information is insufficient, request:_
 - **Recordings:** Network tab HAR file, video screen capture if UI-related.
 - **State:** Relevant application state (Redux dump, database records, localStorage).
 - **Metrics:** Performance baselines (current latency, memory usage, bundle size).
+
+---
+
+## 🌐 Language-Specific Debugging
+
+### Python Debugging
+
+```yaml
+tools:
+  debugger:
+    - "pdb / ipdb (interactive)"
+    - "pudb (visual TUI debugger)"
+    - "PyCharm debugger"
+  
+  profiling:
+    - "cProfile / profile"
+    - "py-spy (sampling profiler)"
+    - "memory_profiler"
+    - "line_profiler"
+  
+  logging:
+    - "logging module with proper levels"
+    - "structlog for structured logging"
+
+common_issues:
+  - name: "Import errors"
+    debug: "Check sys.path, virtual environment activation"
+    
+  - name: "Type errors"
+    debug: "Use mypy for static type checking"
+    
+  - name: "Async issues"
+    debug: "Use asyncio.run() properly, check event loop"
+    
+  - name: "Memory leaks"
+    debug: "Use tracemalloc, objgraph"
+
+debugging_commands:
+  - "python -m pdb script.py"
+  - "python -c 'import sys; print(sys.path)'"
+  - "python -m cProfile -s cumtime script.py"
+  - "pip list --outdated"
+```
+
+### Go Debugging
+
+```yaml
+tools:
+  debugger:
+    - "delve (dlv)"
+    - "GoLand debugger"
+  
+  profiling:
+    - "pprof (CPU, memory, goroutine)"
+    - "trace tool"
+    - "go test -bench"
+  
+  linting:
+    - "golangci-lint"
+    - "go vet"
+    - "staticcheck"
+
+common_issues:
+  - name: "Goroutine leaks"
+    debug: "Use pprof goroutine profile, check channel closing"
+    
+  - name: "Race conditions"
+    debug: "Run with -race flag: go run -race main.go"
+    
+  - name: "Nil pointer dereference"
+    debug: "Check error returns, use pointer receivers carefully"
+    
+  - name: "Interface satisfaction"
+    debug: "var _ Interface = (*Struct)(nil) compile check"
+
+debugging_commands:
+  - "dlv debug ./cmd/app"
+  - "go run -race main.go"
+  - "go test -v -cover ./..."
+  - "go tool pprof http://localhost:6060/debug/pprof/heap"
+  - "golangci-lint run"
+```
+
+### Rust Debugging
+
+```yaml
+tools:
+  debugger:
+    - "rust-gdb / rust-lldb"
+    - "VS Code with CodeLLDB"
+    - "CLion with Rust plugin"
+  
+  profiling:
+    - "perf (Linux)"
+    - "cargo flamegraph"
+    - "valgrind"
+  
+  linting:
+    - "clippy"
+    - "rustfmt"
+
+common_issues:
+  - name: "Borrow checker errors"
+    debug: "Understand ownership, use references properly, clone if needed"
+    
+  - name: "Lifetime errors"
+    debug: "Add explicit lifetime annotations, consider 'static"
+    
+  - name: "Trait bounds"
+    debug: "Check required traits, use where clauses"
+    
+  - name: "Async/await issues"
+    debug: "Ensure futures are Send + Sync, use tokio::spawn properly"
+
+debugging_commands:
+  - "cargo clippy -- -D warnings"
+  - "cargo test -- --nocapture"
+  - "RUST_BACKTRACE=1 cargo run"
+  - "cargo expand (macro debugging)"
+  - "cargo tree (dependency analysis)"
+```
+
+### Java/Kotlin Debugging
+
+```yaml
+tools:
+  debugger:
+    - "IntelliJ IDEA debugger"
+    - "jdb (command line)"
+    - "VisualVM"
+  
+  profiling:
+    - "JProfiler"
+    - "YourKit"
+    - "async-profiler"
+    - "JFR (Java Flight Recorder)"
+  
+  linting:
+    - "SpotBugs"
+    - "PMD"
+    - "Checkstyle"
+    - "detekt (Kotlin)"
+
+common_issues:
+  - name: "NullPointerException"
+    debug: "Use Optional, Kotlin null safety, add null checks"
+    
+  - name: "Memory leaks"
+    debug: "Use heap dumps, check for static references, listener cleanup"
+    
+  - name: "Thread deadlocks"
+    debug: "Use jstack, analyze thread dumps, check lock ordering"
+    
+  - name: "ClassNotFoundException"
+    debug: "Check classpath, Maven/Gradle dependencies"
+
+debugging_commands:
+  - "jstack <pid>"
+  - "jmap -heap <pid>"
+  - "java -Xlog:gc* -jar app.jar"
+  - "./gradlew dependencies"
+  - "mvn dependency:tree"
+```
+
+---
+
+*Related Protocols:*
+- [error_fix_protocol.md](error_fix_protocol.md) - Automated error fixing
+- [test_automation_protocol.md](test_automation_protocol.md) - Testing for bug prevention
+- [Back to Master Protocol](MASTER_PROTOCOL.md)

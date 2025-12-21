@@ -31,7 +31,16 @@ This comprehensive linting setup provides a production-ready configuration for R
 
 ### 1. Install Dependencies
 
-
+```bash
+npm install --save-dev \
+  eslint @eslint/js globals \
+  eslint-plugin-react eslint-plugin-react-hooks \
+  eslint-plugin-react-refresh typescript-eslint \
+  eslint-plugin-prettier eslint-config-prettier \
+  eslint-plugin-jsx-a11y \
+  stylelint stylelint-config-standard stylelint-config-recess-order \
+  prettier prettier-plugin-tailwindcss
+```
 
 ### 2. Install Tailwind CSS (if not already installed)
 
