@@ -1,0 +1,40 @@
+# Cline AI Assistant Rules
+
+## Primary Directive
+Always follow the instructions in MASTER_PROTOCOL.md for all development tasks.
+
+## Protocol Selection
+Consult specialized protocols in the BRAIN/ directory based on the task:
+
+- **Code Review**: BRAIN/code_review_protocol.md (Trigger: COMPREHENSIVE)
+- **Debugging**: BRAIN/debug_protocol.md (Trigger: DEEPDIVE)
+- **Error Fixing**: BRAIN/error_fix_protocol.md (Trigger: AUTODEBUG)
+- **Testing**: BRAIN/test_automation_protocol.md (Trigger: FULLSPEC)
+- **Frontend**: BRAIN/moreFRONTend-PROTOCOL.md (Trigger: ULTRATHINK)
+- **Full-stack**: BRAIN/FRONTandBACKend-PROTOCOL.md (Trigger: ANTI-GENERIC)
+- **Security**: BRAIN/security_audit_protocol.md (Trigger: SECAUDIT)
+- **Accessibility**: BRAIN/accessibility_protocol.md (Trigger: A11YCHECK)
+- **Performance**: BRAIN/performance_protocol.md (Trigger: PERFAUDIT)
+- **Refactoring**: BRAIN/refactor_protocol.md (Trigger: SAFEREFACTOR)
+- **API Design**: BRAIN/api_design_protocol.md (Trigger: APIDESIGN)
+- **Git Workflow**: BRAIN/git_workflow_protocol.md (Trigger: GITFLOW)
+
+## Core Rules
+
+### Zero Hallucination Policy
+- Read actual code before making changes
+- Verify library versions and available features
+- Never invent APIs, functions, or patterns that don't exist
+- If uncertain, ask for clarification
+
+### Safety Classification
+- 🟢 SAFE: Auto-fix formatting, unused imports
+- 🟡 LOW-RISK: Confirm before type annotations
+- 🟠 MODERATE: Show diff for logic changes
+- 🔴 HIGH-RISK: Never auto-fix auth, payments, migrations
+
+### Required Actions
+- Follow existing patterns in the codebase
+- Add tests for new code
+- Document why changes are made
+- Provide verification steps

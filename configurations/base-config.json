@@ -1,0 +1,19 @@
+{
+  "protocol": "MASTER_PROTOCOL.md",
+  "brain_path": "BRAIN/",
+  "rules": [
+    "Always reference MASTER_PROTOCOL before starting a task.",
+    "Use MDAP for complex refactors.",
+    "Run SECAUDIT before completing any PR."
+  ],
+  "ide_specific": {
+    "cursor": {
+      "rules_file": ".cursorrules",
+      "auto_index": true
+    },
+    "cline": {
+      "rules_file": ".clinerules",
+      "mode": "agentic"
+    }
+  }
+}
