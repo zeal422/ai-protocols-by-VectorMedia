@@ -18,6 +18,7 @@
 | 🗺️ Map codebase | [codebase_indexing_protocol.md](codebase_indexing_protocol.md) | `FULLINDEX` |
 | 🔐 Security audit | [security_audit_protocol.md](security_audit_protocol.md) | `SECAUDIT` |
 | ♿ Accessibility check | [accessibility_protocol.md](accessibility_protocol.md) | `A11YCHECK` |
+| ♿ ARIA accessibility | [aria_accessibility_protocol.md](aria_accessibility_protocol.md) | `FULLARIA` |
 | 📝 Git workflow | [git_workflow_protocol.md](git_workflow_protocol.md) | `GITFLOW` |
 | 🔌 API design | [api_design_protocol.md](api_design_protocol.md) | `APIDESIGN` |
 | ⚡ Performance optimization | [performance_protocol.md](performance_protocol.md) | `PERFAUDIT` |
@@ -36,9 +37,10 @@
 | **BIGPAPPA** | Autonomous review + fixes | Full quality audit |
 | **AUTODEBUG** | Auto-detect and fix all errors | Cleaning up codebase |
 | **COMPREHENSIVE** | Deep code review | Thorough PR review |
-| **SECAUDIT** | Security vulnerability scan | Pre-deployment security check |
-| **A11YCHECK** | Accessibility compliance audit | WCAG compliance verification |
-| **PERFAUDIT** | Performance analysis | Optimizing speed |
+| **SECAUDIT** | Full scan (OWASP Top 10, secrets, API testing) | Pre-deployment security check |
+| **A11YCHECK** | Accessibility compliance audit (WCAG AA) | WCAG compliance verification |
+| **FULLARIA** | Comprehensive ARIA audit (WCAG AAA, semantics, focus) | Advanced accessibility/assistive tech check |
+| **PERFAUDIT** | Performance analysis (Core Web Vitals, DB, bundle) | Optimizing speed |
 
 ---
 

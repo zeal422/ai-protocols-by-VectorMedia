@@ -61,9 +61,9 @@ function main() {
   // Check core files
   log('📋 Core Files:', 'blue');
   const coreFiles = [
-    'MASTER_PROTOCOL.md',
+    'BRAIN/MASTER_PROTOCOL.md',
     'README.md',
-    'IMPLEMENT_IMPROVEMENTS_PLAN.md',
+    'docs/IMPLEMENT_IMPROVEMENTS_PLAN.md',
   ];
 
   coreFiles.forEach(file => {
@@ -95,6 +95,8 @@ function main() {
     'api_design_protocol.md',
     'git_workflow_protocol.md',
     'OPTIMIZED_LINT_SETUP.md',
+    'mdap_protocol.md',
+    'aria_accessibility_protocol.md',
   ];
 
   protocols.forEach(protocol => {

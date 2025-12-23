@@ -59,7 +59,8 @@ function extractTriggers(content: string): string[] {
     'api_design_protocol': ['APIDESIGN'],
     'performance_protocol': ['PERFAUDIT'],
     'mdap_protocol': ['MDAP', 'MILLIONSTEP'],
-    'refactor_protocol': ['REFACTOR']
+    'refactor_protocol': ['REFACTOR'],
+    'aria_accessibility_protocol': ['FULLARIA']
   };
 
   const baseName = content.match(/^#\s+(.+)$/m)?.[1] || '';

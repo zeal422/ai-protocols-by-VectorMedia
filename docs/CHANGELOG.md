@@ -1,15 +1,15 @@
 # Changelog
 
-## [2.2.0] - 2025-12-22
+## [2.3.1] - 2025-12-23
 ### Added
-- **MDAP (Massively Decomposed Agentic Processes)**: Integrated core strategies from "Solving a Million-Step LLM Task with Zero Errors" paper.
-- **[mdap_protocol.md](BRAIN/mdap_protocol.md)**: New specialized protocol for zero-error scaling on complex tasks.
-- **Red-Flagging**: Rules for discarding bloated or confused LLM samples to prevent error correlation.
-- **MAD (Maximal Agentic Decomposition)**: Protocols for atomic task atomization to maximize per-step success rates ($p \to 1$).
+- **ARIA Accessibility Protocol**: New specialized protocol for advanced ARIA and assistive technology (`BRAIN/aria_accessibility_protocol.md`).
+- **FULLARIA Trigger**: Integrated new command for comprehensive accessibility audits into `MASTER_PROTOCOL.md` and `COMMANDS.md`.
+- **Expanded Validation**: Updated `scripts/validate-protocols.js` to verify 17 protocols (added MDAP and ARIA).
+- **Configuration Updates**: Added `FULLARIA` to all AI tool configuration templates (Cursor, Cline, Claude, Gemini, KiloCode).
 
 ### Changed
-- **MASTER_PROTOCOL.md**: Upgraded to v2.2.0 with MDAP orchestration.
-- **Debug & Error Protocols**: Injected MDAP reliability guardrails (token limits and circular logic detection).
+- **README**: Updated protocol count to 17 and added ARIA Accessibility to the feature list.
+- **Validation Score**: Increased check count from 28 to 30 (100% passing).
 
 ## [2.3.0] - 2025-12-22
 ### Added - Implementation Complete

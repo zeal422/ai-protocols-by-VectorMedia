@@ -93,6 +93,7 @@ graph TD
 | **`FULLSPEC`** | [test_automation](../BRAIN/test_automation_protocol.md) | **Complete Coverage:** Generates a full suite of unit, integration, and E2E tests for the implementation. |
 | **`COMPREHENSIVE`** | [code_review](../BRAIN/code_review_protocol.md) | **Expert Review:** Peer-level audit across Four Pillars (Correctness, Readability, Performance, Maintainability). |
 | **`A11YCHECK`** | [accessibility](../BRAIN/accessibility_protocol.md) | **WCAG Verification:** Comprehensive accessibility audit for WCAG 2.1 AA/AAA compliance. |
+| **`FULLARIA`** | [aria_accessibility](../BRAIN/aria_accessibility_protocol.md) | **ARIA Mastery:** Advanced accessibility audit focused on semantic integrity, assistive tech compatibility, and focus management. |
 | **`SECAUDIT`** | [security_audit](../BRAIN/security_audit_protocol.md) | **Vulnerability Scan:** OWASP Top 10 auditing, secret detection, and dependency risk assessment. |
 | **`GITFLOW`** | [git_workflow](../BRAIN/git_workflow_protocol.md) | **Workflow Standards:** Ensures PRs meet team conventions, commit linting, and CI/CD ready branches. |
 

@@ -1,0 +1,23 @@
+In BRAIN/aria_accessibility_protocol.md around lines 146 to 149, the accordion example uses aria-labelledby="btn1" on the region but the corresponding button lacks id="btn1"; add an explicit id attribute to the button to match the aria-labelledby reference (e.g., set id="btn1" on the button) so the region correctly associates with the control, and verify aria-controls and aria-expanded remain consistent.
+
+
+
+In BRAIN/aria_accessibility_protocol.md around lines 135 to 139, the tab panels use aria-labelledby="tab1"/"tab2" but the corresponding tab buttons lack id attributes; add matching id="tab1" and id="tab2" to the respective button elements so the aria-labelledby references point to existing elements, ensuring correct accessible association between tabs and tabpanels.
+
+
+In BRAIN/aria_accessibility_protocol.md around lines 86 to 88, the guidance incorrectly states that native <input type="checkbox"> requires manual aria-checked and Space handling; update the text to clarify that native checkboxes are handled by the browser (no aria-checked or custom Space handling needed) and reserve aria-checked and keyboard handling guidance for custom widgets (e.g., elements with role="checkbox") — replace the current single-line checkbox entry with a two-part note distinguishing Native vs Custom and instruct authors to only add aria-checked and Space key handlers for non-native implementations.
+
+
+In README.md around line 110, the "Validation Score: 30/30 (100%)" line lacks explanation; update the README to add a short subsection immediately above or below that line describing what the 30 items represent, how the score is computed, and an example breakdown. Specifically: list the categories included (e.g., core protocols, specialized tests, new features, docs checks, config files), state whether each category is equally weighted or show per-item weights, explain the scoring rule (pass/fail per item and total aggregation), and include a concrete example breakdown like "6 core + 4 specialized + 6 new + 4 docs + 10 config = 30" so readers can reproduce the total and understand the percent calculation.
+
+
+In README.md around lines 36 (badge), 108, 110 (validation output example) and 162 (validation checks): the documented protocol count is inconsistent (badge shows 16, other places reference 17, and tables total 15). Confirm the true number of implemented BRAIN protocols by counting the actual protocol files/entries, then update the badge value, the validation example lines, and the validation check text to the confirmed number; also reconcile the protocol tables (Core, Specialized, New) so they list every referenced protocol (add missing entries or remove stale references) so all counts and examples match the authoritative list.
+
+
+In configurations/claude/claude-instructions.md around line 17, the protocol label "ARIA Mastery" is inconsistent with the primary protocol name in BRAIN/MASTER_PROTOCOL.md; update this occurrence to "ARIA Accessibility" to match MASTER_PROTOCOL.md, and scan configurations/gemini/system-instructions.txt (line 17) and any other configuration files to ensure all protocol references use the exact "ARIA Accessibility" wording for consistency.
+
+
+In configurations/copilot/copilot-instructions.md around line 17, the protocol label "ARIA Mastery" is inconsistent with the primary name used in BRAIN/MASTER_PROTOCOL.md and configurations/gemini/system-instructions.txt; update the label to "ARIA Accessibility" and adjust the trigger text if needed to match the canonical name in MASTER_PROTOCOL.md, then run a quick grep across configuration files to ensure all references use the exact "ARIA Accessibility" term for consistency.
+
+
+In configurations/cursor/README.md around line 28, the protocol name "ARIA Mastery" is inconsistent with the primary definition "ARIA Accessibility" used in BRAIN/MASTER_PROTOCOL.md and configurations/gemini/system-instructions.txt; update the entry to read "**ARIA Accessibility**: BRAIN/aria_accessibility_protocol.md (Trigger: FULLARIA)" so the protocol name matches the master protocol definition across all configuration files.

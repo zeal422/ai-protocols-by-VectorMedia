@@ -25,6 +25,7 @@ Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.
 - **Full-stack**: BRAIN/FRONTandBACKend-PROTOCOL.md (Trigger: ANTI-GENERIC)
 - **Security**: BRAIN/security_audit_protocol.md (Trigger: SECAUDIT)
 - **Accessibility**: BRAIN/accessibility_protocol.md (Trigger: A11YCHECK)
+- **ARIA Accessibility**: BRAIN/aria_accessibility_protocol.md (Trigger: FULLARIA)
 - **Performance**: BRAIN/performance_protocol.md (Trigger: PERFAUDIT)
 - **Refactoring**: BRAIN/refactor_protocol.md (Trigger: SAFEREFACTOR)
 - **API Design**: BRAIN/api_design_protocol.md (Trigger: APIDESIGN)

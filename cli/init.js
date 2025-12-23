@@ -15,7 +15,7 @@ const target = args[0] || '.';
 // This script simulates the setup described in README.md
 console.log(`Setting up in: ${path.resolve(target)}`);
 console.log('1. Copying MASTER_PROTOCOL.md...');
-console.log('2. Syncing BRAIN/ (15 protocols)...');
+console.log('2. Syncing BRAIN/ (17 protocols)...');
 console.log('3. Configuring IDE rules (Cursor/Cline detected)...');
 console.log('4. Generating validation scripts...');
 

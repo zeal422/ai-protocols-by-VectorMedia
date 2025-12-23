@@ -49,7 +49,8 @@ function extractTriggers(content) {
         'api_design_protocol': ['APIDESIGN'],
         'performance_protocol': ['PERFAUDIT'],
         'mdap_protocol': ['MDAP', 'MILLIONSTEP'],
-        'refactor_protocol': ['REFACTOR']
+        'refactor_protocol': ['REFACTOR'],
+        'aria_accessibility_protocol': ['FULLARIA']
     };
     const baseName = content.match(/^#\s+(.+)$/m)?.[1] || '';
     // Normalize baseName for matching: lowercase, remove non-alphanumeric except spaces

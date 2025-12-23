@@ -31,9 +31,9 @@ graph TB
 
 # AI Development Protocols
 
-[![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](docs/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.1-blue.svg)](docs/CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Protocols](https://img.shields.io/badge/protocols-15-purple.svg)](#-protocol-files)
+[![Protocols](https://img.shields.io/badge/protocols-18-purple.svg)](#-protocol-files)
 [![AI Ready](https://img.shields.io/badge/AI-ready-orange.svg)](#-quick-start)
 [![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](#-documentation)
 [![WCAG](https://img.shields.io/badge/WCAG-2.2%20AA-green.svg)](BRAIN/accessibility_protocol.md)
@@ -70,7 +70,7 @@ npx @ai-protocols/init
 1. **Copy core files to your project:**
    ```bash
    # Copy protocols
-   cp -r MASTER_PROTOCOL.md BRAIN/ docs/ /path/to/your/project/
+   cp -r BRAIN/ docs/ /path/to/your/project/
    
    # Copy validation scripts
    cp -r scripts/ /path/to/your/project/
@@ -104,12 +104,23 @@ npx @ai-protocols/init
    node scripts/validate-protocols.js
    
    # Expected output:
-   # ✅ MASTER_PROTOCOL.md
-   # ✅ 15/15 BRAIN protocols present
+   # ✅ BRAIN/MASTER_PROTOCOL.md
+   # ✅ 18/18 BRAIN protocols present
    # ✅ Configuration detected: Cursor
-   # Validation Score: 28/28 (100%)
+   # Validation Score: 30/30 (100%)
    # Status: ✅ EXCELLENT
    ```
+
+### 📊 Validation Score Explained
+
+The validation script checks **30 critical items** to ensure a perfect setup:
+- **3 Core Files:** (MASTER_PROTOCOL, README, IMPLEMENT_IMPROVEMENTS_PLAN)
+- **18 BRAIN Protocols:** All specialized logic files in the `BRAIN/` directory.
+- **4 Documentation Guides:** Essential usage instructions.
+- **2 Working Examples:** Node and React project templates.
+- **3 Configuration Templates:** Base configs for tools and IDEs.
+
+**Scoring Rule:** Each item is equally weighted. A score of 30/30 (100%) confirms that the entire ecosystem is correctly integrated.
 
 ---
 
@@ -159,7 +170,7 @@ powershell scripts/validate-protocols.ps1
 
 **Validation checks:**
 - ✅ MASTER_PROTOCOL.md exists
-- ✅ All 15 BRAIN protocols present
+- ✅ All 18 BRAIN protocols present
 - ✅ Documentation files found
 - ✅ IDE configuration detected
 - ✅ Example projects (optional)
@@ -200,6 +211,7 @@ The master protocol automatically routes to specialized protocols based on your 
 | Protocol | Purpose | Trigger |
 |----------|---------|---------|
 | **[BRAIN/MASTER_PROTOCOL.md](BRAIN/MASTER_PROTOCOL.md)** | Main orchestrator - start here | — |
+| [BRAIN/mdap_protocol.md](BRAIN/mdap_protocol.md) | Zero-error scaling for complex tasks | `MDAP` |
 | [BRAIN/code_review_protocol.md](BRAIN/code_review_protocol.md) | Code review using Four Pillars framework | `COMPREHENSIVE` |
 | [BRAIN/debug_protocol.md](BRAIN/debug_protocol.md) | Scientific debugging methodology | `DEEPDIVE` |
 | [BRAIN/error_fix_protocol.md](BRAIN/error_fix_protocol.md) | Auto-fix errors with severity classification | `AUTODEBUG` |
@@ -213,34 +225,19 @@ The master protocol automatically routes to specialized protocols based on your 
 | [BRAIN/FRONTandBACKend-PROTOCOL.md](BRAIN/FRONTandBACKend-PROTOCOL.md) | Full-stack development guidelines | `ANTI-GENERIC` |
 | [BRAIN/bigpappa_protocol_reviewANDfixes.md](BRAIN/bigpappa_protocol_reviewANDfixes.md) | Comprehensive code audit and remediation | `BIGPAPPA` |
 | [BRAIN/codebase_indexing_protocol.md](BRAIN/codebase_indexing_protocol.md) | Codebase intelligence and mapping | `FULLINDEX` |
+| [BRAIN/refactor_protocol.md](BRAIN/refactor_protocol.md) | Systematic improvement with safety checks | `SAFEREFACTOR` |
 
-### New Protocols (v1.1.0)
+### New Protocols (v1.1.0+)
 
 | Protocol | Purpose | Trigger |
 |----------|---------|---------|
 | [BRAIN/security_audit_protocol.md](BRAIN/security_audit_protocol.md) | Security auditing with OWASP Top 10 | `SECAUDIT` |
 | [BRAIN/accessibility_protocol.md](BRAIN/accessibility_protocol.md) | WCAG 2.1 compliance testing | `A11YCHECK` |
+| [BRAIN/aria_accessibility_protocol.md](BRAIN/aria_accessibility_protocol.md) | Advanced ARIA and assistive technology | `FULLARIA` |
 | [BRAIN/git_workflow_protocol.md](BRAIN/git_workflow_protocol.md) | Git conventions and CI/CD integration | `GITFLOW` |
 | [BRAIN/api_design_protocol.md](BRAIN/api_design_protocol.md) | REST/GraphQL API design patterns | `APIDESIGN` |
 | [BRAIN/performance_protocol.md](BRAIN/performance_protocol.md) | Core Web Vitals and optimization | `PERFAUDIT` |
-
-### Reference & Setup
-
-| File | Purpose |
-|------|---------|
-| [docs/QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md) | One-page cheat sheet |
-| [docs/CHANGELOG.md](docs/CHANGELOG.md) | Version history |
-| [docs/QUICK_START.md](docs/QUICK_START.md) | 5-minute setup guide |
-| [docs/SCENARIOS.md](docs/SCENARIOS.md) | Real-world usage examples |
-| [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) | Common issues & solutions |
-| [docs/FAQ.md](docs/FAQ.md) | Frequently asked questions |
-| [docs/CASE_STUDIES.md](docs/CASE_STUDIES.md) | Success stories & metrics |
-| [BRAIN/OPTIMIZED_LINT_SETUP.md](BRAIN/OPTIMIZED_LINT_SETUP.md) | Linting setup for React/TypeScript/Tailwind |
-| [examples/node-express/](examples/node-express/) | Node.js + Express API example with auth & tests |
-| [examples/react-typescript/](examples/react-typescript/) | React + TypeScript app with accessible components |
-| [cli/](cli/) | Interactive setup tool (`npx @ai-protocols/init`) |
-| [scripts/](scripts/) | Validation scripts (JS, Bash, PowerShell) |
-| [configurations/](configurations/) | AI tool configurations |
+| [BRAIN/OPTIMIZED_LINT_SETUP.md](BRAIN/OPTIMIZED_LINT_SETUP.md) | Linting setup for modern stacks | — |
 
 ## 🛡️ Core Principles
 

@@ -57,10 +57,12 @@ Regardless of which model you use (Flash, Sonnet, GPT), "Lean" protocols provide
 | Model | Strongest Protocol Match |
 |:---|:---|
 | **Gemini 2.0 Flash** | `QUICK`, `AUTODEBUG`, `GITFLOW` |
-| **Claude 3.5 Sonnet** | `ULTRATHINK`, `SAFEREFACTOR`, `COMPREHENSIVE` |
+| **Claude 3.5 Sonnet** | `ULTRATHINK`, `SAFEREFACTOR`, `COMPREHENSIVE`, `FULLARIA` |
 | **GPT-4o** | `APIDESIGN`, `PERFAUDIT`, `DEEPDIVE` |
 | **KiloCode / O1** | `BIGPAPPA`, `FULLINDEX`, `SECAUDIT` |
 
 ---
+
+*AI Protocols v2.3.1 - 17 specialized protocols for high-performance development.*
 
 **[Back to MASTER_PROTOCOL](../MASTER_PROTOCOL.md)** | **[Back to README](../README.md)**

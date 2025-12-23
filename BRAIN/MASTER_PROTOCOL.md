@@ -281,7 +281,7 @@ The **MASTER PROTOCOL** intelligently routes AI assistants to specialized protoc
 - **Guard Clauses:** Deep nesting → early returns, linear flow
 
 **Safety Checklist:**
-- Before: All tests pass, coverage measured, behavior documented, git branch created
+- Before: All tests pass, coverage measured, behavior documentation, git branch created
 - During: ONE change type, test after EVERY change, commit each step, no feature additions
 - After: All tests pass, no performance regression, complexity reduced, docs updated
 
@@ -295,6 +295,22 @@ Risk: [LOW/MEDIUM/HIGH]
 Plan: [N steps with expected improvements]
 Expected: Complexity X→A, Lines Y→B, Nesting Z→C
 ```
+
+---
+
+### 16. ARIA Accessibility
+**Triggers:** "FULLARIA", "aria audit", "screen reader optimization"  
+**Primary:** `BRAIN/aria_accessibility_protocol.md`  
+**Secondary:** `BRAIN/accessibility_protocol.md`, `BRAIN/moreFRONTend-PROTOCOL.md`
+
+**Process:**
+1. Apply POUR framework (Perceivable, Operable, Understandable, Robust)
+2. Verify semantic HTML usage
+3. Audit ARIA roles, states, and properties
+4. Test keyboard interactions and focus management
+5. Generate accessibility remediation report
+
+**Special:** "FULLARIA" = comprehensive ARIA audit (WCAG AA/AAA, semantic integrity, live regions, focus trapping)
 
 ---
 
@@ -467,6 +483,7 @@ When user invokes "use MASTER_PROTOCOL to [request]":
 - **Linting Setup:** `BRAIN/OPTIMIZED_LINT_SETUP.md`
 - **Security:** `BRAIN/security_audit_protocol.md`
 - **Accessibility:** `BRAIN/accessibility_protocol.md`
+- **ARIA Accessibility:** `BRAIN/aria_accessibility_protocol.md`
 - **Git Workflow:** `BRAIN/git_workflow_protocol.md`
 - **API Design:** `BRAIN/api_design_protocol.md`
 - **Performance:** `BRAIN/performance_protocol.md`
