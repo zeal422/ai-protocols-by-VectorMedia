@@ -113,7 +113,7 @@ npx @ai-protocols/init
 ### 📊 Validation Score Explained
 
 The validation script checks **30 critical items** to ensure a perfect setup:
-- **3 Core Files:** (MASTER_PROTOCOL, README, IMPLEMENT_IMPROVEMENTS_PLAN)
+- **3 Core Files:** (MASTER_PROTOCOL, README, HOW_TO_USE)
 - **18 BRAIN Protocols:** All specialized logic files in the `BRAIN/` directory.
 - **4 Documentation Guides:** Essential usage instructions.
 - **2 Working Examples:** Node and React project templates.
@@ -295,8 +295,8 @@ Apply the **Four Pillars** to all reviews:
                     │ Backend  │
                     └────┬─────┘
                          │
-            ┌────────────▼────────────┐
-            │                         │
+            ┌────────────▼───────────┐
+            │                        │
     ┌───────▼────────┐      ┌────────▼────────┐
     │  BigPappa      │      │   Lint Setup    │
     │  (Full Audit)  │      │   (Config)      │
