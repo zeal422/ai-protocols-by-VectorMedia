@@ -1,4 +1,4 @@
-import { Server } from "@modelcontextprotocol/sdk/server/index";
+import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { ProtocolScanner } from "../scanner/protocol-scanner.js";
 import { ContentIndexer } from "../search/indexer.js";
 import { SearchMatcher } from "../search/matcher.js";

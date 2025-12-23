@@ -1,7 +1,7 @@
 // @ts-ignore - SDK types may not match exactly
-import { Server } from "@modelcontextprotocol/sdk/server/index";
+import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 // @ts-ignore - SDK types may not match exactly
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/client/stdio";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 // @ts-ignore - SDK types may not match exactly
 import { ListToolsRequestSchema, CallToolRequestSchema } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";

@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // @ts-ignore - MCP SDK types may not be fully compatible
-import { Server } from "@modelcontextprotocol/sdk/server/index";
+import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 // @ts-ignore - MCP SDK types may not be fully compatible
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 // @ts-ignore - MCP SDK types may not be fully compatible
 import { InitializeRequestSchema } from "@modelcontextprotocol/sdk/types.js";
 import { ProtocolScanner } from "./scanner/protocol-scanner.js";
@@ -13,11 +13,20 @@ import { resolveProtocolsRoot } from "./utils/path-resolver.js";
 import * as fs from 'fs/promises';
 import path from 'path';
 
+const SERVER_INFO = {
+  name: "ai-protocols",
+  version: "2.0.0"
+};
+
+const SERVER_CAPABILITIES = {
+  tools: {},
+  resources: {}
+};
+
 async function main() {
-  // @ts-ignore - Server constructor signature may vary by SDK version
-  const server = new Server({
-    name: "ai-protocols",
-    version: "2.0.0"
+  // Create server with info and capabilities
+  const server = new Server(SERVER_INFO, {
+    capabilities: SERVER_CAPABILITIES
   });
 
   try {
@@ -73,14 +82,8 @@ async function main() {
     server.setRequestHandler(InitializeRequestSchema, async () => {
       return {
         protocolVersion: "2024-11-05",
-        capabilities: {
-          tools: {},
-          resources: {}
-        },
-        serverInfo: {
-          name: "ai-protocols",
-          version: "2.0.0"
-        }
+        capabilities: SERVER_CAPABILITIES,
+        serverInfo: SERVER_INFO
       };
     });
 
