@@ -1,0 +1,18 @@
+In protocols-mcp/build/index.js around lines 3 to 5, the StdioServerTransport is being imported from the client path but this file is server-side; change the import to the server transport module (e.g. replace "@modelcontextprotocol/sdk/client/stdio" with the server-side path such as "@modelcontextprotocol/sdk/server/stdio" or the correct server export path in the MCP SDK), ensure the named export matches (StdioServerTransport) and update any build/type imports accordingly, then run a type-check/build to verify the new path and export are valid.
+
+
+
+In protocols-mcp/build/scanner/protocol-scanner.d.ts around lines 6 to 9, the declaration `private validateBrainPath;` is incomplete and missing a method signature/type; update the declaration to include the correct signature and return type (e.g., `(): void` for synchronous or `(): Promise<void>` for async) by ensuring the original source file protocols-mcp/src/scanner/protocol-scanner.ts has a properly typed method; recompile so the generated .d.ts contains the full method signature.
+
+In protocols-mcp/src/index.ts around line 55, using protocol.fileName as the Map key can cause collisions when different protocols share the same file name; change the key to a guaranteed-unique identifier (for example the protocol's full relative path, directory + fileName, or protocol.name/ID) so entries don't silently overwrite one another, and update any lookup sites to use that same unique key; alternatively, add a check before set to throw or log if the key already exists to detect duplicates.
+
+In protocols-mcp/src/search/indexer.ts around lines 68 to 71, the method signature declares content: string but the implementation defensively handles null/undefined with content ?? ''. Either change the signature to accept nullable input (content: string | null | undefined) and keep the defensive fallback, or remove the null-coalescing and ensure all callers pass a non-null string; update any call sites or types accordingly to match the chosen approach.
+
+
+Verify all usages of ValidationResult are updated for this breaking change.
+
+The property change from separate errors and warnings arrays to a unified issues array is a breaking API change. Any code accessing result.errors or result.warnings will fail at runtime.
+
+Additionally, there's no type-level enforcement of the relationship between success: boolean and the severity of items in the issues array. Consider whether success should be false when any issue has severity: 'error'.
+
+
