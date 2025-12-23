@@ -1,124 +1,39 @@
 # GitHub Copilot Integration
 
-Configure GitHub Copilot to use AI Development Protocols.
+Enable AI Development Protocols in GitHub Copilot for VS Code.
 
 ## Setup
 
-### 1. Create Copilot Instructions File
+### 1. Custom Instructions
 
-Create `.github/copilot-instructions.md` in your repository:
+Add the content of `copilot-instructions.md` to your GitHub Copilot "Custom Instructions" setting in VS Code:
 
-```markdown
-# Copilot Instructions
+1. Open VS Code Settings (`Ctrl+,`).
+2. Search for `github.copilot.chat.customInstructions`.
+3. Paste the content of `configurations/copilot/copilot-instructions.md`.
 
-This project follows the AI Development Protocols framework.
+### 2. Standard Protocol Set
 
-## Guidelines
+Ensure the following triggers are understood:
 
-### Code Quality
-- Follow existing patterns in the codebase
-- Use TypeScript strict mode
-- Add proper error handling
-- Include JSDoc comments for public APIs
-
-### Testing
-- Add unit tests for new functions
-- Use existing testing patterns
-- Aim for 80%+ coverage
-
-### Safety
-- Never expose secrets or API keys
-- Use parameterized queries (prevent SQL injection)
-- Validate all user inputs
-- Follow OWASP security guidelines
-
-### Naming Conventions
-- Components: PascalCase
-- Functions: camelCase
-- Constants: SCREAMING_SNAKE_CASE
-- Files: kebab-case or PascalCase (match existing)
-
-### Commit Messages
-Use Conventional Commits:
-- feat: new feature
-- fix: bug fix
-- docs: documentation
-- test: adding tests
-- refactor: code restructuring
-
-## Do NOT
-- Create files outside the project structure
-- Install new dependencies without explicit request
-- Modify authentication or payment logic
-- Change database schema directly
-- Commit secrets or sensitive data
-```
-
-### 2. VS Code Settings
-
-Add to `.vscode/settings.json`:
-
-```json
-{
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": true
-  },
-  "github.copilot.advanced": {
-    "debug.showScores": false,
-    "inlineSuggest.count": 3
-  }
-}
-```
+| Task | Protocol | Trigger |
+| :--- | :--- | :--- |
+| Code Review | BRAIN/code_review_protocol.md | `COMPREHENSIVE` |
+| Debugging | BRAIN/debug_protocol.md | `DEEPDIVE` |
+| Error Fixing | BRAIN/error_fix_protocol.md | `AUTODEBUG` |
+| Testing | BRAIN/test_automation_protocol.md | `FULLSPEC` |
+| Frontend | BRAIN/moreFRONTend-PROTOCOL.md | `ULTRATHINK` |
+| Full-stack | BRAIN/FRONTandBACKend-PROTOCOL.md | `ANTI-GENERIC` |
+| Security | BRAIN/security_audit_protocol.md | `SECAUDIT` |
+| Accessibility | BRAIN/accessibility_protocol.md | `A11YCHECK` |
+| Performance | BRAIN/performance_protocol.md | `PERFAUDIT` |
+| Refactoring | BRAIN/refactor_protocol.md | `SAFEREFACTOR` |
+| API Design | BRAIN/api_design_protocol.md | `APIDESIGN` |
+| Git Workflow | BRAIN/git_workflow_protocol.md | `GITFLOW` |
+| Code Audit | BRAIN/bigpappa_protocol_reviewANDfixes.md | `BIGPAPPA` |
+| Indexing | BRAIN/codebase_indexing_protocol.md | `FULLINDEX` |
 
 ## Usage Tips
 
-### Effective Comments
-
-Write descriptive comments to guide Copilot:
-
-```typescript
-// Create a function that validates email format
-// Should return true for valid emails, false otherwise
-// Use RFC 5322 compliant regex
-
-function validateEmail(email: string): boolean {
-  // Copilot will complete based on your comment
-}
-```
-
-### Reference Patterns
-
-```typescript
-// Following the pattern in src/api/users.ts,
-// create a handler for the /api/orders endpoint
-// Include proper error handling and validation
-```
-
-### Type-First Development
-
-```typescript
-interface OrderCreateInput {
-  userId: string;
-  items: OrderItem[];
-  shippingAddress: Address;
-}
-
-// Copilot will use the interface to suggest implementations
-function createOrder(input: OrderCreateInput): Promise<Order> {
-  // Suggestions will match the type definitions
-}
-```
-
-## Best Practices
-
-1. **Write descriptive comments** before code blocks
-2. **Define types first** - Copilot uses them for better suggestions
-3. **Reference existing patterns** in comments
-4. **Review all suggestions** - don't blindly accept
-5. **Use keyboard shortcuts**:
-   - `Tab` - Accept suggestion
-   - `Esc` - Dismiss suggestion
-   - `Alt+]` - Next suggestion
-   - `Alt+[` - Previous suggestion
+- **Reference Files**: Use `#` to reference specific protocols: *"#BRAIN/debug_protocol.md help me with this error"*.
+- **Direct Commands**: Use the triggers directly in your prompts: *"FULLSPEC: Add tests for this component"*.

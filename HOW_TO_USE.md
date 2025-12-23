@@ -43,7 +43,8 @@ Keep these folders in your project root for the AI to access:
 - `/BRAIN`: Contains `MASTER_PROTOCOL.md` and all 15 specialized sub-protocols.
 - `/docs`: Detailed scenarios, FAQs, and troubleshooting guides.
 - `/scripts`: Validation tools to ensure protocol integrity.
-- `/configurations`: Pre-configured rules for Cursor, Cline, and ESLint.
+- `/configurations`: Pre-configured rules for Cursor, Opencode, Cline, Kilocode, Claude, Copilot, Gemini, and VS Code.
+
 
 ---
 

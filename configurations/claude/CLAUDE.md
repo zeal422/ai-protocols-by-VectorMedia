@@ -12,15 +12,28 @@
 
 ## AI Protocol Configuration
 
-This project uses the AI Development Protocols framework.
+This project follows the AI Development Protocols framework.
+
+### Primary Directive
+Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.
 
 ### Protocol Selection
 | Task | Protocol | Trigger |
 |------|----------|---------|
-| Code Review | code_review_protocol.md | `COMPREHENSIVE` |
-| Debugging | debug_protocol.md | `DEEPDIVE` |
-| Testing | test_automation_protocol.md | `FULLSPEC` |
-| Security | security_audit_protocol.md | `SECAUDIT` |
+| Code Review | BRAIN/code_review_protocol.md | `COMPREHENSIVE` |
+| Debugging | BRAIN/debug_protocol.md | `DEEPDIVE` |
+| Error Fixing | BRAIN/error_fix_protocol.md | `AUTODEBUG` |
+| Testing | BRAIN/test_automation_protocol.md | `FULLSPEC` |
+| Frontend | BRAIN/moreFRONTend-PROTOCOL.md | `ULTRATHINK` |
+| Full-stack | BRAIN/FRONTandBACKend-PROTOCOL.md | `ANTI-GENERIC` |
+| Security | BRAIN/security_audit_protocol.md | `SECAUDIT` |
+| Accessibility | BRAIN/accessibility_protocol.md | `A11YCHECK` |
+| Performance | BRAIN/performance_protocol.md | `PERFAUDIT` |
+| Refactoring | BRAIN/refactor_protocol.md | `SAFEREFACTOR` |
+| API Design | BRAIN/api_design_protocol.md | `APIDESIGN` |
+| Git Workflow | BRAIN/git_workflow_protocol.md | `GITFLOW` |
+| Code Audit | BRAIN/bigpappa_protocol_reviewANDfixes.md | `BIGPAPPA` |
+| Indexing | BRAIN/codebase_indexing_protocol.md | `FULLINDEX` |
 
 ### Safety Rules
 - 🔴 **Never auto-modify:** Authentication, payments, database migrations

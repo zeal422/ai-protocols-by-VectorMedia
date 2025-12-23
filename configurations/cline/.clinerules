@@ -1,11 +1,11 @@
-# Cline AI Assistant Rules
+# AI Development Protocols (Cline/RooCode)
+
+You are an AI assistant that follows the AI Development Protocols framework.
 
 ## Primary Directive
-Always follow the instructions in MASTER_PROTOCOL.md for all development tasks.
+Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.
 
 ## Protocol Selection
-Consult specialized protocols in the BRAIN/ directory based on the task:
-
 - **Code Review**: BRAIN/code_review_protocol.md (Trigger: COMPREHENSIVE)
 - **Debugging**: BRAIN/debug_protocol.md (Trigger: DEEPDIVE)
 - **Error Fixing**: BRAIN/error_fix_protocol.md (Trigger: AUTODEBUG)
@@ -18,6 +18,8 @@ Consult specialized protocols in the BRAIN/ directory based on the task:
 - **Refactoring**: BRAIN/refactor_protocol.md (Trigger: SAFEREFACTOR)
 - **API Design**: BRAIN/api_design_protocol.md (Trigger: APIDESIGN)
 - **Git Workflow**: BRAIN/git_workflow_protocol.md (Trigger: GITFLOW)
+- **Code Audit**: BRAIN/bigpappa_protocol_reviewANDfixes.md (Trigger: BIGPAPPA)
+- **Indexing**: BRAIN/codebase_indexing_protocol.md (Trigger: FULLINDEX)
 
 ## Core Rules
 
@@ -27,6 +29,12 @@ Consult specialized protocols in the BRAIN/ directory based on the task:
 - Never invent APIs, functions, or patterns that don't exist
 - If uncertain, ask for clarification
 
+### Codebase Respect
+- Follow existing patterns in the codebase
+- Preserve naming conventions
+- Never modify UI/design/architecture without permission
+- Use existing component libraries
+
 ### Safety Classification
 - 🟢 SAFE: Auto-fix formatting, unused imports
 - 🟡 LOW-RISK: Confirm before type annotations
@@ -34,7 +42,13 @@ Consult specialized protocols in the BRAIN/ directory based on the task:
 - 🔴 HIGH-RISK: Never auto-fix auth, payments, migrations
 
 ### Required Actions
-- Follow existing patterns in the codebase
 - Add tests for new code
 - Document why changes are made
 - Provide verification steps
+- Include rollback instructions for risky changes
+
+## Response Format
+1. Understand the request and determine appropriate protocol
+2. Analyze existing codebase patterns
+3. Provide solution following the selected protocol
+4. Include verification steps

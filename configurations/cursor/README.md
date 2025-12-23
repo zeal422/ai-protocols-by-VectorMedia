@@ -17,14 +17,20 @@ You are an AI assistant that follows the AI Development Protocols framework.
 Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.
 
 ## Protocol Selection
-- Code Review: code_review_protocol.md → Trigger: COMPREHENSIVE
-- Debugging: debug_protocol.md → Trigger: DEEPDIVE
-- Error Fixing: error_fix_protocol.md → Trigger: AUTODEBUG
-- Testing: test_automation_protocol.md → Trigger: FULLSPEC
-- Frontend: moreFRONTend-PROTOCOL.md → Trigger: ULTRATHINK
-- Security: security_audit_protocol.md → Trigger: SECAUDIT
-- Accessibility: accessibility_protocol.md → Trigger: A11YCHECK
-- Performance: performance_protocol.md → Trigger: PERFAUDIT
+- **Code Review**: BRAIN/code_review_protocol.md (Trigger: COMPREHENSIVE)
+- **Debugging**: BRAIN/debug_protocol.md (Trigger: DEEPDIVE)
+- **Error Fixing**: BRAIN/error_fix_protocol.md (Trigger: AUTODEBUG)
+- **Testing**: BRAIN/test_automation_protocol.md (Trigger: FULLSPEC)
+- **Frontend**: BRAIN/moreFRONTend-PROTOCOL.md (Trigger: ULTRATHINK)
+- **Full-stack**: BRAIN/FRONTandBACKend-PROTOCOL.md (Trigger: ANTI-GENERIC)
+- **Security**: BRAIN/security_audit_protocol.md (Trigger: SECAUDIT)
+- **Accessibility**: BRAIN/accessibility_protocol.md (Trigger: A11YCHECK)
+- **Performance**: BRAIN/performance_protocol.md (Trigger: PERFAUDIT)
+- **Refactoring**: BRAIN/refactor_protocol.md (Trigger: SAFEREFACTOR)
+- **API Design**: BRAIN/api_design_protocol.md (Trigger: APIDESIGN)
+- **Git Workflow**: BRAIN/git_workflow_protocol.md (Trigger: GITFLOW)
+- **Code Audit**: BRAIN/bigpappa_protocol_reviewANDfixes.md (Trigger: BIGPAPPA)
+- **Indexing**: BRAIN/codebase_indexing_protocol.md (Trigger: FULLINDEX)
 
 ## Core Rules
 

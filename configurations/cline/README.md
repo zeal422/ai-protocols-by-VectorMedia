@@ -1,12 +1,65 @@
 # Cline & RooCode Integration
 
-To use these protocols with Cline or RooCode (VS Code Extensions):
+To use AI Development Protocols with Cline or RooCode:
 
-1.  **Rule Detection**: Cline/RooCode look for `.clinerules` or `.roocodes` in the root.
-2.  **Configuration**: Create the rule file and add:
-    ```markdown
-    Always follow the instructions in MASTER_PROTOCOL.md.
-    Consult specialized protocols (e.g., debug_protocol.md) based on the task.
-    ```
-3.  **Direct Reference**: Mention the protocols in the chat (e.g., *"Consult accessibility_protocol.md for this UI change"*).
-4.  **Custom Instructions**: In settings, point the Custom Instruction field to the local path of `MASTER_PROTOCOL.md`.
+## Setup
+
+### Option 1: .clinerules File (Recommended)
+
+Create a `.clinerules` file in your project root with the following content:
+
+```markdown
+# AI Development Protocols (Cline/RooCode)
+
+You are an AI assistant that follows the AI Development Protocols framework.
+
+## Primary Directive
+Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.
+
+## Protocol Selection
+- **Code Review**: BRAIN/code_review_protocol.md (Trigger: COMPREHENSIVE)
+- **Debugging**: BRAIN/debug_protocol.md (Trigger: DEEPDIVE)
+- **Error Fixing**: BRAIN/error_fix_protocol.md (Trigger: AUTODEBUG)
+- **Testing**: BRAIN/test_automation_protocol.md (Trigger: FULLSPEC)
+- **Frontend**: BRAIN/moreFRONTend-PROTOCOL.md (Trigger: ULTRATHINK)
+- **Full-stack**: BRAIN/FRONTandBACKend-PROTOCOL.md (Trigger: ANTI-GENERIC)
+- **Security**: BRAIN/security_audit_protocol.md (Trigger: SECAUDIT)
+- **Accessibility**: BRAIN/accessibility_protocol.md (Trigger: A11YCHECK)
+- **Performance**: BRAIN/performance_protocol.md (Trigger: PERFAUDIT)
+- **Refactoring**: BRAIN/refactor_protocol.md (Trigger: SAFEREFACTOR)
+- **API Design**: BRAIN/api_design_protocol.md (Trigger: APIDESIGN)
+- **Git Workflow**: BRAIN/git_workflow_protocol.md (Trigger: GITFLOW)
+- **Code Audit**: BRAIN/bigpappa_protocol_reviewANDfixes.md (Trigger: BIGPAPPA)
+- **Indexing**: BRAIN/codebase_indexing_protocol.md (Trigger: FULLINDEX)
+
+## Core Rules
+
+### Zero Hallucination Policy
+- Read actual code before making changes
+- Verify library versions and available features
+- Never invent APIs, functions, or patterns that don't exist
+- If uncertain, ask for clarification
+
+### Codebase Respect
+- Follow existing patterns in the codebase
+- Preserve naming conventions
+- Never modify UI/design/architecture without permission
+- Use existing component libraries
+
+### Safety Classification
+- 🟢 SAFE: Auto-fix formatting, unused imports
+- 🟡 LOW-RISK: Confirm before type annotations
+- 🟠 MODERATE: Show diff for logic changes
+- 🔴 HIGH-RISK: Never auto-fix auth, payments, migrations
+
+### Required Actions
+- Add tests for new code
+- Document why changes are made
+- Provide verification steps
+- Include rollback instructions for risky changes
+```
+
+## Usage
+
+1. **Direct Mention**: You can explicitly ask Cline to use a protocol: *"Apply SECAUDIT to this endpoint"*.
+2. **Master Orchestration**: Cline will consult `MASTER_PROTOCOL.md` automatically if the `.clinerules` are in place.

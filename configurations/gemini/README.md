@@ -1,8 +1,33 @@
-# Gemini Integration
+# Google Gemini Integration
 
-To use these protocols with Google Gemini (Web, 1.5 Pro, 2.0 Flash):
+Use AI Development Protocols with Google Gemini (via AI Studio or Gemini Advanced).
 
-1.  **System Instructions**: Copy the contents of `MASTER_PROTOCOL.md` and paste it into Gemini's "System Instructions" or "Custom Instructions" if using the API/Vertex AI.
-2.  **Web Context**: Upload `MASTER_PROTOCOL.md` as a file at the start of your session.
-3.  **Prompting**: Start your requests with: *"Use the **MASTER_PROTOCOL** to..."* or trigger specific modes like **`DEEPDIVE`**.
-4.  **Reference**: For best results, use the optimized markdown files; their lower token count ensures Gemini's context window stays focused on your code.
+## Setup
+
+### 1. System Instructions
+
+Paste the content of `configurations/gemini/system-instructions.txt` into the "System Instructions" field in your AI tool (e.g., Google AI Studio).
+
+### 2. Standard Protocol Set
+
+Ensure the following triggers and paths are used:
+
+- **Code Review**: BRAIN/code_review_protocol.md (Trigger: COMPREHENSIVE)
+- **Debugging**: BRAIN/debug_protocol.md (Trigger: DEEPDIVE)
+- **Error Fixing**: BRAIN/error_fix_protocol.md (Trigger: AUTODEBUG)
+- **Testing**: BRAIN/test_automation_protocol.md (Trigger: FULLSPEC)
+- **Frontend**: BRAIN/moreFRONTend-PROTOCOL.md (Trigger: ULTRATHINK)
+- **Full-stack**: BRAIN/FRONTandBACKend-PROTOCOL.md (Trigger: ANTI-GENERIC)
+- **Security**: BRAIN/security_audit_protocol.md (Trigger: SECAUDIT)
+- **Accessibility**: BRAIN/accessibility_protocol.md (Trigger: A11YCHECK)
+- **Performance**: BRAIN/performance_protocol.md (Trigger: PERFAUDIT)
+- **Refactoring**: BRAIN/refactor_protocol.md (Trigger: SAFEREFACTOR)
+- **API Design**: BRAIN/api_design_protocol.md (Trigger: APIDESIGN)
+- **Git Workflow**: BRAIN/git_workflow_protocol.md (Trigger: GITFLOW)
+- **Code Audit**: BRAIN/bigpappa_protocol_reviewANDfixes.md (Trigger: BIGPAPPA)
+- **Indexing**: BRAIN/codebase_indexing_protocol.md (Trigger: FULLINDEX)
+
+## Usage Tips
+
+- **Context Window**: Gemini has a large context window; don't hesitate to upload the entire `BRAIN/` directory if you're using the file upload feature in Gemini Advanced.
+- **Reference Commands**: Use the triggers directly in your prompt to activate specialized logic.

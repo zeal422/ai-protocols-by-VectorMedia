@@ -31,7 +31,7 @@ graph TB
 
 # AI Development Protocols
 
-[![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](docs/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](docs/CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Protocols](https://img.shields.io/badge/protocols-15-purple.svg)](#-protocol-files)
 [![AI Ready](https://img.shields.io/badge/AI-ready-orange.svg)](#-quick-start)
@@ -39,7 +39,8 @@ graph TB
 [![WCAG](https://img.shields.io/badge/WCAG-2.2%20AA-green.svg)](BRAIN/accessibility_protocol.md)
 [![OWASP](https://img.shields.io/badge/OWASP-Top%2010-red.svg)](BRAIN/security_audit_protocol.md)
 
-A comprehensive collection of protocols and guidelines designed to help ANY AI assistant (Gemini, KiloCode, Cline, RooCode, Cursor, Claude, Copilot, etc.) deliver consistent, high-quality software development assistance while reducing hallucinations and maintaining code quality.
+A comprehensive collection of protocols and guidelines designed to help ANY AI assistant (Gemini, Opencode, KiloCode, Cline, RooCode, Cursor, Claude, Copilot, etc.) deliver consistent, high-quality software development assistance while reducing hallucinations and maintaining code quality.
+
 
 ## 🎯 Purpose
 
@@ -90,7 +91,12 @@ npx @ai-protocols/init
    # For VS Code
    mkdir -p /path/to/your/project/.vscode
    cp configurations/vscode/settings.json /path/to/your/project/.vscode/
+
+   # For Opencode AI
+   cp configurations/opencode/.opencoderules /path/to/your/project/
+   cp configurations/opencode/opencode.json /path/to/your/project/
    ```
+
 
 3. **Validate your setup:**
    ```bash
