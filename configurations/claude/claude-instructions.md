@@ -1,6 +1,6 @@
-# Claude Custom Instructions (AI Development Protocols)
+# Claude Custom Instructions (ai-protocols)
 
-Follow these instructions to use the AI Development Protocols framework with Claude.ai.
+Follow these instructions to use the ai-protocols framework with Claude.ai.
 
 ## Primary Directive
 Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.

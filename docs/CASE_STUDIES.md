@@ -1,6 +1,6 @@
 # 📊 Case Studies & Success Stories
 
-Real-world examples of AI Development Protocols in action.
+Real-world examples of ai-protocols in action.
 
 ---
 
@@ -444,7 +444,7 @@ Result:
 
 ## 💡 Your Success Story?
 
-We'd love to hear how AI Development Protocols helped your team!
+We'd love to hear how ai-protocols helped your team!
 
 **Share your results:**
 - Metrics before/after

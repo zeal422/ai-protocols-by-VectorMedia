@@ -1,6 +1,6 @@
 # React + TypeScript Example
 
-Production-ready React application demonstrating AI Development Protocols.
+Production-ready React application demonstrating ai-protocols.
 
 ## 🎯 What This Demonstrates
 
@@ -407,5 +407,5 @@ MIT - Use this as a template for your projects!
 
 ---
 
-**This example demonstrates production-ready React code following AI Development Protocols.**  
+**This example demonstrates production-ready React code following ai-protocols.**  
 Built with: React 18, TypeScript, Vite, Vitest, Testing Library, Accessibility Best Practices

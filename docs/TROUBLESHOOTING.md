@@ -1,6 +1,6 @@
 # 🛠️ Troubleshooting Guide
 
-Common issues and solutions when using AI Development Protocols.
+Common issues and solutions when using ai-protocols.
 
 ---
 

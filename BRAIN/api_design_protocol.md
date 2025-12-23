@@ -104,7 +104,7 @@ X-Request-ID: <uuid>  // For tracing
   "data": {
     "id": "123",
     "email": "user@example.com",
-    "createdAt": "2024-01-15T10:30:00Z"
+    "createdAt": "2025-01-15T10:30:00Z"
   },
   "meta": { "requestId": "abc-123-def" }
 }
@@ -139,7 +139,7 @@ X-Request-ID: <uuid>  // For tracing
   },
   "meta": {
     "requestId": "abc-123-def",
-    "timestamp": "2024-01-15T10:30:00Z"
+    "timestamp": "2025-01-15T10:30:00Z"
   }
 }
 ```
@@ -431,6 +431,6 @@ Before shipping an API:
 
 ---
 
-*Last Updated: 2025-12-22*  
+*Last Updated: 2025-12-23*  
 *Protocol Version: 2.0.0*
 

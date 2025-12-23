@@ -1,6 +1,6 @@
 # 🌐 Universal LLM Integration Guide
 
-The AI Development Protocols are designed to be **LLM-Agnostic**. They work with any advanced Large Language Model (Gemini, KiloCode, Cline, RooCode, Cursor, Claude, GPT-4, etc.) because they rely on structured markdown and standard prompt engineering principles.
+The ai-protocols are designed to be **LLM-Agnostic**. They work with any advanced Large Language Model (Gemini 3 Pro, Flash, GPT 5.2, Sonnet 4.5, Opus, etc.) because they rely on structured markdown and standard prompt engineering principles.
 
 ---
 
@@ -56,9 +56,9 @@ Regardless of which model you use (Flash, Sonnet, GPT), "Lean" protocols provide
 
 | Model | Strongest Protocol Match |
 |:---|:---|
-| **Gemini 2.0 Flash** | `QUICK`, `AUTODEBUG`, `GITFLOW` |
-| **Claude 3.5 Sonnet** | `ULTRATHINK`, `SAFEREFACTOR`, `COMPREHENSIVE`, `FULLARIA` |
-| **GPT-4o** | `APIDESIGN`, `PERFAUDIT`, `DEEPDIVE` |
+| **Gemini 3 Pro / Flash** | `QUICK`, `AUTODEBUG`, `GITFLOW` |
+| **Sonnet 4.5 / Opus** | `ULTRATHINK`, `SAFEREFACTOR`, `COMPREHENSIVE`, `FULLARIA` |
+| **GPT 5.2** | `APIDESIGN`, `PERFAUDIT`, `DEEPDIVE` |
 | **KiloCode / O1** | `BIGPAPPA`, `FULLINDEX`, `SECAUDIT` |
 
 ---

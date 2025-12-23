@@ -1,5 +1,5 @@
 /**
- * Express Server following AI Development Protocols
+ * Express Server following ai-protocols
  * Demonstrates: API Design, Security, Error Handling, Performance
  */
 import express from 'express';

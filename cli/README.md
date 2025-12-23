@@ -1,6 +1,6 @@
-# AI Protocols CLI
+# ai-protocols CLI
 
-Interactive CLI for setting up AI Development Protocols in your project.
+Interactive CLI for setting up ai-protocols in your project.
 
 ## Usage
 

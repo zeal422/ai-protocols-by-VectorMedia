@@ -1,12 +1,12 @@
 # ❓ Frequently Asked Questions
 
-Common questions about AI Development Protocols.
+Common questions about ai-protocols.
 
 ---
 
 ## 📚 General Questions
 
-### What are AI Development Protocols?
+### What are ai-protocols?
 
 A comprehensive framework that guides AI assistants (Cursor, Cline, Copilot, Gemini, etc.) to follow software engineering best practices. Instead of generic responses, protocols provide specialized workflows for debugging, code review, testing, security audits, and more.
 
@@ -74,7 +74,7 @@ your-project/
 
 ```bash
 git add MASTER_PROTOCOL.md BRAIN/ docs/ .cursorrules
-git commit -m "Add AI Development Protocols"
+git commit -m "Add ai-protocols"
 ```
 
 ---
@@ -286,7 +286,7 @@ Yes, protocols include version metadata:
 ```yaml
 ---
 protocol_version: "2.1.0"
-last_updated: "2025-12-22"
+last_updated: "2025-12-23"
 ---
 ```
 

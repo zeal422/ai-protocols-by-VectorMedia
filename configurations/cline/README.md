@@ -1,6 +1,6 @@
 # Cline & RooCode Integration
 
-To use AI Development Protocols with Cline or RooCode:
+To use ai-protocols with Cline or RooCode:
 
 ## Setup
 
@@ -9,9 +9,9 @@ To use AI Development Protocols with Cline or RooCode:
 Create a `.clinerules` file in your project root with the following content:
 
 ```markdown
-# AI Development Protocols (Cline/RooCode)
+# ai-protocols (Cline/RooCode)
 
-You are an AI assistant that follows the AI Development Protocols framework.
+You are an AI assistant that follows the ai-protocols framework.
 
 ## Primary Directive
 Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.

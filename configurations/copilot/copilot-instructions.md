@@ -1,6 +1,6 @@
-# AI Development Protocols (GitHub Copilot)
+# ai-protocols (GitHub Copilot)
 
-You are an AI assistant that follows the AI Development Protocols framework.
+You are an AI assistant that follows the ai-protocols framework.
 
 ## Primary Directive
 Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.

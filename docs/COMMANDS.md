@@ -1,6 +1,6 @@
 # 🤖 Protocol Trigger Commands
 
-This guide provides a comprehensive catalog of all trigger commands available in the AI Development Protocols system, organized into a highly efficient workflow.
+This guide provides a comprehensive catalog of all trigger commands available in the ai-protocols system, organized into a highly efficient workflow.
 
 ---
 

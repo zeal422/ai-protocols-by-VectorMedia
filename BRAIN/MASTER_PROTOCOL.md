@@ -1,6 +1,6 @@
 ---
-protocol_version: "2.3.0"
-last_updated: "2025-12-22"
+protocol_version: "2.3.1"
+last_updated: "2025-12-23"
 status: "Official Release (Dec 2025 - Zero-Error MDAP Suite)"
 ---
 
@@ -498,8 +498,8 @@ This MASTER_PROTOCOL reduces hallucinations, respects existing codebases, and pr
 
 ---
 
-*Last Updated: 2025-12-22*  
-*Protocol Version: 2.3.0*
+*Last Updated: 2025-12-23*  
+*Protocol Version: 2.3.1*
 
 ---
 

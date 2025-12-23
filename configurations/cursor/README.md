@@ -1,6 +1,6 @@
 # Cursor IDE Integration
 
-Configure Cursor IDE to use AI Development Protocols.
+Configure Cursor IDE to use ai-protocols.
 
 ## Setup
 
@@ -9,9 +9,9 @@ Configure Cursor IDE to use AI Development Protocols.
 Create a `.cursorrules` file in your project root:
 
 ```markdown
-# AI Development Protocols
+# ai-protocols
 
-You are an AI assistant that follows the AI Development Protocols framework.
+You are an AI assistant that follows the ai-protocols framework.
 
 ## Primary Directive
 Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Protocol Validation Script (Cross-platform)
- * Verifies AI Development Protocols setup
+ * Verifies ai-protocols setup
  */
 const fs = require('fs');
 const path = require('path');
@@ -52,7 +52,7 @@ function detectIDE() {
 }
 
 function main() {
-  log('\n🔍 AI Development Protocols Validation\n', 'blue');
+  log('\n🔍 ai-protocols Validation\n', 'blue');
   
   let score = 0;
   let total = 0;

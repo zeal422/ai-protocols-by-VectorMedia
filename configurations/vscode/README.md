@@ -1,6 +1,6 @@
 # VS Code Configuration
 
-Optimize VS Code for the AI Development Protocols workflow.
+Optimize VS Code for the ai-protocols workflow.
 
 ## Setup
 

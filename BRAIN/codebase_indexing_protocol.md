@@ -229,8 +229,8 @@ api_endpoints:
     tests: {unit: 3, integration: 2, e2e: 1}
     
     changelog:
-      - {date: "2024-01-15", change: "Added email field", breaking: false}
-      - {date: "2023-12-01", change: "UUID migration", breaking: true}
+      - {date: "2025-01-15", change: "Added email field", breaking: false}
+      - {date: "2025-12-01", change: "UUID migration", breaking: true}
 ```
 
 ### Database Schema Index
@@ -269,8 +269,8 @@ database_schemas:
       - {query: "SELECT * FROM users WHERE deleted_at IS NULL", freq: "high", perf: "good (indexed)"}
     
     migrations:
-      - {version: "20240115_add_role", date: "2024-01-15", desc: "Added role enum"}
-      - {version: "20231201_uuid", date: "2023-12-01", desc: "Migrated to UUID PK"}
+      - {version: "20250115_add_role", date: "2025-01-15", desc: "Added role enum"}
+      - {version: "20251201_uuid", date: "2025-12-01", desc: "Migrated to UUID PK"}
 ```
 
 ### Change Impact Matrix
@@ -481,6 +481,6 @@ When user triggers "FULLINDEX":
 - [Back to Master Protocol](../MASTER_PROTOCOL.md)
 ---
 
-*Last Updated: 2025-12-22*  
+*Last Updated: 2025-12-23*  
 *Protocol Version: 2.0.0*
 

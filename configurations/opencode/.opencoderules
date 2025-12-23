@@ -13,6 +13,7 @@ Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.
 - Frontend: moreFRONTend-PROTOCOL.md → Trigger: ULTRATHINK
 - Security: security_audit_protocol.md → Trigger: SECAUDIT
 - Accessibility: accessibility_protocol.md → Trigger: A11YCHECK
+- ARIA Accessibility: aria_accessibility_protocol.md → Trigger: FULLARIA
 - Performance: performance_protocol.md → Trigger: PERFAUDIT
 
 ## Core Rules

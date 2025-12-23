@@ -1,6 +1,6 @@
-# AI Development Protocols MCP Server
+# ai-protocols MCP Server
 
-An MCP (Model Context Protocol) server that exposes the AI Development Protocols for use with AI assistants like Claude, Cursor, and other MCP-compatible clients.
+An MCP (Model Context Protocol) server that exposes the ai-protocols for use with AI assistants like Claude, Cursor, and other MCP-compatible clients.
 
 ## Features
 
@@ -35,9 +35,9 @@ Add to your MCP settings:
   "mcpServers": {
     "ai-protocols": {
       "command": "node",
-      "args": ["C:/CODING/---PROTOCOLS---by-VM/protocols-mcp/build/index.js"],
+      "args": ["/path/to/your/project/protocols-mcp/build/index.js"],
       "env": {
-        "PROTOCOLS_PATH": "C:/CODING/---PROTOCOLS---by-VM"
+        "PROTOCOLS_PATH": "/path/to/your/project"
       }
     }
   }

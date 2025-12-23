@@ -1,7 +1,7 @@
 {
   "name": "ai-protocols-react-typescript-example",
   "version": "1.0.0",
-  "description": "React + TypeScript example following AI Development Protocols",
+  "description": "React + TypeScript example following ai-protocols",
   "type": "module",
   "scripts": {
     "dev": "vite",

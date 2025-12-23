@@ -29,7 +29,7 @@ function App() {
           </main>
 
           <footer className="footer">
-            <p>Built with AI Development Protocols</p>
+            <p>Built with ai-protocols</p>
           </footer>
         </div>
       </BrowserRouter>

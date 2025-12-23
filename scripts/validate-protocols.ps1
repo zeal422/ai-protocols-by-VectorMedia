@@ -1,6 +1,6 @@
 ###############################################################################
 # Protocol Validation Script (PowerShell)
-# Verifies AI Development Protocols setup on Windows
+# Verifies ai-protocols setup on Windows
 ###############################################################################
 
 $score = 0
@@ -29,7 +29,7 @@ function Test-FileExists {
     }
 }
 
-Write-Color "`n🔍 AI Development Protocols Validation`n" "Cyan"
+Write-Color "`n🔍 ai-protocols Validation`n" "Cyan"
 
 # Check core files
 Write-Color "📋 Core Files:" "Cyan"

@@ -1,6 +1,6 @@
 # GitHub Copilot Integration
 
-Enable AI Development Protocols in GitHub Copilot for VS Code.
+Enable ai-protocols in GitHub Copilot for VS Code.
 
 ## Setup
 
@@ -26,6 +26,7 @@ Ensure the following triggers are understood:
 | Full-stack | BRAIN/FRONTandBACKend-PROTOCOL.md | `ANTI-GENERIC` |
 | Security | BRAIN/security_audit_protocol.md | `SECAUDIT` |
 | Accessibility | BRAIN/accessibility_protocol.md | `A11YCHECK` |
+| ARIA Accessibility | BRAIN/aria_accessibility_protocol.md | `FULLARIA` |
 | Performance | BRAIN/performance_protocol.md | `PERFAUDIT` |
 | Refactoring | BRAIN/refactor_protocol.md | `SAFEREFACTOR` |
 | API Design | BRAIN/api_design_protocol.md | `APIDESIGN` |

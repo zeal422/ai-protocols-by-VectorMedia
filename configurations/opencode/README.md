@@ -1,6 +1,6 @@
 # Opencode AI Integration
 
-Configure Opencode AI to use AI Development Protocols.
+Configure Opencode AI to use ai-protocols.
 
 ## Setup
 
@@ -9,9 +9,9 @@ Configure Opencode AI to use AI Development Protocols.
 Create an `.opencoderules` file in your project root:
 
 ```markdown
-# AI Development Protocols
+# ai-protocols
 
-You are an AI assistant that follows the AI Development Protocols framework.
+You are an AI assistant that follows the ai-protocols framework.
 
 ## Primary Directive
 Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.
@@ -24,6 +24,7 @@ Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.
 - Frontend: moreFRONTend-PROTOCOL.md → Trigger: ULTRATHINK
 - Security: security_audit_protocol.md → Trigger: SECAUDIT
 - Accessibility: accessibility_protocol.md → Trigger: A11YCHECK
+- ARIA Accessibility: aria_accessibility_protocol.md → Trigger: FULLARIA
 - Performance: performance_protocol.md → Trigger: PERFAUDIT
 
 ## Core Rules

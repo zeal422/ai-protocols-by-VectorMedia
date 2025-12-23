@@ -12,7 +12,7 @@
 
 ## AI Protocol Configuration
 
-This project follows the AI Development Protocols framework.
+This project follows the ai-protocols framework.
 
 ### Primary Directive
 Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.
@@ -28,6 +28,7 @@ Use MASTER_PROTOCOL.md as your orchestrator for all development tasks.
 | Full-stack | BRAIN/FRONTandBACKend-PROTOCOL.md | `ANTI-GENERIC` |
 | Security | BRAIN/security_audit_protocol.md | `SECAUDIT` |
 | Accessibility | BRAIN/accessibility_protocol.md | `A11YCHECK` |
+| ARIA Accessibility | BRAIN/aria_accessibility_protocol.md | `FULLARIA` |
 | Performance | BRAIN/performance_protocol.md | `PERFAUDIT` |
 | Refactoring | BRAIN/refactor_protocol.md | `SAFEREFACTOR` |
 | API Design | BRAIN/api_design_protocol.md | `APIDESIGN` |

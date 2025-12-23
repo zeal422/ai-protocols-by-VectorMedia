@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Interactive CLI for AI Development Protocols Setup
+ * Interactive CLI for ai-protocols Setup
  */
 const { prompt } = require('enquirer');
 const chalk = require('chalk');
@@ -11,7 +11,7 @@ const path = require('path');
 const PROTOCOL_ROOT = path.join(__dirname, '..');
 
 async function main() {
-  console.log(chalk.blue.bold('\n🚀 AI Development Protocols Setup\n'));
+  console.log(chalk.blue.bold('\n🚀 ai-protocols Setup\n'));
 
   try {
     // Step 1: Framework Selection

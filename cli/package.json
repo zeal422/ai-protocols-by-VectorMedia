@@ -1,7 +1,7 @@
 {
   "name": "@ai-protocols/init",
   "version": "1.0.0",
-  "description": "Interactive CLI for setting up AI Development Protocols",
+  "description": "Interactive CLI for setting up ai-protocols",
   "main": "index.js",
   "bin": {
     "ai-protocols-init": "./index.js"

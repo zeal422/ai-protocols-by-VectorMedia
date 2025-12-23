@@ -1,7 +1,7 @@
 #!/bin/bash
 ###############################################################################
 # Protocol Validation Script (Bash)
-# Verifies AI Development Protocols setup on Unix-like systems
+# Verifies ai-protocols setup on Unix-like systems
 ###############################################################################
 
 set -e
@@ -46,7 +46,7 @@ check_dir() {
     fi
 }
 
-log "$BLUE" "\n🔍 AI Development Protocols Validation\n"
+log "$BLUE" "\n🔍 ai-protocols Validation\n"
 
 # Check core files
 log "$BLUE" "📋 Core Files:"

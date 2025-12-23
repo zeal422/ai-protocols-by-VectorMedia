@@ -1,7 +1,7 @@
 {
   "name": "ai-protocols-node-express-example",
   "version": "1.0.0",
-  "description": "Node.js + Express example following AI Development Protocols",
+  "description": "Node.js + Express example following ai-protocols",
   "main": "dist/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",

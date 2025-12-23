@@ -1,6 +1,6 @@
 # Claude Integration
 
-Configure Claude.ai to follow AI Development Protocols.
+Configure Claude.ai to follow ai-protocols.
 
 ## Setup
 
@@ -29,6 +29,7 @@ For a more global setup in Claude.ai Pro:
 | Full-stack | BRAIN/FRONTandBACKend-PROTOCOL.md | `ANTI-GENERIC` |
 | Security | BRAIN/security_audit_protocol.md | `SECAUDIT` |
 | Accessibility | BRAIN/accessibility_protocol.md | `A11YCHECK` |
+| ARIA Accessibility | BRAIN/aria_accessibility_protocol.md | `FULLARIA` |
 | Performance | BRAIN/performance_protocol.md | `PERFAUDIT` |
 | Refactoring | BRAIN/refactor_protocol.md | `SAFEREFACTOR` |
 | API Design | BRAIN/api_design_protocol.md | `APIDESIGN` |

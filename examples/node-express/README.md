@@ -1,6 +1,6 @@
 # Node.js + Express Example
 
-Production-ready REST API demonstrating AI Development Protocols.
+Production-ready REST API demonstrating ai-protocols.
 
 ## 🎯 What This Demonstrates
 
@@ -328,5 +328,5 @@ MIT - Use this as a template for your projects!
 
 ---
 
-**This example demonstrates production-ready code following AI Development Protocols.**  
+**This example demonstrates production-ready code following ai-protocols.**  
 Built with: Node.js 18+, Express, TypeScript, JWT, Bcrypt, Zod, Jest, Winston

@@ -1,4 +1,5 @@
-# AI Development Protocols
+# ai-protocols
+by me, VectorMedia
 
 ```mermaid
 graph TB
@@ -29,7 +30,8 @@ graph TB
     style Perf fill:#06b6d4,color:#fff
 ```
 
-# AI Development Protocols
+# ai-protocols
+by me, VectorMedia
 
 [![Version](https://img.shields.io/badge/version-2.3.1-blue.svg)](docs/CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -39,12 +41,12 @@ graph TB
 [![WCAG](https://img.shields.io/badge/WCAG-2.2%20AA-green.svg)](BRAIN/accessibility_protocol.md)
 [![OWASP](https://img.shields.io/badge/OWASP-Top%2010-red.svg)](BRAIN/security_audit_protocol.md)
 
-A comprehensive collection of protocols and guidelines designed to help ANY AI assistant (Gemini, Opencode, KiloCode, Cline, RooCode, Cursor, Claude, Copilot, etc.) deliver consistent, high-quality software development assistance while reducing hallucinations and maintaining code quality.
+A comprehensive collection of protocols and guidelines designed to help ANY AI assistant (Gemini 3 Pro, Flash, GPT 5.2, Sonnet 4.5, Opus, etc.) deliver consistent, high-quality software development assistance while reducing hallucinations and maintaining code quality.
 
 
 ## 🎯 Purpose
 
-This repository provides standardized protocols that guide AI assistants through various development tasks including code review, debugging, testing, and feature development. These protocols are framework-agnostic and work with any LLM (Flash 2.0, Sonnet 3.5, GPT-4, etc.) by ensuring they respect existing codebases and follow best practices.
+This repository provides standardized protocols that guide AI assistants through various development tasks including code review, debugging, testing, and feature development. These protocols are framework-agnostic and work with any LLM (Gemini 3 Pro, Flash, GPT 5.2, Sonnet 4.5, Opus, etc.) by ensuring they respect existing codebases and follow best practices.
 
 ## 🚀 Quick Start
 
@@ -407,7 +409,7 @@ Built on principles from:
 ---
 
 **Version:** 1.0.0  
-**Last Updated:** 2025-12-21  
+**Last Updated:** 2025-12-23  
 **Status:** Active Development  
 **Maintained by:** Community Contributors
 
