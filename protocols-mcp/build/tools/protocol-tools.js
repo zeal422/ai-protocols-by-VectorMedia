@@ -25,52 +25,52 @@ const FuzzyMatchProtocolSchema = z.object({
 const TOOLS = [
     {
         name: "get_protocol",
-        description: "Retrieve a specific protocol by name (e.g., 'MASTER_PROTOCOL', 'debug_protocol')",
+        description: "Retrieve a specific protocol by its exact name or filename (e.g., 'MASTER_PROTOCOL', 'debug_protocol'). Use this when you already know which protocol is needed for the task.",
         inputSchema: {
             type: "object",
             properties: {
-                name: { type: "string", description: "Protocol name or filename" }
+                name: { type: "string", description: "Protocol name or filename (e.g., 'debug_protocol')" }
             },
             required: ["name"]
         }
     },
     {
         name: "list_protocols",
-        description: "List all available protocols with metadata",
+        description: "List all available protocols with metadata. Use this to browse available capabilities or when you are unsure which specialized protocol to use.",
         inputSchema: {
             type: "object",
             properties: {
-                category: { type: "string", description: "Filter by category" }
+                category: { type: "string", description: "Filter by category (e.g., 'Quality', 'Debugging', 'Security', 'Accessibility', 'Frontend')" }
             },
             required: []
         }
     },
     {
         name: "get_protocol_by_trigger",
-        description: "Find protocol by trigger command (e.g., 'DEEPDIVE', 'FULLINDEX')",
+        description: "Find and retrieve a protocol using a specific trigger command (e.g., 'DEEPDIVE', 'FULLINDEX', 'SECAUDIT'). This is the preferred way to fetch a protocol when a user mentions a specific trigger keyword.",
         inputSchema: {
             type: "object",
             properties: {
-                trigger: { type: "string", description: "Trigger command" }
+                trigger: { type: "string", description: "Trigger command (e.g., 'DEEPDIVE')" }
             },
             required: ["trigger"]
         }
     },
     {
         name: "search_protocols",
-        description: "Search protocols by keywords with relevance scoring",
+        description: "Search for protocols using natural language keywords (e.g., 'error handling', 'ui design', 'unit tests'). Use this when the user's request is vague or doesn't match a known trigger.",
         inputSchema: {
             type: "object",
             properties: {
-                query: { type: "string", description: "Search query" },
-                category: { type: "string", description: "Filter by category" }
+                query: { type: "string", description: "Search query keywords" },
+                category: { type: "string", description: "Optional filter by category" }
             },
             required: ["query"]
         }
     },
     {
         name: "fuzzy_match_protocol",
-        description: "Find protocol by approximate name (handles typos)",
+        description: "Find a protocol by approximate name (handles typos or partial names). Use this if 'get_protocol' fails due to a naming mismatch.",
         inputSchema: {
             type: "object",
             properties: {

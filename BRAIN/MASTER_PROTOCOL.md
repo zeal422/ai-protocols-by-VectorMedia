@@ -314,6 +314,19 @@ Expected: Complexity X→A, Lines Y→B, Nesting Z→C
 
 ---
 
+### 17. MCP Protocol Retrieval
+**Guidance:** Use these tools to find and retrieve specialized protocols from the AI Development Protocols system.
+
+**Workflow:**
+1. **Trigger Check:** If the user mentions a known trigger (e.g., `DEEPDIVE`), use `get_protocol_by_trigger`.
+2. **Task Search:** If the request is vague (e.g., "help me with tests"), use `search_protocols` with relevant keywords.
+3. **Capability Browsing:** If unsure which protocol applies, use `list_protocols` to see all available logic modules.
+4. **Exact Retrieval:** Once the protocol name is known, use `get_protocol` to fetch the full instructions.
+
+**Goal:** Never guess protocol content. Always fetch the canonical version via MCP.
+
+---
+
 ## 🔄 Multi-Protocol Workflows
 
 **"Review and fix bugs in PR":**
