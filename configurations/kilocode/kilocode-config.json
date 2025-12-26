@@ -1,6 +1,6 @@
 {
   "name": "ai-protocols",
-  "version": "2.3.0",
+  "version": "2.3.2",
   "description": "Comprehensive AI-assisted development framework",
   "knowledgeBase": {
     "enabled": true,

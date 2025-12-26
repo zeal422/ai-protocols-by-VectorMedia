@@ -1,4 +1,4 @@
-# ai-protocols (v2.3.1)
+# ai-protocols (v2.3.2)
 by me, VectorMedia
 
 Master the "Zero-Error" workflow by utilizing the encapsulated intelligence of the `BRAIN/` directory and the power of the Model Context Protocol (MCP).
@@ -13,7 +13,7 @@ The `MASTER_PROTOCOL.md` is your AI's brain. To start any task with 100% protoco
 ---
 
 ## 2. 🔌 MCP Server Integration
-The MCP server exposes all 18 protocols as dynamic tools (`get_protocol`, `search_protocols`, etc.) that AI assistants can call directly.
+The MCP server exposes all 19 protocols as dynamic tools (`get_protocol`, `search_protocols`, etc.) that AI assistants can call directly.
 
 ### 🚀 Setup in 30 Seconds
 1. **Build**: 
@@ -56,6 +56,7 @@ Type these into your prompt to activate specialized modules:
 | `ULTRATHINK`| `moreFRONTend` | "Avant-Garde" UI/UX design & architecture. |
 | `FULLSPEC` | `test_automation` | 100% mission-critical test coverage. |
 | `FULLARIA` | `aria_accessibility`| Advanced screen reader & ARIA optimization. |
+| `BESTPRACTICES`| `best_practices` | Universal health check & stack detection. |
 
 ---
 

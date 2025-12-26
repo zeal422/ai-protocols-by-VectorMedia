@@ -50,7 +50,8 @@ function extractTriggers(content) {
         'performance_protocol': ['PERFAUDIT'],
         'mdap_protocol': ['MDAP', 'MILLIONSTEP'],
         'refactor_protocol': ['REFACTOR'],
-        'aria_accessibility_protocol': ['FULLARIA']
+        'aria_accessibility_protocol': ['FULLARIA'],
+        'best_practices_protocol': ['BESTPRACTICES']
     };
     const baseName = content.match(/^#\s+(.+)$/m)?.[1] || '';
     // Normalize baseName for matching: lowercase, remove non-alphanumeric except spaces

@@ -1,5 +1,5 @@
 ---
-protocol_version: "2.3.1"
+protocol_version: "2.3.2"
 last_updated: "2025-12-23"
 status: "Official Release (Dec 2025 - Zero-Error MDAP Suite)"
 ---
@@ -327,6 +327,21 @@ Expected: Complexity X→A, Lines Y→B, Nesting Z→C
 
 ---
 
+### 18. Best Practices
+**Triggers:** "BESTPRACTICES", "best practices", "quality audit", "standardize"  
+**Primary:** `BRAIN/best_practices_protocol.md`  
+**Secondary:** `BRAIN/code_review_protocol.md`, `BRAIN/error_fix_protocol.md`
+
+**Process:**
+1. Detect tech stack automatically
+2. Apply industry-standard audits (Security, Quality, Perf, Architecture)
+3. Enforce language-specific best practices
+4. Provide structured remediation report with code fixes
+
+**Special:** "BESTPRACTICES" = universal health check across all code dimensions.
+
+---
+
 ## 🔄 Multi-Protocol Workflows
 
 **"Review and fix bugs in PR":**
@@ -499,6 +514,7 @@ When user invokes "use MASTER_PROTOCOL to [request]":
 - **ARIA Accessibility:** `BRAIN/aria_accessibility_protocol.md`
 - **Git Workflow:** `BRAIN/git_workflow_protocol.md`
 - **API Design:** `BRAIN/api_design_protocol.md`
+- **Best Practices:** `BRAIN/best_practices_protocol.md`
 - **Performance:** `BRAIN/performance_protocol.md`
 
 ---
@@ -512,7 +528,7 @@ This MASTER_PROTOCOL reduces hallucinations, respects existing codebases, and pr
 ---
 
 *Last Updated: 2025-12-23*  
-*Protocol Version: 2.3.1*
+*Protocol Version: 2.3.2*
 
 ---
 

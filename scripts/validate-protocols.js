@@ -58,12 +58,11 @@ function main() {
   let total = 0;
   const issues = [];
 
-  // Check core files
+  // 1. Check core files
   log('📋 Core Files:', 'blue');
   const coreFiles = [
-    'BRAIN/MASTER_PROTOCOL.md',
     'README.md',
-    'docs/IMPLEMENT_IMPROVEMENTS_PLAN.md',
+    'HOW_TO_USE.md',
   ];
 
   coreFiles.forEach(file => {
@@ -77,9 +76,11 @@ function main() {
     }
   });
 
-  // Check BRAIN protocols
+  // 2. Check BRAIN protocols
   log('\n🧠 BRAIN Protocols:', 'blue');
   const protocols = [
+    'MASTER_PROTOCOL.md',
+    'mdap_protocol.md',
     'code_review_protocol.md',
     'debug_protocol.md',
     'error_fix_protocol.md',
@@ -95,30 +96,37 @@ function main() {
     'api_design_protocol.md',
     'git_workflow_protocol.md',
     'OPTIMIZED_LINT_SETUP.md',
-    'mdap_protocol.md',
     'aria_accessibility_protocol.md',
+    'best_practices_protocol.md',
   ];
 
+  let protocolsFound = 0;
   protocols.forEach(protocol => {
     total++;
     const filePath = path.join('BRAIN', protocol);
     if (checkFile(filePath)) {
       score++;
+      protocolsFound++;
     } else {
       issues.push(`Missing protocol: ${filePath}`);
     }
   });
 
-  log(`  ${score - coreFiles.length}/${protocols.length} protocols present`, 
-      score === total ? 'green' : 'yellow');
+  log(`  ${protocolsFound}/${protocols.length} protocols present`, 
+      protocolsFound === protocols.length ? 'green' : 'yellow');
 
-  // Check documentation
+  // 3. Check documentation
   log('\n📚 Documentation:', 'blue');
   const docs = [
     'docs/COMMANDS.md',
-    'docs/QUICK_REFERENCE.md',
     'docs/UNIVERSAL_INTEGRATION.md',
     'docs/CHANGELOG.md',
+    'docs/FAQ.md',
+    'docs/TROUBLESHOOTING.md',
+    'docs/SCENARIOS.md',
+    'docs/CASE_STUDIES.md',
+    'docs/QUICK_START.md',
+    'docs/QUICK_REFERENCE.md',
   ];
 
   docs.forEach(doc => {
@@ -127,11 +135,12 @@ function main() {
       log(`  ✅ ${doc}`, 'green');
       score++;
     } else {
-      log(`  ⚠️  ${doc} (optional)`, 'yellow');
+      log(`  ❌ ${doc}`, 'red');
+      issues.push(`Missing doc: ${doc}`);
     }
   });
 
-  // Check examples
+  // 4. Check examples
   log('\n💡 Examples:', 'blue');
   const examples = [
     'examples/node-express/package.json',
@@ -144,11 +153,12 @@ function main() {
       log(`  ✅ ${example}`, 'green');
       score++;
     } else {
-      log(`  ⚠️  ${example} (optional)`, 'yellow');
+      log(`  ❌ ${example}`, 'red');
+      issues.push(`Missing example: ${example}`);
     }
   });
 
-  // Check configurations
+  // 5. Check configurations
   log('\n⚙️  Configuration Templates:', 'blue');
   const configs = [
     'configurations/cursor/.cursorrules',
@@ -163,7 +173,8 @@ function main() {
       log(`  ✅ ${config}`, 'green');
       score++;
     } else {
-      log(`  ⚠️  ${config}`, 'yellow');
+      log(`  ❌ ${config}`, 'red');
+      issues.push(`Missing config: ${config}`);
     }
   });
 

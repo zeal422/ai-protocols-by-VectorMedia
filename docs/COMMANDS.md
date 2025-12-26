@@ -23,9 +23,11 @@ graph TD
     
     P3b --> P4[Phase 4: Optimization]
     P4 -->|PERFAUDIT| P4a[🚀 Performance]
-    P4 -->|SAFEREFACTOR| P4b[✨ Code Quality]
+    P4 -->|BESTPRACTICES| P4b[✨ Best Practices]
+    P4 -->|SAFEREFACTOR| P4c[✨ Code Quality]
     
-    P4b --> P5[Phase 5: Quality & CI/CD]
+    P4c --> P5[Phase 5: Quality & CI/CD]
+
     P5 -->|FULLSPEC| P5a[🧪 Testing]
     P5 -->|COMPREHENSIVE| P5b[👁️ Code Review]
     P5 -->|A11YCHECK| P5c[♿ Accessibility]
@@ -83,6 +85,7 @@ graph TD
 | Command | Protocol | Description |
 |:---|:---|:---|
 | **`PERFAUDIT`** | [performance](../BRAIN/performance_protocol.md) | **Performance Optimization:** Focuses on Core Web Vitals, bundle size reduction, and DB query profiling. |
+| **`BESTPRACTICES`** | [best_practices](../BRAIN/best_practices_protocol.md) | **Universal Health Check:** Automatically detects tech stack and enforces industry-standard best practices. |
 | **`SAFEREFACTOR`** | [refactor](../BRAIN/refactor_protocol.md) | **Risk-Mitigated Refactoring:** Systematic code improvement without changing external behavior. |
 
 ### Phase 5: Quality Assurance & CI/CD
@@ -143,10 +146,9 @@ bash scripts/validate-protocols.sh
 powershell scripts/validate-protocols.ps1
 
 # Expected output:
-# ✅ MASTER_PROTOCOL.md
-# ✅ 15/15 BRAIN protocols present
+# ✅ 19/19 BRAIN protocols present
 # ✅ Configuration detected: Cursor
-# Validation Score: 28/28 (100%)
+# Validation Score: 36/36 (100%)
 # Status: ✅ EXCELLENT
 ```
 

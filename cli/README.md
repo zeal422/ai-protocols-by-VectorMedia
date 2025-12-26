@@ -78,7 +78,7 @@ node index.js
 ```
 your-project/
 ├── MASTER_PROTOCOL.md          # Main orchestrator
-├── BRAIN/                      # 15 specialized protocols
+├── BRAIN/                      # 19 specialized protocols
 ├── docs/                       # Documentation
 ├── scripts/                    # Validation scripts
 ├── .cursorrules               # Cursor config (if selected)

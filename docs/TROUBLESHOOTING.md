@@ -68,7 +68,7 @@ Try: "Follow the instructions in BRAIN/debug_protocol.md to debug this issue"
 ```bash
 ❌ MASTER_PROTOCOL.md
 ❌ BRAIN/code_review_protocol.md
-Validation Score: 5/20 (25%)
+Validation Score: 10/36 (27%)
 ```
 
 **Solutions:**
@@ -88,7 +88,7 @@ ls -la
 # If files are missing, copy from source
 # Ensure you have:
 # - MASTER_PROTOCOL.md (root)
-# - BRAIN/ folder with 15 protocols
+# - BRAIN/ folder with 19 protocols
 # - docs/ folder
 # - configurations/ folder
 ```

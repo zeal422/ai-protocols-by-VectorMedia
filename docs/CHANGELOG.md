@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.3.2] - 2025-12-25
+### Added
+- **Universal Best Practices Protocol**: New specialized protocol for tech stack detection and industry-standard health checks (`BRAIN/best_practices_protocol.md`).
+- **BESTPRACTICES Trigger**: Integrated new command for universal audits into `MASTER_PROTOCOL.md`, `HOW_TO_USE.md`, and `COMMANDS.md`.
+- **Enhanced Validation**: Updated `scripts/validate-protocols.js` to verify 19 protocols and increased validation items to 36 (100% passing).
+- **MCP Server Update**: Integrated `BESTPRACTICES` into the Model Context Protocol (MCP) metadata extractor and search index.
+
+### Changed
+- **README**: Updated protocol count to 19, added Best Practices to Mermaid diagrams and relationship maps.
+- **MASTER_PROTOCOL**: Bumped version to 2.3.2 and integrated Best Practices as a core module.
+- **Documentation**: Updated `COMMANDS.md` with new workflow diagrams and 100% score (36/36) validation examples.
+
 ## [2.3.1] - 2025-12-23
 ### Added
 - **ARIA Accessibility Protocol**: New specialized protocol for advanced ARIA and assistive technology (`BRAIN/aria_accessibility_protocol.md`).
@@ -9,7 +21,7 @@
 
 ### Changed
 - **README**: Updated protocol count to 17 and added ARIA Accessibility to the feature list.
-- **Validation Score**: Increased check count from 28 to 30 (100% passing).
+- **Validation Score**: Increased check count to 30 (100% passing - v2.3.1).
 
 ## [2.3.0] - 2025-12-22
 ### Added - Implementation Complete
@@ -29,7 +41,7 @@
 - **Setup Time**: From 30 minutes to 2 minutes (with CLI)
 
 ### Metrics
-- **Validation Score**: 100% (28/28 checks passing)
+- **Validation Score**: 100% (28/28 checks passing - v2.3.0)
 - **Framework Score**: 9.7/10 (up from 8.5/10)
 - **Files Created**: 64 new files
 - **Lines Added**: ~8,000 lines of code and documentation

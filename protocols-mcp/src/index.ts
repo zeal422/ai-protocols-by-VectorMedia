@@ -15,7 +15,7 @@ import path from 'path';
 
 const SERVER_INFO = {
   name: "ai-protocols",
-  version: "2.0.0"
+  version: "2.3.2"
 };
 
 const SERVER_CAPABILITIES = {

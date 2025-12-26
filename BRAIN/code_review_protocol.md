@@ -211,5 +211,5 @@ _- Clarification on whether this requires a database migration"_
 ---
 
 *Last Updated: 2025-12-23*  
-*Protocol Version: 2.0.0*
+*Protocol Version: 2.3.2*
 

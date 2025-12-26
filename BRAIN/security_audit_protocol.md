@@ -194,5 +194,5 @@ Before declaring "security review complete":
 ---
 
 *Last Updated: 2025-12-23*  
-*Protocol Version: 2.1.0*
+*Protocol Version: 2.3.2*
 

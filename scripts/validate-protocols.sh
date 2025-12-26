@@ -4,8 +4,6 @@
 # Verifies ai-protocols setup on Unix-like systems
 ###############################################################################
 
-set -e
-
 # Colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -37,48 +35,77 @@ check_file() {
     fi
 }
 
-check_dir() {
-    local dir=$1
-    if [ -d "$dir" ]; then
-        return 0
-    else
-        return 1
-    fi
-}
-
 log "$BLUE" "\n🔍 ai-protocols Validation\n"
 
-# Check core files
+# 1. Check core files
 log "$BLUE" "📋 Core Files:"
-check_file "MASTER_PROTOCOL.md"
 check_file "README.md"
-check_file "IMPLEMENT_IMPROVEMENTS_PLAN.md"
+check_file "HOW_TO_USE.md"
 
-# Check BRAIN protocols
+# 2. Check BRAIN protocols
 log "$BLUE" "\n🧠 BRAIN Protocols:"
 protocol_count=0
-for protocol in code_review_protocol.md debug_protocol.md error_fix_protocol.md \
-                test_automation_protocol.md moreFRONTend-PROTOCOL.md \
-                FRONTandBACKend-PROTOCOL.md security_audit_protocol.md \
-                accessibility_protocol.md performance_protocol.md; do
+protocols=(
+    "MASTER_PROTOCOL.md"
+    "mdap_protocol.md"
+    "code_review_protocol.md"
+    "debug_protocol.md"
+    "error_fix_protocol.md"
+    "test_automation_protocol.md"
+    "moreFRONTend-PROTOCOL.md"
+    "FRONTandBACKend-PROTOCOL.md"
+    "bigpappa_protocol_reviewANDfixes.md"
+    "codebase_indexing_protocol.md"
+    "security_audit_protocol.md"
+    "accessibility_protocol.md"
+    "performance_protocol.md"
+    "refactor_protocol.md"
+    "api_design_protocol.md"
+    "git_workflow_protocol.md"
+    "OPTIMIZED_LINT_SETUP.md"
+    "aria_accessibility_protocol.md"
+    "best_practices_protocol.md"
+)
+
+for protocol in "${protocols[@]}"; do
     total=$((total + 1))
     if [ -f "BRAIN/$protocol" ]; then
         protocol_count=$((protocol_count + 1))
         score=$((score + 1))
+    else
+        issues+=("Missing protocol: BRAIN/$protocol")
     fi
 done
-log "$GREEN" "  $protocol_count/15 protocols present"
+if [ $protocol_count -eq ${#protocols[@]} ]; then
+    protocol_color=$GREEN
+else
+    protocol_color=$YELLOW
+fi
+log "$protocol_color" "  $protocol_count/${#protocols[@]} protocols present"
 
-# Check documentation
+# 3. Check documentation
 log "$BLUE" "\n📚 Documentation:"
-check_file "docs/COMMANDS.md" || true
-check_file "docs/QUICK_REFERENCE.md" || true
-check_file "docs/CHANGELOG.md" || true
+check_file "docs/COMMANDS.md"
+check_file "docs/UNIVERSAL_INTEGRATION.md"
+check_file "docs/CHANGELOG.md"
+check_file "docs/FAQ.md"
+check_file "docs/TROUBLESHOOTING.md"
+check_file "docs/SCENARIOS.md"
+check_file "docs/CASE_STUDIES.md"
+check_file "docs/QUICK_START.md"
+check_file "docs/QUICK_REFERENCE.md"
 
-# Check examples
+# 4. Check examples
 log "$BLUE" "\n💡 Examples:"
-if check_file "examples/node-express/package.json"; then :; else log "$YELLOW" "  ⚠️  Node.js example incomplete"; fi
-if check_file "examples/react-typescript/package.json"; then :; else log "$YELLOW" "  ⚠️  React example incomplete"; fi
+check_file "examples/node-express/package.json"
+check_file "examples/react-typescript/package.json"
+
+# 5. Check configurations
+log "$BLUE" "\n⚙️  Configuration Templates:"
+check_file "configurations/cursor/.cursorrules"
+check_file "configurations/cline/.clinerules"
+check_file "configurations/eslint.config.js"
+check_file "configurations/prettier.config.js"
 
 # IDE detection
 log "$BLUE" "\n🔧 IDE Integration:"

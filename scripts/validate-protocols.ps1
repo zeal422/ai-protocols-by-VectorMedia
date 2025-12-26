@@ -31,24 +31,33 @@ function Test-FileExists {
 
 Write-Color "`n🔍 ai-protocols Validation`n" "Cyan"
 
-# Check core files
+# 1. Check core files
 Write-Color "📋 Core Files:" "Cyan"
-Test-FileExists "MASTER_PROTOCOL.md"
 Test-FileExists "README.md"
-Test-FileExists "IMPLEMENT_IMPROVEMENTS_PLAN.md"
+Test-FileExists "HOW_TO_USE.md"
 
-# Check BRAIN protocols
+# 2. Check BRAIN protocols
 Write-Color "`n🧠 BRAIN Protocols:" "Cyan"
 $protocols = @(
+    "MASTER_PROTOCOL.md",
+    "mdap_protocol.md",
     "code_review_protocol.md",
     "debug_protocol.md",
     "error_fix_protocol.md",
     "test_automation_protocol.md",
     "moreFRONTend-PROTOCOL.md",
     "FRONTandBACKend-PROTOCOL.md",
+    "bigpappa_protocol_reviewANDfixes.md",
+    "codebase_indexing_protocol.md",
     "security_audit_protocol.md",
     "accessibility_protocol.md",
-    "performance_protocol.md"
+    "performance_protocol.md",
+    "refactor_protocol.md",
+    "api_design_protocol.md",
+    "git_workflow_protocol.md",
+    "OPTIMIZED_LINT_SETUP.md",
+    "aria_accessibility_protocol.md",
+    "best_practices_protocol.md"
 )
 
 $protocolCount = 0
@@ -57,24 +66,36 @@ foreach ($protocol in $protocols) {
     if (Test-Path "BRAIN\$protocol") {
         $protocolCount++
         $script:score++
+    } else {
+        $script:issues += "Missing protocol: BRAIN\$protocol"
     }
 }
-Write-Color "  $protocolCount/$($protocols.Count) protocols present" "Green"
+$protocolColor = if ($protocolCount -eq $protocols.Count) { "Green" } else { "Yellow" }
+Write-Color "  $protocolCount/$($protocols.Count) protocols present" $protocolColor
 
-# Check documentation
+# 3. Check documentation
 Write-Color "`n📚 Documentation:" "Cyan"
 Test-FileExists "docs\COMMANDS.md"
-Test-FileExists "docs\QUICK_REFERENCE.md"
+Test-FileExists "docs\UNIVERSAL_INTEGRATION.md"
 Test-FileExists "docs\CHANGELOG.md"
+Test-FileExists "docs\FAQ.md"
+Test-FileExists "docs\TROUBLESHOOTING.md"
+Test-FileExists "docs\SCENARIOS.md"
+Test-FileExists "docs\CASE_STUDIES.md"
+Test-FileExists "docs\QUICK_START.md"
+Test-FileExists "docs\QUICK_REFERENCE.md"
 
-# Check examples
+# 4. Check examples
 Write-Color "`n💡 Examples:" "Cyan"
-if (-not (Test-FileExists "examples\node-express\package.json")) {
-    Write-Color "  ⚠️  Node.js example incomplete" "Yellow"
-}
-if (-not (Test-FileExists "examples\react-typescript\package.json")) {
-    Write-Color "  ⚠️  React example incomplete" "Yellow"
-}
+Test-FileExists "examples\node-express\package.json"
+Test-FileExists "examples\react-typescript\package.json"
+
+# 5. Check configurations
+Write-Color "`n⚙️  Configuration Templates:" "Cyan"
+Test-FileExists "configurations\cursor\.cursorrules"
+Test-FileExists "configurations\cline\.clinerules"
+Test-FileExists "configurations\eslint.config.js"
+Test-FileExists "configurations\prettier.config.js"
 
 # IDE detection
 Write-Color "`n🔧 IDE Integration:" "Cyan"
@@ -83,7 +104,7 @@ if (Test-Path ".cursorrules") {
     Write-Color "  ✅ Cursor (.cursorrules)" "Green"
     $ideDetected = $true
 }
-if (Test-Path ".clinerules") { 
+if (Test-Path ".clinerules") {
     Write-Color "  ✅ Cline (.clinerules)" "Green"
     $ideDetected = $true
 }
@@ -100,16 +121,15 @@ if (-not $ideDetected) {
 Write-Color ("`n" + ("=" * 50)) "Cyan"
 $percentage = [math]::Round(($score / $total) * 100)
 
-$status = if ($percentage -ge 80) {
-    "Green"; "✅ GOOD"
-} elseif ($percentage -ge 60) {
-    "Yellow"; "⚠️  NEEDS IMPROVEMENT"
-} else {
-    "Red"; "❌ INCOMPLETE"
-}
+$statusText = if ($percentage -ge 80) { "✅ GOOD" }
+              elseif ($percentage -ge 60) { "⚠️  NEEDS IMPROVEMENT" }
+              else { "❌ INCOMPLETE" }
+$statusColor = if ($percentage -ge 80) { "Green" }
+               elseif ($percentage -ge 60) { "Yellow" }
+               else { "Red" }
 
 Write-Host "`nValidation Score: $score/$total ($percentage%)"
-Write-Color "Status: $($status[1])`n" $status[0]
+Write-Color "Status: $statusText`n" $statusColor
 
 # Recommendations
 if ($issues.Count -gt 0) {
@@ -121,8 +141,4 @@ if ($issues.Count -gt 0) {
 }
 
 # Exit with appropriate code
-if ($percentage -ge 80) {
-    exit 0
-} else {
-    exit 1
-}
+if ($percentage -ge 80) { exit 0 } else { exit 1 }

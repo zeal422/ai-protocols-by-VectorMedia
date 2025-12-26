@@ -24,7 +24,7 @@ A comprehensive framework that guides AI assistants (Cursor, Cline, Copilot, Gem
 
 **Key Requirement:** Any AI tool that supports custom instructions or file context.
 
-### Do I need to use all 15 protocols?
+### Do I need to use all 19 protocols?
 
 No! Use protocols as needed:
 - **Starter Pack:** COMPREHENSIVE (review), DEEPDIVE (debug), FULLSPEC (tests)
@@ -158,7 +158,7 @@ Trigger commands (like DEEPDIVE, FULLSPEC) help AI quickly identify which specia
 ### What's the difference between MASTER_PROTOCOL and BRAIN protocols?
 
 - **MASTER_PROTOCOL:** Router/orchestrator. Decides which specialized protocol to use.
-- **BRAIN Protocols:** 15 specialized protocols for specific tasks (debugging, testing, security, etc.).
+- **BRAIN Protocols:** 19 specialized protocols for specific tasks (debugging, testing, security, etc.).
 
 Think: MASTER_PROTOCOL is the "table of contents," BRAIN protocols are the "chapters."
 
@@ -169,7 +169,7 @@ Think: MASTER_PROTOCOL is the "table of contents," BRAIN protocols are the "chap
 - At least 3-5 BRAIN protocols you'll actually use
 
 **Recommended:**
-- All 15 BRAIN protocols (even if unused, they're small)
+- All 19 BRAIN protocols (even if unused, they're small)
 - docs/ folder for reference
 - configurations/ folder for IDE setup
 
@@ -285,7 +285,7 @@ company-monorepo/
 Yes, protocols include version metadata:
 ```yaml
 ---
-protocol_version: "2.1.0"
+protocol_version: "2.3.2"
 last_updated: "2025-12-23"
 ---
 ```

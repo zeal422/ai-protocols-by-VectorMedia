@@ -56,7 +56,7 @@ async function runTests() {
     const protocols = await scanner.scanProtocols();
     
     assert(protocols.length > 0, 'Expected at least one protocol');
-    assert(protocols.length === 18, `Expected 18 protocols, got ${protocols.length}`);
+    assert(protocols.length === 19, `Expected 19 protocols, got ${protocols.length}`);
     
     console.log(`  ✓ Found ${protocols.length} protocols`);
     passed++;

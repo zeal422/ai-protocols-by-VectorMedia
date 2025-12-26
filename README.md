@@ -1,7 +1,7 @@
 ```mermaid
 graph TB
-    Start([Developer Taskk]) --> Master[MASTER_PROTOCOLOL]
-    Master --> Decision{Task Typee}
+    Start([Developer Task]) --> Master[MASTER_PROTOCOL]
+    Master --> Decision{Task Type?}
     
     Decision -->|Bug/Error| Debug[🐛 DEEPDIVE<br/>Debug Protocol]
     Decision -->|Code Review| Review[👁️ COMPREHENSIVE<br/>Review Protocol]
@@ -9,6 +9,7 @@ graph TB
     Decision -->|Testing| Test[🧪 FULLSPEC<br/>Test Protocol]
     Decision -->|Security| Sec[🔐 SECAUDIT<br/>Security Protocol]
     Decision -->|Performance| Perf[⚡ PERFAUDIT<br/>Performance Protocol]
+    Decision -->|Best Practices| Best[✨ BESTPRACTICES<br/>Best Practices Protocol]
     
     Debug --> Result[✅ Solution]
     Review --> Result
@@ -16,6 +17,7 @@ graph TB
     Test --> Result
     Sec --> Result
     Perf --> Result
+    Best --> Result
     
     style Master fill:#3b82f6,color:#fff
     style Result fill:#10b981,color:#fff
@@ -25,14 +27,15 @@ graph TB
     style Test fill:#f59e0b,color:#fff
     style Sec fill:#dc2626,color:#fff
     style Perf fill:#06b6d4,color:#fff
+    style Best fill:#10b981,color:#fff
 ```
 
 # ai-protocols
 by me, VectorMedia
 
-[![Version](https://img.shields.io/badge/version-2.3.1-blue.svg)](docs/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.2-blue.svg)](docs/CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Protocols](https://img.shields.io/badge/protocols-18-purple.svg)](#-protocol-files)
+[![Protocols](https://img.shields.io/badge/protocols-19-purple.svg)](#-protocol-files)
 [![AI Ready](https://img.shields.io/badge/AI-ready-orange.svg)](#-quick-start)
 [![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](#-documentation)
 [![WCAG](https://img.shields.io/badge/WCAG-2.2%20AA-green.svg)](BRAIN/accessibility_protocol.md)
@@ -103,23 +106,22 @@ npx @ai-protocols/init
    node scripts/validate-protocols.js
    
    # Expected output:
-   # ✅ BRAIN/MASTER_PROTOCOL.md
-   # ✅ 18/18 BRAIN protocols present
+   # ✅ 19/19 BRAIN protocols present
    # ✅ Configuration detected: Cursor
-   # Validation Score: 30/30 (100%)
+   # Validation Score: 36/36 (100%)
    # Status: ✅ EXCELLENT
    ```
 
 ### 📊 Validation Score Explained
 
-The validation script checks **30 critical items** to ensure a perfect setup:
-- **3 Core Files:** (MASTER_PROTOCOL, README, HOW_TO_USE)
-- **18 BRAIN Protocols:** All specialized logic files in the `BRAIN/` directory.
-- **4 Documentation Guides:** Essential usage instructions.
+The validation script checks **36 critical items** to ensure a perfect setup:
+- **2 Core Files:** (README, HOW_TO_USE)
+- **19 BRAIN protocols:** All protocol files in the `BRAIN/` directory (including MASTER_PROTOCOL).
+- **9 Documentation Guides:** Complete instructional coverage.
 - **2 Working Examples:** Node and React project templates.
-- **3 Configuration Templates:** Base configs for tools and IDEs.
+- **4 Configuration Templates:** Base configs for tools and linting.
 
-**Scoring Rule:** Each item is equally weighted. A score of 30/30 (100%) confirms that the entire ecosystem is correctly integrated.
+**Scoring Rule:** Each item is equally weighted. A score of 36/36 (100%) confirms that the entire ecosystem is correctly integrated.
 
 ---
 
@@ -168,8 +170,8 @@ powershell scripts/validate-protocols.ps1
 ```
 
 **Validation checks:**
-- ✅ MASTER_PROTOCOL.md exists
-- ✅ All 18 BRAIN protocols present
+- ✅ README.md exists
+- ✅ All 19 BRAIN protocols present
 - ✅ Documentation files found
 - ✅ IDE configuration detected
 - ✅ Example projects (optional)
@@ -236,6 +238,7 @@ The master protocol automatically routes to specialized protocols based on your 
 | [BRAIN/git_workflow_protocol.md](BRAIN/git_workflow_protocol.md) | Git conventions and CI/CD integration | `GITFLOW` |
 | [BRAIN/api_design_protocol.md](BRAIN/api_design_protocol.md) | REST/GraphQL API design patterns | `APIDESIGN` |
 | [BRAIN/performance_protocol.md](BRAIN/performance_protocol.md) | Core Web Vitals and optimization | `PERFAUDIT` |
+| [BRAIN/best_practices_protocol.md](BRAIN/best_practices_protocol.md) | Universal health check and stack detection | `BESTPRACTICES` |
 | [BRAIN/OPTIMIZED_LINT_SETUP.md](BRAIN/OPTIMIZED_LINT_SETUP.md) | Linting setup for modern stacks | — |
 
 ## 🛡️ Core Principles
@@ -282,14 +285,14 @@ Apply the **Four Pillars** to all reviews:
 │  │  3. Route to Appropriate Protocol(s)                   │  │
 │  │  4. Execute with Safety Checks                         │  │
 │  └────────────────────────────────────────────────────────┘  │
-└────────┬──────┬────────┬────────┬────────┬────────┬──────────┘
-         │      │        │        │        │        │
-    ┌────▼───┐ ┌▼─────┐ ┌▼─────┐ ┌▼─────┐ ┌▼─────┐ ┌▼──────────┐
-    │ Code   │ │Debug │ │Error │ │Test  │ │Front │ │ Codebase  │
-    │Review  │ │      │ │Fix   │ │Auto  │ │end   │ │ Indexing  │
-    └────┬───┘ └┬─────┘ └┬─────┘ └┬─────┘ └┬─────┘ └┬──────────┘
-         │      │        │        │        │        │
-         └──────┴────────┴────────┴────────┴────────┘
+└────────┬──────┬────────┬────────┬────────┬────────┬────────┬──────────┘
+         │      │        │        │        │        │        │
+    ┌────▼───┐ ┌▼─────┐ ┌▼─────┐ ┌▼─────┐ ┌▼─────┐ ┌▼─────┐ ┌▼──────────┐
+    │ Code   │ │Debug │ │Error │ │Test  │ │Front │ │ Best │ │ Codebase  │
+    │Review  │ │      │ │Fix   │ │Auto  │ │end   │ │ Pract│ │ Indexing  │
+    └────┬───┘ └┬─────┘ └┬─────┘ └┬─────┘ └┬─────┘ └┬─────┘ └┬──────────┘
+         │      │        │        │        │        │        │
+         └──────┴────────┴────────┴────────┴────────┴────────┴────────┘
                          │
                     ┌────▼─────┐
                     │ Backend  │
@@ -405,8 +408,8 @@ Built on principles from:
 
 ---
 
-**Version:** 1.1.5  
-**Last Updated:** 2025-12-23  
+**Version:** 2.3.2  
+**Last Updated:** 2025-12-25  
 **Status:** Active Development  
 **Maintained by:** Community Contributors
 
