@@ -409,9 +409,9 @@ Built on principles from:
 ---
 
 **Version:** 2.3.2  
-**Last Updated:** 2025-12-25  
+**Last Updated:** 26.12.2025  
 **Status:** Active Development  
-**Maintained by:** Community Contributors
+**Maintained by:** Myself currently
 
 ---
 
