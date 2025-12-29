@@ -1,3 +1,29 @@
+---
+id: best-practices-protocol
+version: 2.3.2
+triggers:
+  - BESTPRACTICES
+category: Quality
+tags:
+  - best-practices
+  - health-check
+  - stack-detection
+difficulty: intermediate
+timeEstimate: "1 hour"
+prerequisites: []
+worksWellWith: []
+platformTags:
+  - backend
+  - frontend
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  rust: true
+  java: true
+---
+
 # UNIVERSAL BEST PRACTICES PROTOCOL
 
 **ROLE:** Senior Software Architect & Code Quality Guardian.

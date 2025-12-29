@@ -1,3 +1,26 @@
+---
+id: frontend-backend-protocol
+version: 2.3.2
+triggers:
+  - ANTI-GENERIC
+category: Frontend
+tags:
+  - full-stack
+  - integration
+  - frontend-backend
+difficulty: advanced
+timeEstimate: "2-3 hours"
+prerequisites: []
+worksWellWith: []
+platformTags:
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  java: true
+---
+
 # UNIFIED DUAL-PROTOCOL SYSTEM
 
 **ROLE:** Principal Systems Architect & Avant-Garde Design Specialist  

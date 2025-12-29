@@ -1,27 +1,54 @@
+import { hasFrontmatter } from '../types/protocol-frontmatter.js';
+import * as yaml from 'js-yaml';
 /**
  * Extract metadata from protocol markdown file
- * Looks for trigger commands, categories, and descriptions
+ * Supports YAML front-matter with fallback to inferred metadata
  */
 export function extractMetadata(fileName, content) {
     // Only remove trailing .md extension
     const name = fileName.replace(/\.md$/, '');
+    // Try to extract YAML front-matter first
+    let frontmatterData = null;
+    let hasFrontmatterBlock = false;
+    // Support both Unix (LF) and Windows (CRLF) line endings
+    const frontmatterMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+    if (frontmatterMatch) {
+        try {
+            frontmatterData = yaml.load(frontmatterMatch[1]);
+            hasFrontmatterBlock = hasFrontmatter(frontmatterData);
+        }
+        catch (error) {
+            // Invalid YAML, fall back to inferred
+            console.warn(`Warning: Invalid YAML front-matter in ${fileName}:`, error);
+        }
+    }
     // Extract title (first H1 heading only - starts with # followed by space)
     const titleMatch = content.match(/^#\s+(.+)$/m);
     const title = titleMatch ? titleMatch[1] : name;
-    // Extract triggers - look for patterns
-    const triggers = extractTriggers(content);
-    // Extract category from mapping
-    const category = inferCategory(name, content);
+    // Extract triggers - use frontmatter or infer
+    const triggers = frontmatterData?.triggers || extractTriggers(content);
+    // Extract category - use frontmatter or infer
+    const category = frontmatterData?.category || inferCategory(name, content);
     // Extract purpose/description (first paragraph after title)
     const purpose = extractPurpose(content);
     return {
+        id: frontmatterData?.id || name,
         fileName,
         name,
         title,
         triggers,
         category,
+        tags: frontmatterData?.tags || extractTags(name, title),
+        difficulty: frontmatterData?.difficulty || 'intermediate',
+        timeEstimate: frontmatterData?.timeEstimate,
         purpose,
-        filePath: 'BRAIN/'
+        filePath: 'BRAIN/',
+        version: frontmatterData?.version || '1.0.0',
+        prerequisites: frontmatterData?.prerequisites || [],
+        worksWellWith: frontmatterData?.worksWellWith || [],
+        platformTags: frontmatterData?.platformTags || inferPlatformTags(name),
+        stackSpecific: frontmatterData?.stackSpecific || inferStackSpecific(name),
+        hasFrontmatter: hasFrontmatterBlock
     };
 }
 function extractTriggers(content) {
@@ -113,5 +140,64 @@ function extractPurpose(content) {
         }
     }
     return purposeLines.join(' ').substring(0, 200);
+}
+function extractTags(name, title) {
+    const tags = [];
+    // Extract from name
+    const nameParts = name.toLowerCase().split(/[-_]/);
+    tags.push(...nameParts.filter(p => p.length > 2));
+    // Extract from title
+    const titleWords = title.toLowerCase()
+        .split(/\s+/)
+        .filter(w => w.length > 3 && !['role', 'system', 'protocol'].includes(w));
+    tags.push(...titleWords);
+    return [...new Set(tags)].slice(0, 10); // Limit to 10 tags
+}
+function inferPlatformTags(name) {
+    const lowerName = name.toLowerCase();
+    const platforms = [];
+    if (lowerName.includes('frontend') || lowerName.includes('front-end')) {
+        platforms.push('frontend');
+    }
+    if (lowerName.includes('backend') || lowerName.includes('back-end')) {
+        platforms.push('backend');
+    }
+    if (lowerName.includes('react') || lowerName.includes('vue') || lowerName.includes('svelte')) {
+        platforms.push('frontend');
+    }
+    if (lowerName.includes('api') || lowerName.includes('design')) {
+        platforms.push('backend');
+    }
+    if (lowerName.includes('git') || lowerName.includes('workflow')) {
+        platforms.push('fullstack');
+    }
+    if (lowerName.includes('security') || lowerName.includes('audit') || lowerName.includes('performance')) {
+        platforms.push('fullstack');
+    }
+    if (lowerName.includes('accessibility') || lowerName.includes('aria')) {
+        platforms.push('frontend');
+    }
+    // Default to fullstack if no specific platform detected
+    if (platforms.length === 0) {
+        platforms.push('fullstack');
+    }
+    return [...new Set(platforms)];
+}
+function inferStackSpecific(name) {
+    const stackSpecific = {};
+    const lowerName = name.toLowerCase();
+    // Most protocols work with all stacks
+    stackSpecific['node'] = true;
+    stackSpecific['python'] = true;
+    stackSpecific['go'] = true;
+    stackSpecific['java'] = true;
+    stackSpecific['rust'] = true;
+    // Some are more specific
+    if (lowerName.includes('react') || lowerName.includes('frontend')) {
+        stackSpecific['node'] = true;
+        stackSpecific['javascript'] = true;
+        stackSpecific['typescript'] = true;
+    }
+    return stackSpecific;
 }
 //# sourceMappingURL=metadata-extractor.js.map

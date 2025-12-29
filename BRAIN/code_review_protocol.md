@@ -1,3 +1,29 @@
+---
+id: code-review-protocol
+version: 2.3.2
+triggers:
+  - COMPREHENSIVE
+category: Quality
+tags:
+  - code-review
+  - 4-pillar
+  - quality-assurance
+difficulty: advanced
+timeEstimate: "1-2 hours per review"
+prerequisites: []
+worksWellWith: []
+platformTags:
+  - backend
+  - frontend
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  rust: true
+  java: true
+---
+
 # SYSTEM ROLE & CODE REVIEW PROTOCOLS
 
 **ROLE:** Principal Engineer & Code Quality Guardian  

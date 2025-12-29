@@ -1,3 +1,28 @@
+---
+id: git-workflow-protocol
+version: 2.3.2
+triggers:
+  - GITFLOW
+category: VersionControl
+tags:
+  - git
+  - workflow
+  - branching
+  - version-control
+difficulty: beginner
+timeEstimate: "30m"
+prerequisites: []
+worksWellWith: []
+platformTags:
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  rust: true
+  java: true
+---
+
 # GIT WORKFLOW PROTOCOL
 
 **ROLE:** Senior DevOps Engineer & Version Control Specialist  

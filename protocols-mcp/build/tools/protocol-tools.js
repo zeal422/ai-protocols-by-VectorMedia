@@ -2,6 +2,8 @@
 import { ListToolsRequestSchema, CallToolRequestSchema } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";
 import { createErrorResponse, ProtocolError } from "../utils/error-handler.js";
+import { analyzeTaskIntent, getTaskDifficulty, getTaskTimeEstimate } from "../search/task-analyzer.js";
+import { buildWorkflow, formatWorkflow, getWorkflowShortcuts } from "../search/workflow-builder.js";
 import * as fs from 'fs/promises';
 import path from 'path';
 // Tool schemas
@@ -20,6 +22,10 @@ const SearchProtocolsSchema = z.object({
 });
 const FuzzyMatchProtocolSchema = z.object({
     name: z.string().describe("Approximate protocol name")
+});
+const RouteTaskSchema = z.object({
+    description: z.string().describe("Description of what you need to do"),
+    taskType: z.string().optional().describe("Override task type (debug, build, refactor, audit, optimize, test, setup)")
 });
 // Tool definitions for ListTools response
 const TOOLS = [
@@ -78,9 +84,21 @@ const TOOLS = [
             },
             required: ["name"]
         }
+    },
+    {
+        name: "route_task",
+        description: "Intelligent task routing - describe what you need to do and get a recommended protocol sequence. Analyzes your task intent and suggests the best protocol(s) to follow, with optional context-aware personalization.",
+        inputSchema: {
+            type: "object",
+            properties: {
+                description: { type: "string", description: "Description of what you need to do (e.g., 'Fix this bug', 'Build a React component', 'Refactor the auth module')" },
+                taskType: { type: "string", description: "Optional: override task type (debug, build, refactor, audit, optimize, test, setup)" }
+            },
+            required: ["description"]
+        }
     }
 ];
-export function registerProtocolTools(server, scanner, indexer, matcher, protocolsRoot) {
+export function registerProtocolTools(server, scanner, indexer, matcher, protocolsRoot, projectContext) {
     // Handle list tools request
     server.setRequestHandler(ListToolsRequestSchema, async () => {
         return { tools: TOOLS };
@@ -162,7 +180,11 @@ export function registerProtocolTools(server, scanner, indexer, matcher, protoco
                     if (!index) {
                         throw new ProtocolError('Search index not initialized', 'INDEX_ERROR');
                     }
-                    const results = matcher.search(index, query, { category });
+                    let results = matcher.search(index, query, { category });
+                    // Apply context-aware filtering if project context available
+                    if (projectContext && projectContext.detected) {
+                        results = matcher.contextualizeResults(results, projectContext);
+                    }
                     if (results.length === 0) {
                         return {
                             content: [{
@@ -171,16 +193,27 @@ export function registerProtocolTools(server, scanner, indexer, matcher, protoco
                                 }]
                         };
                     }
-                    const formatted = results.map(r => ({
-                        protocol: r.protocol,
-                        score: r.score,
-                        excerpt: r.excerpt,
-                        matches: r.matches.slice(0, 2)
-                    }));
+                    // Build response with context information
+                    let responseText = `# Search Results for: "${query}"\n\n`;
+                    if (projectContext && projectContext.detected) {
+                        responseText += `**Search personalized for:** ${projectContext.language}, ${projectContext.framework || 'N/A'}\n\n`;
+                    }
+                    const formatted = results.map((r, i) => {
+                        let item = `${i + 1}. **${r.protocol}** (Score: ${r.score})`;
+                        if (r.contextRelevance === 'high') {
+                            item += ' ✓ Matches your tech stack';
+                        }
+                        else if (r.contextRelevance === 'medium') {
+                            item += ' ~ Partially relevant to your stack';
+                        }
+                        item += `\n   ${r.excerpt}\n`;
+                        return item;
+                    }).join('\n');
+                    responseText += formatted;
                     return {
                         content: [{
                                 type: "text",
-                                text: JSON.stringify(formatted, null, 2)
+                                text: responseText
                             }]
                     };
                 }
@@ -203,6 +236,48 @@ export function registerProtocolTools(server, scanner, indexer, matcher, protoco
                         content: [{
                                 type: "text",
                                 text: JSON.stringify(results.slice(0, 5), null, 2)
+                            }]
+                    };
+                }
+                case "route_task": {
+                    const { description, taskType: overrideTaskType } = RouteTaskSchema.parse(args);
+                    // Analyze task intent - validate result is valid TaskType
+                    let inferredTaskType = analyzeTaskIntent(description);
+                    if (overrideTaskType) {
+                        // Validate override is a valid task type
+                        const validTypes = ['debug', 'build', 'refactor', 'audit', 'optimize', 'test', 'setup', 'unknown'];
+                        if (validTypes.includes(overrideTaskType)) {
+                            inferredTaskType = overrideTaskType;
+                        }
+                    }
+                    const difficulty = getTaskDifficulty(inferredTaskType);
+                    const timeEstimate = getTaskTimeEstimate(inferredTaskType);
+                    // Build workflow
+                    const workflow = buildWorkflow(inferredTaskType, projectContext);
+                    // Format response
+                    let response = `# Task Routing: ${inferredTaskType.toUpperCase()}\n\n`;
+                    response += `**Task Description:** ${description}\n\n`;
+                    response += `**Difficulty:** ${difficulty}\n`;
+                    response += `**Estimated Time:** ${timeEstimate}\n`;
+                    if (projectContext && projectContext.detected) {
+                        const framework = projectContext.framework && projectContext.framework !== 'unknown' ? projectContext.framework : 'none';
+                        response += `**Project Context:** ${projectContext.language}, Framework: ${framework}\n`;
+                    }
+                    response += `\n## Recommended Protocol Sequence\n\n`;
+                    response += formatWorkflow(workflow, inferredTaskType);
+                    // Add shortcuts
+                    const shortcuts = getWorkflowShortcuts(inferredTaskType);
+                    if (Object.keys(shortcuts).length > 0) {
+                        response += `\n## Quick Shortcuts\n\n`;
+                        for (const [name, protocols] of Object.entries(shortcuts)) {
+                            response += `**${name}:** ${protocols.join(' → ')}\n`;
+                        }
+                    }
+                    response += `\n---\n\n**Next Step:** Use trigger commands above or call \`get_protocol\` to retrieve full protocol content.\n`;
+                    return {
+                        content: [{
+                                type: "text",
+                                text: response
                             }]
                     };
                 }

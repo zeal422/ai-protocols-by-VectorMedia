@@ -1,3 +1,30 @@
+---
+id: performance-protocol
+version: 2.3.2
+triggers:
+  - PERFAUDIT
+category: Performance
+tags:
+  - performance
+  - optimization
+  - bottleneck-analysis
+difficulty: advanced
+timeEstimate: "2-4 hours"
+prerequisites:
+  - codebase_indexing_protocol
+worksWellWith: []
+platformTags:
+  - backend
+  - frontend
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  rust: true
+  java: true
+---
+
 # PERFORMANCE PROTOCOL
 
 **ROLE:** Senior Performance Engineer & Site Reliability Specialist  

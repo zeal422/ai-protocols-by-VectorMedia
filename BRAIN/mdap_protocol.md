@@ -1,3 +1,34 @@
+---
+id: mdap-protocol
+version: 2.3.2
+triggers:
+  - MDAP
+  - MILLIONSTEP
+category: Core
+tags:
+  - planning
+  - decomposition
+  - million-step
+  - high-stakes
+difficulty: advanced
+timeEstimate: "1-2 hours planning"
+prerequisites:
+  - codebase_indexing_protocol
+worksWellWith:
+  - test_automation_protocol
+  - code_review_protocol
+platformTags:
+  - backend
+  - frontend
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  rust: true
+  java: true
+---
+
 # 🧠 MDAP Protocol: Zero-Error Long-Horizon Execution
 
 This protocol is based on the **MAKER** framework (Cognizant AI Lab). It ensures zero errors across complex, many-step tasks by utilizing **Massively Decomposed Agentic Processes**.

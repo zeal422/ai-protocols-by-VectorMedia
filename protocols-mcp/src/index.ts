@@ -10,6 +10,7 @@ import { ContentIndexer } from "./search/indexer.js";
 import { SearchMatcher } from "./search/matcher.js";
 import { registerProtocolTools } from "./tools/protocol-tools.js";
 import { resolveProtocolsRoot } from "./utils/path-resolver.js";
+import { detectProjectContext, describeContext } from "./utils/project-context-detector.js";
 import * as fs from 'fs/promises';
 import path from 'path';
 
@@ -33,6 +34,11 @@ async function main() {
     // Initialize core components
     const protocolsRoot = resolveProtocolsRoot();
     console.error(`Protocols root: ${protocolsRoot}`);
+
+    // Detect project context
+    console.error('Detecting project context...');
+    const projectContext = await detectProjectContext(protocolsRoot);
+    console.error(`Project context: ${describeContext(projectContext)}`);
 
     const scanner = new ProtocolScanner(protocolsRoot);
     const indexer = new ContentIndexer();
@@ -88,7 +94,7 @@ async function main() {
     });
 
     // Register tools
-    registerProtocolTools(server, scanner, indexer, matcher, protocolsRoot);
+    registerProtocolTools(server, scanner, indexer, matcher, protocolsRoot, projectContext);
 
     // Start server
     const transport = new StdioServerTransport();

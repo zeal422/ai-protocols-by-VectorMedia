@@ -1,9 +1,11 @@
 import { SearchIndex } from './indexer.js';
+import { ProjectContext } from '../utils/project-context-detector.js';
 export interface SearchResult {
     protocol: string;
     score: number;
     matches: string[];
     excerpt: string;
+    contextRelevance?: 'high' | 'medium' | 'low';
 }
 export declare class SearchMatcher {
     /**
@@ -20,6 +22,11 @@ export declare class SearchMatcher {
         protocol: string;
         similarity: number;
     }>;
+    /**
+     * Re-rank search results based on project context
+     * Prioritizes protocols relevant to user's tech stack
+     */
+    contextualizeResults(results: SearchResult[], context: ProjectContext): SearchResult[];
     private calculateScore;
     private findMatches;
     private extractExcerpt;

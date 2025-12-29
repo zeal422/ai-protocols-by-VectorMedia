@@ -1,3 +1,25 @@
+---
+id: accessibility-protocol
+version: 2.3.2
+triggers:
+  - A11YCHECK
+category: Accessibility
+tags:
+  - wcag
+  - accessibility
+  - compliance
+difficulty: intermediate
+timeEstimate: "1-2 hours"
+prerequisites: []
+worksWellWith: []
+platformTags:
+  - frontend
+stackSpecific:
+  node: true
+  javascript: true
+  typescript: true
+---
+
 # ACCESSIBILITY PROTOCOL
 
 **ROLE:** Senior Accessibility Engineer & WCAG Specialist  

@@ -1,3 +1,29 @@
+---
+id: security-audit-protocol
+version: 2.3.2
+triggers:
+  - SECAUDIT
+category: Security
+tags:
+  - security
+  - owasp
+  - vulnerability
+  - injection-attacks
+difficulty: advanced
+timeEstimate: "2-4 hours"
+prerequisites: []
+worksWellWith: []
+platformTags:
+  - backend
+  - frontend
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  java: true
+---
+
 # SECURITY AUDIT PROTOCOL
 
 **ROLE:** Senior Security Engineer & Penetration Testing Specialist  

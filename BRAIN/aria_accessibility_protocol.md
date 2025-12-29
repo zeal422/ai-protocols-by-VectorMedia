@@ -1,3 +1,26 @@
+---
+id: aria-accessibility-protocol
+version: 2.3.2
+triggers:
+  - FULLARIA
+category: Accessibility
+tags:
+  - aria
+  - screen-reader
+  - accessibility
+  - wcag-aaa
+difficulty: advanced
+timeEstimate: "2-3 hours"
+prerequisites: []
+worksWellWith: []
+platformTags:
+  - frontend
+stackSpecific:
+  node: true
+  javascript: true
+  typescript: true
+---
+
 # ARIA ACCESSIBILITY PROTOCOL (CONDENSED)
 
 **MISSION:** Make web apps accessible to all users, including those using assistive technologies.

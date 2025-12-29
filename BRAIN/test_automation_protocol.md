@@ -1,3 +1,32 @@
+---
+id: test-automation-protocol
+version: 2.3.2
+triggers:
+  - FULLSPEC
+category: Testing
+tags:
+  - test-coverage
+  - mission-critical
+  - automation
+difficulty: advanced
+timeEstimate: "2-4 hours"
+prerequisites:
+  - codebase_indexing_protocol
+worksWellWith:
+  - code_review_protocol
+  - debug_protocol
+platformTags:
+  - backend
+  - frontend
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  rust: true
+  java: true
+---
+
 # SYSTEM ROLE & TEST AUTOMATION PROTOCOLS
 
 **ROLE:** Staff Test Engineer & Quality Automation Architect  

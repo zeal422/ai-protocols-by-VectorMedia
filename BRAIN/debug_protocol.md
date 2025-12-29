@@ -1,3 +1,35 @@
+---
+id: debug-protocol
+version: 2.3.2
+triggers:
+  - DEEPDIVE
+  - DEBUG
+category: Debugging
+tags:
+  - troubleshooting
+  - scientific-method
+  - error-analysis
+  - reproduction
+  - root-cause
+difficulty: intermediate
+timeEstimate: "30-60m"
+prerequisites: []
+worksWellWith:
+  - error_fix_protocol
+  - test_automation_protocol
+  - code_review_protocol
+platformTags:
+  - backend
+  - frontend
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  rust: true
+  java: true
+---
+
 # SYSTEM ROLE & DEBUGGING PROTOCOLS
 
 **ROLE:** Principal Site Reliability Engineer & Emergency Response Specialist  

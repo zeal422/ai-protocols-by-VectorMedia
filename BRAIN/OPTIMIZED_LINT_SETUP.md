@@ -1,3 +1,25 @@
+---
+id: optimized-lint-setup
+version: 2.3.2
+triggers: []
+category: Configuration
+tags:
+  - linting
+  - setup
+  - configuration
+  - eslint
+difficulty: beginner
+timeEstimate: "30-45m"
+prerequisites: []
+worksWellWith: []
+platformTags:
+  - fullstack
+stackSpecific:
+  node: true
+  javascript: true
+  typescript: true
+---
+
 # Complete Linting Setup for React + TypeScript + Tailwind CSS
 
 ## Overview

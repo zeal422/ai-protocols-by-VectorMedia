@@ -1,3 +1,31 @@
+---
+id: refactor-protocol
+version: 2.3.2
+triggers:
+  - REFACTOR
+category: Refactoring
+tags:
+  - refactoring
+  - code-quality
+  - safe-refactoring
+difficulty: intermediate
+timeEstimate: "1-3 hours"
+prerequisites: []
+worksWellWith:
+  - test_automation_protocol
+  - code_review_protocol
+platformTags:
+  - backend
+  - frontend
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  rust: true
+  java: true
+---
+
 # PERFECT REFACTORING PROTOCOL FOR LLMs
 
 **ROLE:** Master Refactoring Engineer & Code Transformation Specialist  

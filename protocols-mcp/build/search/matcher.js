@@ -44,6 +44,54 @@ export class SearchMatcher {
         }
         return results.sort((a, b) => b.similarity - a.similarity);
     }
+    /**
+     * Re-rank search results based on project context
+     * Prioritizes protocols relevant to user's tech stack
+     */
+    contextualizeResults(results, context) {
+        if (!context.detected) {
+            return results;
+        }
+        // Re-score based on context
+        const contextualizedResults = results.map(result => {
+            let contextBonus = 0;
+            let relevance = 'low';
+            // Simple context matching based on protocol name patterns
+            const lowerName = result.protocol.toLowerCase();
+            const lowerLanguage = context.language?.toLowerCase() || '';
+            const lowerFramework = context.framework?.toLowerCase() || '';
+            // Language-specific boost
+            if (lowerLanguage && lowerName.includes(lowerLanguage)) {
+                contextBonus += 5;
+                relevance = 'high';
+            }
+            // Framework-specific boost
+            if (lowerFramework && lowerFramework !== 'unknown' && lowerName.includes(lowerFramework)) {
+                contextBonus += 5;
+                relevance = 'high';
+            }
+            // Platform type boost
+            if (context.projectType === 'frontend') {
+                if (lowerName.includes('frontend') || lowerName.includes('react') || lowerName.includes('accessibility') || lowerName.includes('aria')) {
+                    contextBonus += 3;
+                    relevance = relevance === 'high' ? 'high' : 'medium';
+                }
+            }
+            else if (context.projectType === 'backend') {
+                if (lowerName.includes('backend') || lowerName.includes('api') || lowerName.includes('database') || lowerName.includes('performance')) {
+                    contextBonus += 3;
+                    relevance = relevance === 'high' ? 'high' : 'medium';
+                }
+            }
+            return {
+                ...result,
+                score: result.score + contextBonus,
+                contextRelevance: relevance
+            };
+        });
+        // Re-sort by new score
+        return contextualizedResults.sort((a, b) => b.score - a.score);
+    }
     calculateScore(queryTokens, searchable) {
         let score = 0;
         const lowerTitle = searchable.metadata.title.toLowerCase();

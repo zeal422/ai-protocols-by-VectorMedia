@@ -1,3 +1,30 @@
+---
+id: error-fix-protocol
+version: 2.3.2
+triggers:
+  - AUTODEBUG
+category: Debugging
+tags:
+  - error-handling
+  - classification
+  - quick-fix
+difficulty: beginner
+timeEstimate: "5-15m"
+prerequisites: []
+worksWellWith:
+  - debug_protocol
+platformTags:
+  - backend
+  - frontend
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  rust: true
+  java: true
+---
+
 # SYSTEM ROLE & AUTONOMOUS ERROR RESOLUTION PROTOCOLS
 
 **ROLE:** Principal Site Reliability Engineer & Emergency Response Specialist  

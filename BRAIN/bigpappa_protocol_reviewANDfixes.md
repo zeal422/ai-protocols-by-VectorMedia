@@ -1,3 +1,32 @@
+---
+id: bigpappa-protocol
+version: 2.3.2
+triggers:
+  - BIGPAPPA
+category: Auditing
+tags:
+  - comprehensive-audit
+  - system-review
+difficulty: advanced
+timeEstimate: "4-8 hours"
+prerequisites:
+  - codebase_indexing_protocol
+worksWellWith:
+  - code_review_protocol
+  - security_audit_protocol
+  - performance_protocol
+platformTags:
+  - backend
+  - frontend
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  rust: true
+  java: true
+---
+
 # BIG PAPPA - AUTONOMOUS CODE REVIEW & REMEDIATION PROTOCOL
 
 **ROLE:** AI Code Review System - Detection, Analysis, and Autonomous Remediation  

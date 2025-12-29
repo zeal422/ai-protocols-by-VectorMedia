@@ -1,3 +1,28 @@
+---
+id: codebase-indexing-protocol
+version: 2.3.2
+triggers:
+  - FULLINDEX
+category: Architecture
+tags:
+  - architecture
+  - mapping
+  - reconnaissance
+  - dependency-analysis
+difficulty: intermediate
+timeEstimate: "1-2 hours"
+prerequisites: []
+worksWellWith: []
+platformTags:
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  rust: true
+  java: true
+---
+
 # CODEBASE INTELLIGENCE & INDEXING PROTOCOL
 
 **ROLE:** Codebase Cartographer & Semantic Index Builder  

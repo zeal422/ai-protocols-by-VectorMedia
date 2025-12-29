@@ -8,6 +8,9 @@ export interface ProtocolMetadata {
   filePath: string;
 }
 
+// Re-export extended metadata types
+export { ExtendedProtocolMetadata, ProtocolFrontmatter, DifficultyEnum, CategoryEnum, validateFrontmatter, hasFrontmatter } from './protocol-frontmatter.js';
+
 export interface IDEConfig {
   name: string;
   files: string[];

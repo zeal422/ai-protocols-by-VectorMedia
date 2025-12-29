@@ -1,3 +1,30 @@
+---
+id: api-design-protocol
+version: 2.3.2
+triggers:
+  - APIDESIGN
+category: Architecture
+tags:
+  - api
+  - rest
+  - graphql
+  - design-patterns
+difficulty: intermediate
+timeEstimate: "1-3 hours"
+prerequisites: []
+worksWellWith:
+  - security_audit_protocol
+  - test_automation_protocol
+platformTags:
+  - backend
+  - fullstack
+stackSpecific:
+  node: true
+  python: true
+  go: true
+  java: true
+---
+
 # API DESIGN PROTOCOL
 
 **ROLE:** Senior API Architect & Integration Specialist  
