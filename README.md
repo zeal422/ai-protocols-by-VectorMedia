@@ -414,10 +414,15 @@ Built on principles from:
 
 ---
 
+<<<<<<< HEAD
 **Version:** 2.3.5  
 **Last Updated:** 2025-12-29  
+=======
+**Version:** 2.3.2  
+**Last Updated:** 26.12.2025  
+>>>>>>> cdb55ad4b45fb034ae0792a61abdf9d3fff85721
 **Status:** Active Development  
-**Maintained by:** Community Contributors
+**Maintained by:** Myself currently
 
 ---
 
