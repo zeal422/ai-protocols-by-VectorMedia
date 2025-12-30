@@ -189,7 +189,7 @@ export async function detectProjectContext(rootPath: string): Promise<ProjectCon
     // Detect Dockerfile
     if (fileExists(path.join(rootPath, 'Dockerfile'))) {
       context.hasDocker = true;
-      if (!context.projectType || context.projectType === 'unknown') {
+      if (context.projectType === 'unknown') {
         context.projectType = 'devops';
       }
     }
@@ -281,8 +281,10 @@ export function getRelevantTags(context: ProjectContext): string[] {
     tags.push('fullstack', 'integration');
   }
 
-  if (context.language === 'typescript' || context.language === 'javascript') {
-    tags.push('javascript', 'typescript', 'node');
+  if (context.language === 'typescript') {
+    tags.push('typescript', 'node');
+  } else if (context.language === 'javascript') {
+    tags.push('javascript', 'node');
   } else if (context.language === 'python') {
     tags.push('python');
   } else if (context.language === 'go') {

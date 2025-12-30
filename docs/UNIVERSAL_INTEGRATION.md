@@ -63,6 +63,7 @@ Regardless of which model you use (Flash, Sonnet, GPT), "Lean" protocols provide
 
 ---
 
-*AI Protocols v2.3.2 - 19 specialized protocols for high-performance development.*
+*AI Protocols v2.3.5 - 19 specialized protocols with intelligent routing and 7 guided workflows.*
 
 **[Back to MASTER_PROTOCOL](../MASTER_PROTOCOL.md)** | **[Back to README](../README.md)**
+

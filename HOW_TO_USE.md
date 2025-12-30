@@ -1,5 +1,7 @@
-# ai-protocols (v2.3.2)
+# ai-protocols (v2.3.5)
 by me, VectorMedia
+
+**Last Updated:** 2025-12-29
 
 Master the "Zero-Error" workflow by utilizing the encapsulated intelligence of the `BRAIN/` directory and the power of the Model Context Protocol (MCP).
 
@@ -13,7 +15,13 @@ The `MASTER_PROTOCOL.md` is your AI's brain. To start any task with 100% protoco
 ---
 
 ## 2. 🔌 MCP Server Integration
-The MCP server exposes all 19 protocols as dynamic tools (`get_protocol`, `search_protocols`, etc.) that AI assistants can call directly.
+The MCP server exposes all 19 protocols as dynamic tools via 6 MCP tools:
+- `get_protocol` - Direct protocol lookup
+- `list_protocols` - Browse by category
+- `get_protocol_by_trigger` - Find by trigger command
+- `search_protocols` - Context-aware semantic search
+- `fuzzy_match_protocol` - Typo-tolerant search
+- `route_task` (NEW) - Intelligent task routing with workflow guidance
 
 ### 🚀 Setup in 30 Seconds
 1. **Build**: 
@@ -49,6 +57,7 @@ Type these into your prompt to activate specialized modules:
 
 | Command | Protocol Module | Best For... |
 | :--- | :--- | :--- |
+| `ROUTE_TASK` | `route_task` (NEW) | Intelligent task routing & workflow guidance. |
 | `FULLINDEX` | `codebase_indexing` | Mapping architecture / New projects. |
 | `MDAP` | `mdap_protocol` | **High-Stakes Refactors.** Zero-error scaling. |
 | `DEEPDIVE` | `debug_protocol` | Scientific Method debugging. |
@@ -62,9 +71,21 @@ Type these into your prompt to activate specialized modules:
 
 ## 📂 Directory Structure
 - `/BRAIN`: Contains `MASTER_PROTOCOL.md` and all specialized sub-protocols.
+- `/BRAIN/workflows`: 7 guided workflows (refactor, debug, security, code-review, feature, performance, accessibility).
 - `/docs`: Detailed scenarios, FAQs, and troubleshooting guides.
 - `/scripts`: Validation tools to ensure protocol integrity.
 - `/configurations`: Pre-configured rules for Cursor, Cline, Claude, and Gemini.
+
+---
+
+## 🎯 Context-Aware Features (v2.3.5)
+The system now auto-detects your project and provides intelligent guidance:
+- **Languages**: JavaScript, TypeScript, Python, Go, Rust, Java
+- **Frameworks**: React, Vue, Express, FastAPI, Django, Spring
+- **Tools**: Docker, CI/CD pipelines, package managers
+- **Smart Search**: Results personalized to your tech stack
+- **7 Guided Workflows**: Pre-built step-by-step workflows for common tasks
+- **Workflow Routing**: `route_task` recommends appropriate protocols based on your task
 
 ---
 

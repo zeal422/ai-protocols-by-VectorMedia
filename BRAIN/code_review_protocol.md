@@ -1,6 +1,6 @@
 ---
 id: code-review-protocol
-version: 2.3.2
+version: 2.3.5
 triggers:
   - COMPREHENSIVE
 category: Quality
@@ -236,6 +236,7 @@ _- Clarification on whether this requires a database migration"_
 
 ---
 
-*Last Updated: 2025-12-23*  
-*Protocol Version: 2.3.2*
+*Last Updated: 2025-12-29*  
+*Protocol version: 2.3.5*
+
 

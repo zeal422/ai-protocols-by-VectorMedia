@@ -58,4 +58,5 @@ A one-page guide to all ai-protocols triggers and workflows.
 4. **Maintainability:** Is it testable? SRP followed?
 
 ---
-**Version:** 2.3.2 | **Updated:** 2025-12-25
+**Version:** 2.3.5 | **Updated:** 2025-12-29
+

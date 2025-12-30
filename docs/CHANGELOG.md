@@ -1,5 +1,29 @@
 # Changelog
 
+## [2.3.5] - 2025-12-29
+
+### Added
+- New `route_task` MCP tool for intelligent task routing
+- 7 workflow templates (refactor, debug, security, code-review, feature, performance, accessibility)
+- Project context detection (React, Node, Python, Go, Rust, Java)
+- Context-aware search filtering personalized to project tech stack
+
+### Fixed
+- Maven projects no longer assume Spring framework
+- Windows CRLF line ending support
+- TaskType validation and safe casting
+- Framework undefined handling in output
+- Performance workflow Phase 3 labeling
+- Workflow time estimate accuracy
+- Documentation inconsistencies and placeholders
+- Workflow filename standardization to snake_case
+
+### Improved
+- Better Node.js project type detection
+- Enhanced error handling and validation
+- Comprehensive workflow decision trees
+- Better documentation clarity
+
 ## [2.3.2] - 2025-12-25
 ### Added
 - **Universal Best Practices Protocol**: New specialized protocol for tech stack detection and industry-standard health checks (`BRAIN/best_practices_protocol.md`).
@@ -96,3 +120,4 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Initial release of core development protocols (Code Review, Debug, Error Fix, Testing, Frontend).
 - Basic `MASTER_PROTOCOL.md` routing.
+

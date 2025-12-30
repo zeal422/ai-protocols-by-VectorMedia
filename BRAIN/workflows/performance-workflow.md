@@ -56,10 +56,11 @@ protocols:
 ---
 
 ## Phase 3: Optimization
-✅ **Protocols:** Apply discovered solutions (use performance_protocol guidance)
+✅ **Protocol:** performance_protocol (reference PERFAUDIT findings)
 - **Purpose:** Fix identified bottlenecks
 - **Time:** 1-2 hours
-- **Note:** Refer back to PERFAUDIT findings and implement recommended optimizations
+- **Trigger:** Implement PERFAUDIT recommendations
+- **Reference:** Apply optimization techniques from performance_protocol guidance
 
 ### Techniques:
 - Database indexing

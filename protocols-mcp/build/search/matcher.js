@@ -55,7 +55,9 @@ export class SearchMatcher {
         // Re-score based on context
         const contextualizedResults = results.map(result => {
             let contextBonus = 0;
-            let relevance = 'low';
+            let languageMatched = false;
+            let frameworkMatched = false;
+            let platformMatched = false;
             // Simple context matching based on protocol name patterns
             const lowerName = result.protocol.toLowerCase();
             const lowerLanguage = context.language?.toLowerCase() || '';
@@ -63,25 +65,34 @@ export class SearchMatcher {
             // Language-specific boost
             if (lowerLanguage && lowerName.includes(lowerLanguage)) {
                 contextBonus += 5;
-                relevance = 'high';
+                languageMatched = true;
             }
             // Framework-specific boost
             if (lowerFramework && lowerFramework !== 'unknown' && lowerName.includes(lowerFramework)) {
                 contextBonus += 5;
-                relevance = 'high';
+                frameworkMatched = true;
             }
             // Platform type boost
             if (context.projectType === 'frontend') {
                 if (lowerName.includes('frontend') || lowerName.includes('react') || lowerName.includes('accessibility') || lowerName.includes('aria')) {
                     contextBonus += 3;
-                    relevance = relevance === 'high' ? 'high' : 'medium';
+                    platformMatched = true;
                 }
             }
             else if (context.projectType === 'backend') {
                 if (lowerName.includes('backend') || lowerName.includes('api') || lowerName.includes('database') || lowerName.includes('performance')) {
                     contextBonus += 3;
-                    relevance = relevance === 'high' ? 'high' : 'medium';
+                    platformMatched = true;
                 }
+            }
+            // Determine relevance based on matches and contextBonus
+            // languageMatched || frameworkMatched already implies contextBonus >= 5
+            let relevance = 'low';
+            if (languageMatched || frameworkMatched) {
+                relevance = 'high';
+            }
+            else if (contextBonus >= 3) {
+                relevance = 'medium';
             }
             return {
                 ...result,

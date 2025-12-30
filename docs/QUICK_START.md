@@ -79,3 +79,4 @@ Open your AI assistant (Cursor, Cline, etc.) and try this:
 - **[COMMANDS.md](COMMANDS.md)** - Full list of triggers.
 - **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - One-page cheat sheet.
 - **[SCENARIOS.md](SCENARIOS.md)** - Real-world usage examples.
+

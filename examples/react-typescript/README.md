@@ -415,5 +415,6 @@ MIT - Use this as a template for your projects!
 
 ---
 
-**This example demonstrates production-ready React code following ai-protocols v2.3.2.**  
+**This example demonstrates production-ready React code following ai-protocols v2.3.5.**  
 Built with: React 18, TypeScript, Vite, Vitest, Testing Library, Accessibility Best Practices
+

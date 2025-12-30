@@ -1,7 +1,14 @@
 #!/usr/bin/env node
 /**
- * AI Protocols Init CLI (v2.3.2 - Demo Skeleton)
+ * AI Protocols Init CLI (v2.3.5 - Demo Skeleton)
  * In a real production environment, this would be published to npm.
+ * 
+ * Features:
+ * - 19 specialized protocols with YAML metadata
+ * - 7 guided workflow templates
+ * - Intelligent task routing (route_task tool)
+ * - Project context detection
+ * - Context-aware search
  */
 const fs = require('fs');
 const path = require('path');

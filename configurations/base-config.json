@@ -1,10 +1,13 @@
 {
   "protocol": "MASTER_PROTOCOL.md",
   "brain_path": "BRAIN/",
+  "version": "2.3.5",
   "rules": [
     "Always reference MASTER_PROTOCOL before starting a task.",
+    "Use route_task for intelligent protocol routing.",
     "Use MDAP for complex refactors.",
-    "Run SECAUDIT before completing any PR."
+    "Run SECAUDIT before completing any PR.",
+    "Follow guided workflows from BRAIN/workflows/ for structured processes."
   ],
   "ide_specific": {
     "cursor": {

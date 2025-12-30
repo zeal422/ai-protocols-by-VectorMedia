@@ -245,9 +245,13 @@ export function registerProtocolTools(server, scanner, indexer, matcher, protoco
                     let inferredTaskType = analyzeTaskIntent(description);
                     if (overrideTaskType) {
                         // Validate override is a valid task type
-                        const validTypes = ['debug', 'build', 'refactor', 'audit', 'optimize', 'test', 'setup', 'unknown'];
+                        const validTypes = ['debug', 'build', 'refactor', 'audit', 'optimize', 'test', 'setup'];
                         if (validTypes.includes(overrideTaskType)) {
                             inferredTaskType = overrideTaskType;
+                        }
+                        else {
+                            // Emit warning for invalid override
+                            console.warn(`Warning: Invalid taskType override "${overrideTaskType}". Valid types are: ${validTypes.join(', ')}. Using inferred type: "${inferredTaskType}"`);
                         }
                     }
                     const difficulty = getTaskDifficulty(inferredTaskType);

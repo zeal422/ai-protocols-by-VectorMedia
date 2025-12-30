@@ -25,30 +25,38 @@ node index.js
 ## What It Does
 
 1. **Prompts for Configuration**
-   - Framework selection (Node.js, React, etc.)
-   - AI tool selection (Cursor, Cline, Copilot, etc.)
-   - Focus areas (Security, Testing, Performance, etc.)
+   - Framework selection (Node.js, React, Python, Go, Rust, Java, etc.)
+   - AI tool selection (Cursor, Cline, Copilot, Gemini, etc.)
+   - Focus areas (Security, Testing, Performance, Accessibility, etc.)
 
-2. **Installs Protocols**
-   - Copies MASTER_PROTOCOL.md
-   - Copies BRAIN/ protocols
-   - Copies documentation
+2. **Installs Protocols & Workflows** (v2.3.5)
+   - Copies MASTER_PROTOCOL.md (main orchestrator)
+   - Copies BRAIN/ (19 specialized protocols with YAML metadata)
+   - Copies BRAIN/workflows/ (7 guided workflow templates)
+   - Copies documentation and SYSTEM_GUIDE.md
 
 3. **Configures AI Tools**
-   - Creates `.cursorrules` for Cursor
-   - Creates `.clinerules` for Cline
+   - Creates `.cursorrules` for Cursor (with all 19 protocols + triggers)
+   - Creates `.clinerules` for Cline/RooCode (with all 19 protocols + triggers)
    - Configures Copilot instructions
+   - Configures Gemini system instructions
    - Sets up VS Code settings
 
-4. **Copies Examples**
-   - Optional project templates
-   - Working code demonstrations
-   - Test suites
+4. **Enables Intelligent Features** (NEW v2.3.5)
+   - MCP server setup for route_task tool (intelligent task routing)
+   - Project context detection (auto-detects React, Node, Python, Go, Rust, Java)
+   - Context-aware search configuration
+   - Workflow templates for structured processes
 
-5. **Validates Setup**
-   - Runs validation script
+5. **Copies Examples**
+   - Optional project templates (Node.js Express, React TypeScript)
+   - Working code demonstrations
+   - Test suites with examples
+
+6. **Validates Setup**
+   - Runs validation script (36/36 checks)
    - Provides next steps
-   - Links to documentation
+   - Links to SYSTEM_GUIDE.md and documentation
 
 ## Interactive Prompts
 

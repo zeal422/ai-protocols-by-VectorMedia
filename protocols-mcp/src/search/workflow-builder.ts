@@ -194,7 +194,7 @@ function getPrerequisiteForStep(protocolName: string): string | undefined {
   const prerequisites: Record<string, string> = {
     'mdap_protocol': 'codebase_indexing_protocol',
     'performance_protocol': 'codebase_indexing_protocol',
-    'test_automation_protocol': 'Understand codebase structure',
+    'test_automation_protocol': 'codebase_indexing_protocol',
     'bigpappa_protocol_reviewANDfixes': 'codebase_indexing_protocol'
   };
 

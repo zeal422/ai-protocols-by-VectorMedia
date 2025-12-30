@@ -1,6 +1,6 @@
 ---
 id: optimized-lint-setup
-version: 2.3.2
+version: 2.3.5
 triggers: []
 category: Configuration
 tags:
@@ -309,6 +309,7 @@ The configuration is designed to be:
 
 ---
 
-*Last Updated: 2025-12-23*  
-*Protocol Version: 2.3.2*
+*Last Updated: 2025-12-29*  
+*Protocol version: 2.3.5*
+
 

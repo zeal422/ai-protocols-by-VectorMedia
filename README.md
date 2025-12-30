@@ -1,7 +1,7 @@
 ```mermaid
 graph TB
-    Start([Developer Task]) --> Master[MASTER_PROTOCOL]
-    Master --> Decision{Task Type?}
+    Start([Developer Task]) --> Router["🎯 route_task Tool<br/>(NEW v2.3.5)<br/>Intelligent Routing"]
+    Router --> Decision{Task Type?}
     
     Decision -->|Bug/Error| Debug[🐛 DEEPDIVE<br/>Debug Protocol]
     Decision -->|Code Review| Review[👁️ COMPREHENSIVE<br/>Review Protocol]
@@ -9,31 +9,37 @@ graph TB
     Decision -->|Testing| Test[🧪 FULLSPEC<br/>Test Protocol]
     Decision -->|Security| Sec[🔐 SECAUDIT<br/>Security Protocol]
     Decision -->|Performance| Perf[⚡ PERFAUDIT<br/>Performance Protocol]
-    Decision -->|Best Practices| Best[✨ BESTPRACTICES<br/>Best Practices Protocol]
+    Decision -->|Refactoring| Refactor[🔄 REFACTOR<br/>Refactor Protocol]
     
-    Debug --> Result[✅ Solution]
-    Review --> Result
-    Design --> Result
-    Test --> Result
-    Sec --> Result
-    Perf --> Result
-    Best --> Result
+    Debug --> Workflows["📋 7 Guided Workflows<br/>(NEW v2.3.5)<br/>Refactor • Debug • Security<br/>Code Review • Feature<br/>Performance • Accessibility"]
+    Review --> Workflows
+    Design --> Workflows
+    Test --> Workflows
+    Sec --> Workflows
+    Perf --> Workflows
+    Refactor --> Workflows
     
-    style Master fill:#3b82f6,color:#fff
-    style Result fill:#10b981,color:#fff
+    Workflows --> Context["🔍 Context Detection<br/>(NEW v2.3.5)<br/>React • Node • Python<br/>Go • Rust • Java<br/>Docker • CI/CD"]
+    
+    Context --> Result[✅ Solution<br/>with Personalized<br/>Recommendations]
+    
+    style Router fill:#06b6d4,color:#fff,stroke:#0891b2,stroke-width:3px
+    style Workflows fill:#8b5cf6,color:#fff,stroke:#7c3aed,stroke-width:3px
+    style Context fill:#10b981,color:#fff,stroke:#059669,stroke-width:3px
+    style Result fill:#10b981,color:#fff,stroke:#059669,stroke-width:3px
     style Debug fill:#ef4444,color:#fff
     style Review fill:#8b5cf6,color:#fff
     style Design fill:#ec4899,color:#fff
     style Test fill:#f59e0b,color:#fff
     style Sec fill:#dc2626,color:#fff
     style Perf fill:#06b6d4,color:#fff
-    style Best fill:#10b981,color:#fff
+    style Refactor fill:#f97316,color:#fff
 ```
 
 # ai-protocols
 by me, VectorMedia
 
-[![Version](https://img.shields.io/badge/version-2.3.2-blue.svg)](docs/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.5-blue.svg)](docs/CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Protocols](https://img.shields.io/badge/protocols-19-purple.svg)](#-protocol-files)
 [![AI Ready](https://img.shields.io/badge/AI-ready-orange.svg)](#-quick-start)
@@ -408,8 +414,8 @@ Built on principles from:
 
 ---
 
-**Version:** 2.3.2  
-**Last Updated:** 2025-12-25  
+**Version:** 2.3.5  
+**Last Updated:** 2025-12-29  
 **Status:** Active Development  
 **Maintained by:** Community Contributors
 
@@ -423,3 +429,4 @@ Built on principles from:
 - [🔍 Browse All Protocols](BRAIN/)
 - [💬 Report Issues](../../issues)
 - [⭐ Star This Repository](../../stargazers)
+

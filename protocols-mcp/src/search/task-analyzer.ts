@@ -49,7 +49,7 @@ export function analyzeTaskIntent(description: string): TaskType {
 
   for (const [taskType, keywords] of Object.entries(TASK_KEYWORDS)) {
     for (const keyword of keywords) {
-      if (description.toLowerCase().includes(keyword)) {
+      if (lower.includes(keyword.toLowerCase())) {
         scores[taskType as TaskType]++;
       }
     }

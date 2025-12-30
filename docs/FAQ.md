@@ -285,8 +285,8 @@ company-monorepo/
 Yes, protocols include version metadata:
 ```yaml
 ---
-protocol_version: "2.3.2"
-last_updated: "2025-12-23"
+protocol_version: "2.3.5"
+last_updated: "2025-12-29"
 ---
 ```
 
@@ -440,3 +440,4 @@ Include:
 - [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for issues
 - [SCENARIOS.md](SCENARIOS.md) for usage examples
 - [COMMANDS.md](COMMANDS.md) for all triggers
+

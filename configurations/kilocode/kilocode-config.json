@@ -1,6 +1,6 @@
 {
   "name": "ai-protocols",
-  "version": "2.3.2",
+  "version": "2.3.5",
   "description": "Comprehensive AI-assisted development framework",
   "knowledgeBase": {
     "enabled": true,
@@ -21,7 +21,7 @@
     "A11YCHECK": "BRAIN/accessibility_protocol.md",
     "FULLARIA": "BRAIN/aria_accessibility_protocol.md",
     "PERFAUDIT": "BRAIN/performance_protocol.md",
-    "SAFEREFACTOR": "BRAIN/refactor_protocol.md",
+    "REFACTOR": "BRAIN/refactor_protocol.md",
     "APIDESIGN": "BRAIN/api_design_protocol.md",
     "GITFLOW": "BRAIN/git_workflow_protocol.md",
     "BIGPAPPA": "BRAIN/bigpappa_protocol_reviewANDfixes.md",

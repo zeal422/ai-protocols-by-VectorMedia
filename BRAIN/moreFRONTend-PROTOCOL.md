@@ -1,6 +1,6 @@
 ---
 id: more-frontend-protocol
-version: 2.3.2
+version: 2.3.5
 triggers:
   - ULTRATHINK
 category: Frontend
@@ -85,6 +85,7 @@ stackSpecific:
 
 ---
 
-*Last Updated: 2025-12-23*  
-*Protocol Version: 2.3.2*
+*Last Updated: 2025-12-29*  
+*Protocol version: 2.3.5*
+
 

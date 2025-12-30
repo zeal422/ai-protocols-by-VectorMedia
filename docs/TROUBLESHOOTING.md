@@ -462,3 +462,4 @@ npm test
 ---
 
 **Still stuck?** Double-check you followed [QUICK_START.md](QUICK_START.md) completely, especially the validation step.
+

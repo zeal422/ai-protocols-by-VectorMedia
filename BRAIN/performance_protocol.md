@@ -1,6 +1,6 @@
 ---
 id: performance-protocol
-version: 2.3.2
+version: 2.3.5
 triggers:
   - PERFAUDIT
 category: Performance
@@ -412,12 +412,13 @@ Before shipping:
 
 ---
 
-*Last Updated: 2025-12-25*
-*Protocol Version: 2.3.2*
+*Last Updated: 2025-12-29*
+*Protocol version: 2.3.5*
 
-*Version 2.3.2 Changelog (2025-12-25):*
+*Version 2.3.5 Changelog (2025-12-29):*
 - Added React 19 optimizations (useOptimistic, useActionState)
 - Updated Next.js 15+ performance guidelines with Partial Prerendering (PPR)
 - Enhanced Core Web Vitals monitoring and alerting
 - Follows semantic versioning: minor version bump for new features and enhancements
+
 
