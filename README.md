@@ -526,15 +526,9 @@ Built on principles from:
 ---
 
 **Version:** 2.3.5  
-<<<<<<< HEAD
-**Last Updated:** 2026-01-14  
+**Last Updated:** 2026-01-19  
 =======
-**Last Updated:** 2025-12-30  
-=======
-**Version:** 2.3.5  
-**Last Updated:** 30.12.2025  
 
->>>>>>> c7f0bc3a42b9d0ad7f7596ac73e17420e675015f
 **Status:** Active Development  
 **Maintained by:** VectorMedia
 
