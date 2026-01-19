@@ -1,0 +1,90 @@
+﻿
+> @ai-protocols/mcp-server@2.3.2 test
+> vitest run
+
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mC:/CODING/---PROTOCOLS---by-VM/protocols-mcp[39m
+
+ [32mΓ£ô[39m src/search/task-analyzer.test.ts [2m([22m[2m35 tests[22m[2m)[22m[90m 26[2mms[22m[39m
+ [32mΓ£ô[39m src/search/matcher.test.ts [2m([22m[2m19 tests[22m[2m)[22m[90m 22[2mms[22m[39m
+ [32mΓ£ô[39m src/utils/error-handler.test.ts [2m([22m[2m32 tests[22m[2m)[22m[90m 27[2mms[22m[39m
+ [32mΓ£ô[39m src/search/workflow-builder.test.ts [2m([22m[2m30 tests[22m[2m)[22m[90m 28[2mms[22m[39m
+ [31mΓ¥»[39m src/utils/project-context-detector.test.ts [2m([22m[2m13 tests[22m[2m | [22m[31m9 failed[39m[2m)[22m[90m 50[2mms[22m[39m
+[31m   [31m├ù[31m ProjectContextDetector[2m > [22mdetectProjectContext[2m > [22mshould return ProjectContext object[90m 16[2mms[22m[31m[39m
+[31m     ΓåÆ expected undefined to be defined[39m
+[31m   [31m├ù[31m ProjectContextDetector[2m > [22mdetectProjectContext[2m > [22mshould have all required fields[90m 2[2mms[22m[31m[39m
+[31m     ΓåÆ expected undefined to be defined[39m
+[31m   [31m├ù[31m ProjectContextDetector[2m > [22mdetectProjectContext[2m > [22mshould set detected to false for non-existent path[90m 5[2mms[22m[31m[39m
+[31m     ΓåÆ expected undefined to be false // Object.is equality[39m
+[31m   [31m├ù[31m ProjectContextDetector[2m > [22mDefault context[2m > [22mshould have boolean flags[90m 7[2mms[22m[31m[39m
+[31m     ΓåÆ expected 'undefined' to be 'boolean' // Object.is equality[39m
+[31m   [31m├ù[31m ProjectContextDetector[2m > [22mDefault context[2m > [22mshould have array for dependencies[90m 3[2mms[22m[31m[39m
+[31m     ΓåÆ expected false to be true // Object.is equality[39m
+[31m   [31m├ù[31m ProjectContextDetector[2m > [22mDefault context[2m > [22mshould have detected flag[90m 2[2mms[22m[31m[39m
+[31m     ΓåÆ expected 'undefined' to be 'boolean' // Object.is equality[39m
+[31m   [31m├ù[31m ProjectContextDetector[2m > [22mCurrent directory detection[2m > [22mshould detect current directory[90m 2[2mms[22m[31m[39m
+[31m     ΓåÆ expected 'undefined' to be 'boolean' // Object.is equality[39m
+[31m   [31m├ù[31m ProjectContextDetector[2m > [22mEdge cases[2m > [22mshould return valid context even if detection fails[90m 2[2mms[22m[31m[39m
+[31m     ΓåÆ expected undefined to be false // Object.is equality[39m
+[31m   [31m├ù[31m ProjectContextDetector[2m > [22mType safety[2m > [22mshould return strongly typed context[90m 2[2mms[22m[31m[39m
+[31m     ΓåÆ expected 'undefined' to be 'string' // Object.is equality[39m
+ [31mΓ¥»[39m src/scanner/protocol-scanner.test.ts [2m([22m[2m8 tests[22m[2m | [22m[31m8 failed[39m[2m)[22m[90m 23[2mms[22m[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mbasic functionality[2m > [22mshould create scanner instance[90m 13[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN\BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mbasic functionality[2m > [22mshould have scanProtocols method[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN\BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mbasic functionality[2m > [22mshould have getProtocol method[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN\BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mbasic functionality[2m > [22mshould have getProtocolByTrigger method[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN\BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mbasic functionality[2m > [22mshould have clearCache method[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN\BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mprotocol scanning[2m > [22mscanProtocols returns promise[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN\BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mprotocol scanning[2m > [22mgetProtocol returns promise[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN\BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mprotocol scanning[2m > [22mgetProtocolByTrigger returns promise[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN\BRAIN[39m
+ [31mΓ¥»[39m src/scanner/metadata-extractor.test.ts [2m([22m[2m26 tests[22m[2m | [22m[31m3 failed[39m[2m)[22m[90m 48[2mms[22m[39m
+[31m   [31m├ù[31m extractMetadata[2m > [22mYAML frontmatter parsing[2m > [22mshould support CRLF line endings in frontmatter[90m 15[2mms[22m[31m[39m
+[31m     ΓåÆ expected false to be true // Object.is equality[39m
+[31m   [31m├ù[31m extractMetadata[2m > [22mYAML frontmatter parsing[2m > [22mshould mark frontmatter presence[90m 2[2mms[22m[31m[39m
+[31m     ΓåÆ expected false to be true // Object.is equality[39m
+[31m   [31m├ù[31m extractMetadata[2m > [22mYAML frontmatter parsing[2m > [22mshould handle invalid YAML gracefully[90m 2[2mms[22m[31m[39m
+[31m     ΓåÆ expected false to be true // Object.is equality[39m
+ [31mΓ¥»[39m src/tools/protocol-tools.test.ts [2m([22m[2m17 tests[22m[2m | [22m[31m17 failed[39m[2m)[22m[90m 32[2mms[22m[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool definitions[2m > [22mshould have tools defined[90m 14[2mms[22m[31m[39m
+[31m     ΓåÆ expected undefined to be defined[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool definitions[2m > [22mshould have get_protocol tool[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'find')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool definitions[2m > [22mshould have list_protocols tool[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'find')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool definitions[2m > [22mshould have get_protocol_by_trigger tool[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'find')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool definitions[2m > [22mshould have search_protocols tool[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'find')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool definitions[2m > [22mshould have fuzzy_match_protocol tool[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'find')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool definitions[2m > [22mshould have route_task tool[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'find')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool metadata[2m > [22meach tool should have name[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'forEach')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool metadata[2m > [22meach tool should have description[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'forEach')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool metadata[2m > [22meach tool should have inputSchema[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'forEach')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool metadata[2m > [22meach tool should have unique name[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'map')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool schemas[2m > [22mall schemas should have properties[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'forEach')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool schemas[2m > [22mall schemas should have type[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'forEach')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mTool descriptions[2m > [22mtools should have meaningful descriptions[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'forEach')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mEdge cases[2m > [22mshould handle tools array access[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading '0')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mEdge cases[2m > [22mshould allow iteration over tools[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'forEach')[39m
+[31m   [31m├ù[31m Protocol Tools[2m > [22mEdge cases[2m > [22mshould allow mapping tools[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ Cannot read properties of undefined (reading 'map')[39m
+

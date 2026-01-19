@@ -1,0 +1,902 @@
+[
+  {
+    "artifactId": "artifact-1",
+    "sessionId": "session-1",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:43:49.891Z",
+    "expiresAt": "2026-01-08T08:43:49.891Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "a3",
+    "sessionId": "s2",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:43:49.936Z",
+    "expiresAt": "2026-01-08T08:43:49.936Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "8bd44204-eda6-4380-81ca-67f88ec7abae",
+    "sessionId": "1424a418-cc68-4004-a6bc-699162a7b604",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:47:31.592Z",
+    "expiresAt": "2026-01-08T08:47:31.592Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "99185750-6c5a-4bc6-9cf9-9fa6e204bcd7",
+    "sessionId": "8b6ca481-4b48-474c-a22d-4bb834787e93",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:47:31.625Z",
+    "expiresAt": "2026-01-08T08:47:31.625Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "a17d1f8b-b304-45c9-89a3-fa47e45e8695",
+    "sessionId": "8b6ca481-4b48-474c-a22d-4bb834787e93",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:47:31.631Z",
+    "expiresAt": "2026-01-08T08:47:31.631Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "41050742-26fd-475e-b18c-987c91a4b0bc",
+    "sessionId": "224451a9-c8b4-47c4-b22e-f8733e2d4c9f",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:47:31.638Z",
+    "expiresAt": "2026-01-08T08:47:31.638Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "2c8cc8bb-f674-4abe-942b-840564c267d5",
+    "sessionId": "7661f13e-d753-4156-bb80-b6b35980df2b",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:47:31.644Z",
+    "expiresAt": "2026-01-08T08:47:31.644Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "519b2acf-06a4-455d-8c22-e09db19b89d7",
+    "sessionId": "7661f13e-d753-4156-bb80-b6b35980df2b",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:47:31.646Z",
+    "expiresAt": "2026-01-08T08:47:31.646Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "92279853-753e-48e3-8bf3-f1ae72764f88",
+    "sessionId": "7661f13e-d753-4156-bb80-b6b35980df2b",
+    "protocolName": "test",
+    "artifactType": "recommendations",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:47:31.649Z",
+    "expiresAt": "2026-01-08T08:47:31.649Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "b6e6a8ce-8247-4bc6-8770-4a69cf432bb9",
+    "sessionId": "eac49138-ec09-4574-a331-0d54af69d051",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:49:35.345Z",
+    "expiresAt": "2026-01-08T08:49:35.345Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "7624b344-c6aa-4f7f-9f62-6657b1748343",
+    "sessionId": "d6b4da61-ee30-4606-84b0-24c6bb7a76fe",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:49:35.397Z",
+    "expiresAt": "2026-01-08T08:49:35.397Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "ef60861f-7b87-482d-86cd-a177979aca90",
+    "sessionId": "d6b4da61-ee30-4606-84b0-24c6bb7a76fe",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:49:35.407Z",
+    "expiresAt": "2026-01-08T08:49:35.407Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "85520437-a194-492e-942e-8066cae8f5d7",
+    "sessionId": "7cf41ac4-0652-464d-862b-13fa4657391b",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:49:35.410Z",
+    "expiresAt": "2026-01-08T08:49:35.410Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "c4270159-c65c-47d5-a521-e8df9af26c09",
+    "sessionId": "8fbcc702-4de7-47dc-8f2c-ea6230240816",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:49:35.422Z",
+    "expiresAt": "2026-01-08T08:49:35.422Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "70a8d50d-ebd5-4bdb-ad5a-d7b12d9156f8",
+    "sessionId": "8fbcc702-4de7-47dc-8f2c-ea6230240816",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:49:35.424Z",
+    "expiresAt": "2026-01-08T08:49:35.424Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "738b022b-17e9-4818-8357-ec5cc293fc04",
+    "sessionId": "8fbcc702-4de7-47dc-8f2c-ea6230240816",
+    "protocolName": "test",
+    "artifactType": "recommendations",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:49:35.427Z",
+    "expiresAt": "2026-01-08T08:49:35.427Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "51ac7f28-ffc6-4314-93dc-35f9f67dadcb",
+    "sessionId": "03039f23-1492-4988-987d-2ab692722b66",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:49:35.442Z",
+    "expiresAt": "2026-01-08T07:51:15.442Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "ab8c017a-0b89-406d-8682-2d2229a49ac5",
+    "sessionId": "a554f677-bafc-4e50-9dc9-6a35c39521a6",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:50:39.388Z",
+    "expiresAt": "2026-01-08T08:50:39.388Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "30a9f561-cc0f-436e-9f7f-7696adc665b2",
+    "sessionId": "4c794afd-1b83-40ae-9a06-77145f367452",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:51:07.946Z",
+    "expiresAt": "2026-01-08T08:51:07.946Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "1e7ebdb9-67d0-4619-a467-2dc03c3faf6e",
+    "sessionId": "8184aaa9-5e40-4dcf-9827-59adeff69bae",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T07:51:24.728Z",
+    "expiresAt": "2026-01-08T08:51:24.728Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "9ae11870-1d6f-451a-b00f-716e7be4b3fd",
+    "sessionId": "8bf1cb72-b0d8-4d58-8f64-ff3df90e69fe",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T08:39:44.182Z",
+    "expiresAt": "2026-01-08T09:39:44.182Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "93f47f7e-1465-4c90-9c22-5c55b5fe2e12",
+    "sessionId": "6d477401-4d14-4400-89b2-9e81d0ac585f",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T08:40:30.485Z",
+    "expiresAt": "2026-01-08T09:40:30.485Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "003abced-836c-4a79-ad4c-80b117f298cf",
+    "sessionId": "8f631aa5-20e4-4408-a9f5-a754551016a4",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T08:42:43.219Z",
+    "expiresAt": "2026-01-08T09:42:43.219Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "b3fcffbd-90c7-4ad9-9c48-b7a6802503aa",
+    "sessionId": "f9e6138a-45ce-46f8-a0a4-81ddc85f8b02",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T08:43:24.422Z",
+    "expiresAt": "2026-01-08T09:43:24.422Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "0c6b9c1c-b908-4026-bbaf-7656a788f47c",
+    "sessionId": "cc73b497-1a71-4aa5-adde-4f465a0fcd1e",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T09:33:00.208Z",
+    "expiresAt": "2026-01-08T10:33:00.208Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "e790eaf7-86d2-405c-bbd2-c6030738440b",
+    "sessionId": "b0713285-ecdb-4fdc-a8e8-850e160ec3d2",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T09:34:01.697Z",
+    "expiresAt": "2026-01-08T10:34:01.697Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "3dfc0b5f-7b70-4900-b9dd-bb831a1867d2",
+    "sessionId": "1a57840a-d068-4182-bc0b-6f5a603c2c3d",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T09:49:53.587Z",
+    "expiresAt": "2026-01-08T10:49:53.587Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "3dba7142-132d-41a3-912d-ba3df50d2134",
+    "sessionId": "a975f42f-abe7-42fa-b156-b5b2222f8f4f",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T10:47:44.525Z",
+    "expiresAt": "2026-01-08T11:47:44.525Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "f656cb5c-6218-4fb1-be1b-9ecb87d52ee3",
+    "sessionId": "e22f5ed5-018e-424c-94ec-4fce0775d93a",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T10:47:52.793Z",
+    "expiresAt": "2026-01-08T11:47:52.793Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "5bcf8f8c-cd0c-45ea-b2ac-a466cbe5aeb9",
+    "sessionId": "07d356f3-49c4-496b-a1c0-d56b110ac764",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T10:48:51.795Z",
+    "expiresAt": "2026-01-08T11:48:51.795Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "e7149fa6-fc93-408e-b293-ab7af276faf8",
+    "sessionId": "eb9311c2-62c7-49c3-ade0-7a6f462c9578",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T10:49:00.367Z",
+    "expiresAt": "2026-01-08T11:49:00.367Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "192d2090-9724-4eb6-9a68-1b569d737fb1",
+    "sessionId": "a5c6f7ef-1db6-4936-9db3-a2641035b631",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T10:49:55.337Z",
+    "expiresAt": "2026-01-08T11:49:55.337Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "63a67ac8-77ac-44b2-a920-a905168f0e47",
+    "sessionId": "ec13f994-65b5-4c5d-a867-5ccb1cad4049",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T10:50:04.360Z",
+    "expiresAt": "2026-01-08T11:50:04.360Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "6576af9e-9f08-4f3f-ac6e-75ecd4629526",
+    "sessionId": "dce44d9a-9e45-4425-b586-75e9de8db986",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T10:50:40.363Z",
+    "expiresAt": "2026-01-08T11:50:40.363Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "c089c30d-756f-415f-a534-fd28a0498180",
+    "sessionId": "2cdb0d11-46ed-4072-8bd6-8e1af538ef98",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T12:50:43.703Z",
+    "expiresAt": "2026-01-08T13:50:43.703Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "cfe55163-b0e0-4fb9-86de-7e518901e933",
+    "sessionId": "fdf580e1-2d75-4fe2-8d86-45b38f298470",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T13:00:51.614Z",
+    "expiresAt": "2026-01-08T14:00:51.614Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "8e7da4b4-1b76-4d17-aaa4-2d1cff44f2c0",
+    "sessionId": "bf8a0ea3-9a5d-4bcd-91b0-da9de88db5be",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T13:01:23.799Z",
+    "expiresAt": "2026-01-08T14:01:23.799Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "a2e4d96c-e447-4e7d-877d-2b89040e0cb8",
+    "sessionId": "c966c74d-7136-45fc-a856-d98931090242",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T13:06:55.848Z",
+    "expiresAt": "2026-01-08T14:06:55.848Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "2ce7e651-a929-4e70-ad83-033320965475",
+    "sessionId": "6d0c3ce2-74b3-4ff6-bc03-77c35fa1d2b4",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T13:21:42.688Z",
+    "expiresAt": "2026-01-08T14:21:42.688Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "43a5ca0d-c3ba-4e90-b2c6-463d868c142c",
+    "sessionId": "01f3b116-4db3-4b77-9fc8-4cdd20c371f7",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T13:33:55.197Z",
+    "expiresAt": "2026-01-08T14:33:55.197Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "ebd6457c-81f6-4cfb-83d9-329f704fe3da",
+    "sessionId": "ae25f05c-a2c1-49df-ae40-c967cfdc09af",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T13:39:45.828Z",
+    "expiresAt": "2026-01-08T14:39:45.828Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "a78f25c6-815f-495f-9267-77fe43c72cab",
+    "sessionId": "d26118fe-3f3e-4e0e-805b-482606cd9e1d",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T13:40:00.709Z",
+    "expiresAt": "2026-01-08T14:40:00.709Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "34e05a09-3df8-4be1-bf26-b3b473a629e5",
+    "sessionId": "bbebde6b-60f9-4266-bf16-726db0c30f5b",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T13:40:56.632Z",
+    "expiresAt": "2026-01-08T14:40:56.632Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "3733f9ca-98b4-41dc-b28b-5b75e05f314e",
+    "sessionId": "bd351a03-68b2-4258-bdb4-707ac7fcca2a",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T13:41:44.041Z",
+    "expiresAt": "2026-01-08T14:41:44.041Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "724fa9cd-3dd6-4638-8a56-3a79dc2e3818",
+    "sessionId": "7366aa32-61d7-4541-94cb-81af157b068c",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T13:42:03.512Z",
+    "expiresAt": "2026-01-08T14:42:03.512Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "2d2c9de8-0cce-4a21-b3eb-d8c7c6d3c465",
+    "sessionId": "e2187522-f81d-4cea-b53d-ddd9c9f26454",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T13:58:06.315Z",
+    "expiresAt": "2026-01-08T14:58:06.315Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "994247c0-ce08-4d16-b488-6060c88a36fe",
+    "sessionId": "5ddbc651-2579-418d-8379-49b773e83bce",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T13:58:32.194Z",
+    "expiresAt": "2026-01-08T14:58:32.194Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "dd2ac66b-a9f4-40e5-9449-0b82688ae23c",
+    "sessionId": "1c05686c-3260-44a6-bdee-6b42d5bec64b",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T14:02:11.022Z",
+    "expiresAt": "2026-01-08T15:02:11.022Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "fb9d29e7-eb73-402a-a7e5-cfdcbdbef7fb",
+    "sessionId": "a832bc08-9b17-46c6-a93a-db7afe9ffc5c",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T14:14:09.975Z",
+    "expiresAt": "2026-01-08T15:14:09.975Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "f0883d44-b3b7-4836-9eae-5a69833d9e92",
+    "sessionId": "9c109622-bfdc-4b65-ab6a-b3823dd5fdf8",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T14:14:23.118Z",
+    "expiresAt": "2026-01-08T15:14:23.118Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "80c252aa-6484-42bb-8695-fd4317a0340c",
+    "sessionId": "4cfa9712-ba65-4750-a9e9-7ce284852319",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T14:17:14.598Z",
+    "expiresAt": "2026-01-08T15:17:14.598Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "bbd28c2b-1c06-497e-92dd-8be8c30246a0",
+    "sessionId": "087f3fdb-942f-4832-be86-ffdca74319a2",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T14:24:02.565Z",
+    "expiresAt": "2026-01-08T15:24:02.565Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "9828496e-18d9-40d0-82f8-b945dd2b707d",
+    "sessionId": "c7735891-b975-4e77-987c-e850b16ace3f",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T15:21:14.926Z",
+    "expiresAt": "2026-01-08T16:21:14.926Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "0b88e3e1-6a40-45b3-a5f2-274112be94f4",
+    "sessionId": "e34c005a-ab17-4ba2-846b-9db772205cf2",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T15:23:48.800Z",
+    "expiresAt": "2026-01-08T16:23:48.800Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "ec259da2-94a4-4bc0-af61-78209f6a47fb",
+    "sessionId": "94640dd3-af2f-47cf-a6fb-1c876518fee8",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T15:24:31.623Z",
+    "expiresAt": "2026-01-08T16:24:31.623Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "cd428d42-2b9c-4162-91a9-b9ac6442c67a",
+    "sessionId": "25193337-69d5-4c14-8984-6bfb8617beac",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T15:25:07.130Z",
+    "expiresAt": "2026-01-08T16:25:07.130Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "b275c2fe-921c-42da-ae05-ec4357b6630c",
+    "sessionId": "020b8fc8-27d7-4153-9698-e3da7a8f5a4a",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T15:26:34.737Z",
+    "expiresAt": "2026-01-08T16:26:34.737Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "070d266f-e805-4dac-b8df-99626c14f3a4",
+    "sessionId": "1a22eab9-fc4b-46d6-9310-1e3bbcb92848",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T15:27:26.625Z",
+    "expiresAt": "2026-01-08T16:27:26.625Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "7629c04e-cf5d-4b0a-8e95-425af788a2af",
+    "sessionId": "74025687-a466-4f70-a495-3f7add87c97d",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T15:31:19.822Z",
+    "expiresAt": "2026-01-08T16:31:19.822Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "artifactId": "d8ebacdf-fc18-4401-980e-a676bd807d48",
+    "sessionId": "e8a5a49e-dee3-452e-82c1-13c528373e2e",
+    "protocolName": "test",
+    "artifactType": "findings",
+    "data": {
+      "test": "data"
+    },
+    "createdAt": "2026-01-08T15:45:37.910Z",
+    "expiresAt": "2026-01-08T16:45:37.910Z",
+    "size": 100,
+    "tags": [
+      "test"
+    ]
+  }
+]

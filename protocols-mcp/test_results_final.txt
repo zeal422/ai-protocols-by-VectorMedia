@@ -1,0 +1,32 @@
+﻿
+> @ai-protocols/mcp-server@2.3.2 test
+> vitest run
+
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mC:/CODING/---PROTOCOLS---by-VM/protocols-mcp[39m
+
+ [32mΓ£ô[39m src/search/matcher.test.ts [2m([22m[2m19 tests[22m[2m)[22m[90m 23[2mms[22m[39m
+ [32mΓ£ô[39m src/search/task-analyzer.test.ts [2m([22m[2m35 tests[22m[2m)[22m[90m 26[2mms[22m[39m
+ [32mΓ£ô[39m src/utils/error-handler.test.ts [2m([22m[2m32 tests[22m[2m)[22m[90m 32[2mms[22m[39m
+ [32mΓ£ô[39m src/utils/project-context-detector.test.ts [2m([22m[2m13 tests[22m[2m)[22m[90m 31[2mms[22m[39m
+ [32mΓ£ô[39m src/search/workflow-builder.test.ts [2m([22m[2m30 tests[22m[2m)[22m[90m 30[2mms[22m[39m
+ [31mΓ¥»[39m src/scanner/protocol-scanner.test.ts [2m([22m[2m8 tests[22m[2m | [22m[31m8 failed[39m[2m)[22m[90m 20[2mms[22m[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mbasic functionality[2m > [22mshould create scanner instance[90m 12[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mbasic functionality[2m > [22mshould have scanProtocols method[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mbasic functionality[2m > [22mshould have getProtocol method[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mbasic functionality[2m > [22mshould have getProtocolByTrigger method[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mbasic functionality[2m > [22mshould have clearCache method[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mprotocol scanning[2m > [22mscanProtocols returns promise[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mprotocol scanning[2m > [22mgetProtocol returns promise[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN[39m
+[31m   [31m├ù[31m ProtocolScanner[2m > [22mprotocol scanning[2m > [22mgetProtocolByTrigger returns promise[90m 1[2mms[22m[31m[39m
+[31m     ΓåÆ BRAIN directory not found at: BRAIN[39m
+ [32mΓ£ô[39m src/scanner/metadata-extractor.test.ts [2m([22m[2m26 tests[22m[2m)[22m[90m 33[2mms[22m[39m
+ [32mΓ£ô[39m src/tools/protocol-tools.test.ts [2m([22m[2m17 tests[22m[2m)[22m[90m 17[2mms[22m[39m
+

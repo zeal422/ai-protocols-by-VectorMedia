@@ -1,0 +1,646 @@
+[
+  [
+    "session-1",
+    [
+      {
+        "metricId": "m1",
+        "sessionId": "session-1",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T07:43:49.946Z"
+      }
+    ]
+  ],
+  [
+    "05b5f88d-79e0-440f-988f-755e009c6f5a",
+    [
+      {
+        "metricId": "0b8d4728-2d98-42a4-a057-8006ed7e019e",
+        "sessionId": "05b5f88d-79e0-440f-988f-755e009c6f5a",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T07:47:31.657Z"
+      }
+    ]
+  ],
+  [
+    "95e25728-56ba-4acb-915c-78af560df8fe",
+    [
+      {
+        "metricId": "780e9eaa-83a9-400d-ac4f-3950be4972ba",
+        "sessionId": "95e25728-56ba-4acb-915c-78af560df8fe",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T07:49:35.434Z"
+      }
+    ]
+  ],
+  [
+    "210e16e3-0f81-4787-ba14-fe68d7fc6c34",
+    [
+      {
+        "metricId": "71a3c1ec-7013-4031-a688-cf5dcc30f326",
+        "sessionId": "210e16e3-0f81-4787-ba14-fe68d7fc6c34",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T07:50:39.401Z"
+      }
+    ]
+  ],
+  [
+    "68824f03-a3c9-4dd0-ab58-4249238742f8",
+    [
+      {
+        "metricId": "e72ae328-edd7-4a88-a0bf-380a75aea802",
+        "sessionId": "68824f03-a3c9-4dd0-ab58-4249238742f8",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T07:51:07.963Z"
+      }
+    ]
+  ],
+  [
+    "eba2d91b-f558-4c22-b2ea-70cfccc6ffe8",
+    [
+      {
+        "metricId": "eb053dbe-6cb7-4801-94fe-ebdeb6c25378",
+        "sessionId": "eba2d91b-f558-4c22-b2ea-70cfccc6ffe8",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T07:51:24.759Z"
+      }
+    ]
+  ],
+  [
+    "20c94342-5a74-4d99-8225-4787fd146dbd",
+    [
+      {
+        "metricId": "63718798-fe2e-4ddb-be01-ead806e36ee2",
+        "sessionId": "20c94342-5a74-4d99-8225-4787fd146dbd",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T08:39:44.192Z"
+      }
+    ]
+  ],
+  [
+    "e8be050e-5a74-4056-8d37-c7e42bb1a668",
+    [
+      {
+        "metricId": "2edcff58-e5a4-4b80-a1c7-e160489f1653",
+        "sessionId": "e8be050e-5a74-4056-8d37-c7e42bb1a668",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T08:40:30.495Z"
+      }
+    ]
+  ],
+  [
+    "e2037b8a-d041-4faf-a6ce-5ab6dd75d62f",
+    [
+      {
+        "metricId": "f5218901-2286-4283-bb56-95e57a35d009",
+        "sessionId": "e2037b8a-d041-4faf-a6ce-5ab6dd75d62f",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T08:42:43.231Z"
+      }
+    ]
+  ],
+  [
+    "07c682e6-257d-4553-b0a3-62375a81c18b",
+    [
+      {
+        "metricId": "cc9a73ed-7747-4207-9d70-a830ee6d173e",
+        "sessionId": "07c682e6-257d-4553-b0a3-62375a81c18b",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T08:43:24.437Z"
+      }
+    ]
+  ],
+  [
+    "6fa6e9af-4376-4ba7-9c44-8e62006eb5e6",
+    [
+      {
+        "metricId": "2f60a459-3b97-482f-b363-8c3c846ea687",
+        "sessionId": "6fa6e9af-4376-4ba7-9c44-8e62006eb5e6",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T09:33:00.218Z"
+      }
+    ]
+  ],
+  [
+    "b56b326a-343f-40be-b282-0e83073faf8f",
+    [
+      {
+        "metricId": "64f15531-b55a-4e66-a584-412c086e44ca",
+        "sessionId": "b56b326a-343f-40be-b282-0e83073faf8f",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T09:34:01.706Z"
+      }
+    ]
+  ],
+  [
+    "817b36ac-df49-478d-92ef-7d8d50a9b7a2",
+    [
+      {
+        "metricId": "abbc8bf4-4730-46b1-8d5e-3f10c1282aa5",
+        "sessionId": "817b36ac-df49-478d-92ef-7d8d50a9b7a2",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T09:49:53.598Z"
+      }
+    ]
+  ],
+  [
+    "55804f9b-8b96-4a9a-8fe0-5df6e69fffa3",
+    [
+      {
+        "metricId": "b5df8df3-7b2e-4de6-988a-6f7074a5088e",
+        "sessionId": "55804f9b-8b96-4a9a-8fe0-5df6e69fffa3",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T10:47:44.535Z"
+      }
+    ]
+  ],
+  [
+    "e4da91d6-846f-4059-9e4b-32fa1c3c74f7",
+    [
+      {
+        "metricId": "33687825-3bcf-48be-8912-bd3f484a99c3",
+        "sessionId": "e4da91d6-846f-4059-9e4b-32fa1c3c74f7",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T10:47:52.811Z"
+      }
+    ]
+  ],
+  [
+    "1cbd5214-d433-4dfd-8d7d-7c2974481684",
+    [
+      {
+        "metricId": "2df0885c-a2b1-403c-83f0-db62e92b972e",
+        "sessionId": "1cbd5214-d433-4dfd-8d7d-7c2974481684",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T10:48:51.813Z"
+      }
+    ]
+  ],
+  [
+    "676606be-9ceb-41fe-be72-125cda446773",
+    [
+      {
+        "metricId": "f6bfe493-6189-4aee-9f93-2269c2688145",
+        "sessionId": "676606be-9ceb-41fe-be72-125cda446773",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T10:49:00.380Z"
+      }
+    ]
+  ],
+  [
+    "37a570be-cfc6-4b56-a997-03e486fbdea5",
+    [
+      {
+        "metricId": "adb39a00-6669-4f36-b138-1daf47de2a3b",
+        "sessionId": "37a570be-cfc6-4b56-a997-03e486fbdea5",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T10:49:55.349Z"
+      }
+    ]
+  ],
+  [
+    "05db59ed-fde9-43ce-a525-0776a269d0c9",
+    [
+      {
+        "metricId": "7a484ee5-5b5e-4f4d-af3a-8b751bc5a88b",
+        "sessionId": "05db59ed-fde9-43ce-a525-0776a269d0c9",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T10:50:04.374Z"
+      }
+    ]
+  ],
+  [
+    "cd27192f-4883-4ab8-8768-f2348ef41adb",
+    [
+      {
+        "metricId": "0486ec97-7f71-4ef5-8762-a38bd2dfac0d",
+        "sessionId": "cd27192f-4883-4ab8-8768-f2348ef41adb",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T10:50:40.375Z"
+      }
+    ]
+  ],
+  [
+    "a31ab97f-ed2f-462e-a335-ae52a57207f7",
+    [
+      {
+        "metricId": "0a606384-8a12-4f7d-9ec9-0a9fbbbc532c",
+        "sessionId": "a31ab97f-ed2f-462e-a335-ae52a57207f7",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T12:50:43.714Z"
+      }
+    ]
+  ],
+  [
+    "29a7b6f6-4ea8-4dd4-aae9-15bc06f65234",
+    [
+      {
+        "metricId": "4552f580-8f34-4a7e-af61-068a92c52b43",
+        "sessionId": "29a7b6f6-4ea8-4dd4-aae9-15bc06f65234",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T13:00:51.627Z"
+      }
+    ]
+  ],
+  [
+    "057548e2-7121-4975-8e6c-f09b22ecaca4",
+    [
+      {
+        "metricId": "34c3feb2-3696-4b33-a8e6-971ea8dae07d",
+        "sessionId": "057548e2-7121-4975-8e6c-f09b22ecaca4",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T13:01:23.817Z"
+      }
+    ]
+  ],
+  [
+    "ebc46aa6-6ac1-4a3e-8356-061c149c194e",
+    [
+      {
+        "metricId": "9522c12e-4c04-4d26-8551-14de4df4ee0d",
+        "sessionId": "ebc46aa6-6ac1-4a3e-8356-061c149c194e",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T13:06:55.864Z"
+      }
+    ]
+  ],
+  [
+    "573890c9-fdce-4940-afdb-f3e083561df7",
+    [
+      {
+        "metricId": "079455d1-3409-4829-9e06-da995880406b",
+        "sessionId": "573890c9-fdce-4940-afdb-f3e083561df7",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T13:21:42.703Z"
+      }
+    ]
+  ],
+  [
+    "bf0ed6b5-7431-4da4-8783-d794d1cc95a9",
+    [
+      {
+        "metricId": "5748ab6d-871e-471e-b70b-97dafd56a71a",
+        "sessionId": "bf0ed6b5-7431-4da4-8783-d794d1cc95a9",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T13:33:55.218Z"
+      }
+    ]
+  ],
+  [
+    "3421a65a-64dc-437d-b264-82abd95386d3",
+    [
+      {
+        "metricId": "8bab1576-96c0-4c5c-9791-afac427a383a",
+        "sessionId": "3421a65a-64dc-437d-b264-82abd95386d3",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T13:39:45.848Z"
+      }
+    ]
+  ],
+  [
+    "0a9ce957-371b-42a2-b1ab-c249c6f8cb93",
+    [
+      {
+        "metricId": "2d40cb70-0dca-41ac-96f1-ef2706b77954",
+        "sessionId": "0a9ce957-371b-42a2-b1ab-c249c6f8cb93",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T13:40:00.731Z"
+      }
+    ]
+  ],
+  [
+    "ebc8ef16-62a5-42e1-8080-cdfc459e8a10",
+    [
+      {
+        "metricId": "89601764-7fde-4023-8fa2-c595272c3bed",
+        "sessionId": "ebc8ef16-62a5-42e1-8080-cdfc459e8a10",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T13:40:56.661Z"
+      }
+    ]
+  ],
+  [
+    "61540f6c-61fb-49c6-8e4a-81784da2a081",
+    [
+      {
+        "metricId": "a42809b5-5d99-4211-b311-de701bfd1bab",
+        "sessionId": "61540f6c-61fb-49c6-8e4a-81784da2a081",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T13:41:44.071Z"
+      }
+    ]
+  ],
+  [
+    "48a09c22-8927-4415-853e-2db6cb749fca",
+    [
+      {
+        "metricId": "a4768cec-4297-4ea0-a51c-626f3c1a6ac9",
+        "sessionId": "48a09c22-8927-4415-853e-2db6cb749fca",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T13:42:03.530Z"
+      }
+    ]
+  ],
+  [
+    "21a6fb2d-f8a8-46f0-9cc6-9c5765b20fb3",
+    [
+      {
+        "metricId": "62ebd098-59fe-4baa-9b38-d1c39b10f0cb",
+        "sessionId": "21a6fb2d-f8a8-46f0-9cc6-9c5765b20fb3",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T13:58:06.331Z"
+      }
+    ]
+  ],
+  [
+    "09d3b377-6d61-4d74-b90c-f69dde5cbeff",
+    [
+      {
+        "metricId": "e1039e12-0c09-4a68-8e90-007506e4b613",
+        "sessionId": "09d3b377-6d61-4d74-b90c-f69dde5cbeff",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T13:58:32.216Z"
+      }
+    ]
+  ],
+  [
+    "2b12f47b-21d3-4492-b1d7-e59b4638c0ad",
+    [
+      {
+        "metricId": "ec45b2d9-7156-4ea9-b5c1-510cc6899bbe",
+        "sessionId": "2b12f47b-21d3-4492-b1d7-e59b4638c0ad",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T14:02:11.050Z"
+      }
+    ]
+  ],
+  [
+    "5dd7ffb8-bff0-4bc6-ae1a-886148592bff",
+    [
+      {
+        "metricId": "3c94b40a-a66c-4940-8161-3b050b710068",
+        "sessionId": "5dd7ffb8-bff0-4bc6-ae1a-886148592bff",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T14:14:10.053Z"
+      }
+    ]
+  ],
+  [
+    "3d870d24-6ab6-4edf-992b-0a03b39b1b40",
+    [
+      {
+        "metricId": "263abd20-18a9-4063-acdc-cbbbab01e284",
+        "sessionId": "3d870d24-6ab6-4edf-992b-0a03b39b1b40",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T14:14:23.143Z"
+      }
+    ]
+  ],
+  [
+    "e483582f-9e35-460c-aadd-363a2688958b",
+    [
+      {
+        "metricId": "fc6639a4-6a2b-4e18-a6bf-49061eb3b07b",
+        "sessionId": "e483582f-9e35-460c-aadd-363a2688958b",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T14:17:14.624Z"
+      }
+    ]
+  ],
+  [
+    "ba519e23-d876-4792-bc19-05ecfdce515a",
+    [
+      {
+        "metricId": "6663d960-321c-4961-bed8-ae0fd3ec093a",
+        "sessionId": "ba519e23-d876-4792-bc19-05ecfdce515a",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T14:24:02.609Z"
+      }
+    ]
+  ],
+  [
+    "12a36ad3-b827-4e62-bcc3-3caf5b5cb054",
+    [
+      {
+        "metricId": "e4674798-306f-4dbc-a8ad-8366404d5a8f",
+        "sessionId": "12a36ad3-b827-4e62-bcc3-3caf5b5cb054",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T15:21:14.976Z"
+      }
+    ]
+  ],
+  [
+    "8623cfbb-c2de-4ace-b604-6d1cab338fa6",
+    [
+      {
+        "metricId": "737d324d-67cd-4064-a39c-dac551050c31",
+        "sessionId": "8623cfbb-c2de-4ace-b604-6d1cab338fa6",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T15:23:48.833Z"
+      }
+    ]
+  ],
+  [
+    "bd94df4d-2d3d-4b76-9ae5-08b9efdb9a9a",
+    [
+      {
+        "metricId": "ff847377-4b3b-43b1-bff4-f73cca266bfd",
+        "sessionId": "bd94df4d-2d3d-4b76-9ae5-08b9efdb9a9a",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T15:24:31.694Z"
+      }
+    ]
+  ],
+  [
+    "8288b20b-182c-4368-90e6-fa4dfacbeb48",
+    [
+      {
+        "metricId": "a455c3ab-d095-484b-9535-3e3c85ff8864",
+        "sessionId": "8288b20b-182c-4368-90e6-fa4dfacbeb48",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T15:25:07.198Z"
+      }
+    ]
+  ],
+  [
+    "df848da4-950b-43bd-8622-371d7f426b87",
+    [
+      {
+        "metricId": "534881c6-bedf-40f6-9fa9-e7656ae73c6b",
+        "sessionId": "df848da4-950b-43bd-8622-371d7f426b87",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T15:26:34.772Z"
+      }
+    ]
+  ],
+  [
+    "f80622ef-e202-4fa7-805d-25932c43984f",
+    [
+      {
+        "metricId": "11762e8c-e825-4b4f-b9aa-82c706fcd951",
+        "sessionId": "f80622ef-e202-4fa7-805d-25932c43984f",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T15:27:26.649Z"
+      }
+    ]
+  ],
+  [
+    "a22a5cc8-2f11-45a6-9814-95b9ae3ff2ee",
+    [
+      {
+        "metricId": "6d5b7acd-5437-4706-9f76-eb6056cc9a7c",
+        "sessionId": "a22a5cc8-2f11-45a6-9814-95b9ae3ff2ee",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T15:31:19.861Z"
+      }
+    ]
+  ],
+  [
+    "8b329e57-e8fe-4ac8-8591-1aa5f1a336b0",
+    [
+      {
+        "metricId": "57e1ed98-3696-4375-b2be-cfcc50fe37d6",
+        "sessionId": "8b329e57-e8fe-4ac8-8591-1aa5f1a336b0",
+        "protocolName": "test",
+        "metricType": "execution_time",
+        "value": 100,
+        "unit": "ms",
+        "timestamp": "2026-01-08T15:45:37.981Z"
+      }
+    ]
+  ]
+]

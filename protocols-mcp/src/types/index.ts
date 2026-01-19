@@ -1,3 +1,6 @@
+// Re-export extended metadata types
+export { ExtendedProtocolMetadata, ProtocolFrontmatter, DifficultyEnum, CategoryEnum, validateFrontmatter, hasFrontmatter } from './protocol-frontmatter.js';
+
 export interface ProtocolMetadata {
   fileName: string;
   name: string;
@@ -7,9 +10,6 @@ export interface ProtocolMetadata {
   purpose: string;
   filePath: string;
 }
-
-// Re-export extended metadata types
-export { ExtendedProtocolMetadata, ProtocolFrontmatter, DifficultyEnum, CategoryEnum, validateFrontmatter, hasFrontmatter } from './protocol-frontmatter.js';
 
 export interface IDEConfig {
   name: string;
@@ -31,12 +31,15 @@ export interface ValidationResult {
   score: number;
 }
 
-/**
- * Unified validation message interface for both errors and warnings
- */
 export interface ValidationMessage {
   file: string;
   line?: number;
   message: string;
   severity: 'error' | 'warning';
 }
+
+// Export new Phase 1 types
+export * from './project-context.js';
+export * from './execution.js';
+export * from './database.js';
+export { ProtocolError as ProtocolErrorType, SessionNotFoundError, ArtifactNotFoundError, DatabaseError, ValidationErrorExt } from './errors.js';

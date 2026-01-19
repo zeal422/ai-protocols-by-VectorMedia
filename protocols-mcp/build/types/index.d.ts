@@ -1,3 +1,4 @@
+export { ExtendedProtocolMetadata, ProtocolFrontmatter, DifficultyEnum, CategoryEnum, validateFrontmatter, hasFrontmatter } from './protocol-frontmatter.js';
 export interface ProtocolMetadata {
     fileName: string;
     name: string;
@@ -7,7 +8,6 @@ export interface ProtocolMetadata {
     purpose: string;
     filePath: string;
 }
-export { ExtendedProtocolMetadata, ProtocolFrontmatter, DifficultyEnum, CategoryEnum, validateFrontmatter, hasFrontmatter } from './protocol-frontmatter.js';
 export interface IDEConfig {
     name: string;
     files: string[];
@@ -25,13 +25,14 @@ export interface ValidationResult {
     issues: ValidationMessage[];
     score: number;
 }
-/**
- * Unified validation message interface for both errors and warnings
- */
 export interface ValidationMessage {
     file: string;
     line?: number;
     message: string;
     severity: 'error' | 'warning';
 }
+export * from './project-context.js';
+export * from './execution.js';
+export * from './database.js';
+export { ProtocolError as ProtocolErrorType, SessionNotFoundError, ArtifactNotFoundError, DatabaseError, ValidationErrorExt } from './errors.js';
 //# sourceMappingURL=index.d.ts.map

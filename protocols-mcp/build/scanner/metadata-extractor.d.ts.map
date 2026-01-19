@@ -1,1 +1,1 @@
-{"version":3,"file":"metadata-extractor.d.ts","sourceRoot":"","sources":["../../src/scanner/metadata-extractor.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,wBAAwB,EAAuC,MAAM,kCAAkC,CAAC;AAGjH;;;GAGG;AACH,wBAAgB,eAAe,CAAC,QAAQ,EAAE,MAAM,EAAE,OAAO,EAAE,MAAM,GAAG,wBAAwB,CAoD3F"}
+{"version":3,"file":"metadata-extractor.d.ts","sourceRoot":"","sources":["../../src/scanner/metadata-extractor.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,wBAAwB,EAAwC,MAAM,kCAAkC,CAAC;AAGlH;;;GAGG;AACH,wBAAgB,eAAe,CAAC,QAAQ,EAAE,MAAM,EAAE,OAAO,EAAE,MAAM,GAAG,wBAAwB,CA0D3F"}

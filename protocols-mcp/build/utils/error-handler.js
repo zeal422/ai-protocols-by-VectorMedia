@@ -20,7 +20,7 @@ export function handleError(error, context) {
 export function createErrorResponse(error) {
     return {
         content: [{
-                type: "text",
+                type: 'text',
                 text: `Error [${error.code}]: ${error.message}`
             }],
         isError: true

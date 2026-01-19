@@ -1,21 +1,25 @@
 #!/usr/bin/env node
-// @ts-ignore - MCP SDK types may not be fully compatible
-import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-// @ts-ignore - MCP SDK types may not be fully compatible
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-// @ts-ignore - MCP SDK types may not be fully compatible
-import { InitializeRequestSchema } from "@modelcontextprotocol/sdk/types.js";
-import { ProtocolScanner } from "./scanner/protocol-scanner.js";
-import { ContentIndexer } from "./search/indexer.js";
-import { SearchMatcher } from "./search/matcher.js";
-import { registerProtocolTools } from "./tools/protocol-tools.js";
-import { resolveProtocolsRoot } from "./utils/path-resolver.js";
-import { detectProjectContext, describeContext } from "./utils/project-context-detector.js";
+import { Server } from '@modelcontextprotocol/sdk/server/index.js';
+import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
+import { InitializeRequestSchema } from '@modelcontextprotocol/sdk/types.js';
+import { ProtocolScanner } from './scanner/protocol-scanner.js';
+import { ContentIndexer } from './search/indexer.js';
+import { SearchMatcher } from './search/matcher.js';
+import { registerProtocolTools } from './tools/protocol-tools.js';
+import { resolveProtocolsRoot } from './utils/path-resolver.js';
+import { detectProjectContext, describeContext } from './utils/project-context-detector.js';
+import { DependencyResolver } from './intelligence/dependency-resolver.js';
+import { IntentRefinement } from './intelligence/intent-refinement.js';
+import { MetricsCollector } from './intelligence/metrics-collector.js';
+import { WorkflowEngine } from './adaptation/workflow-engine.js';
+import { ErrorRecoverySystem } from './adaptation/error-recovery.js';
+import { RiskAssessmentEngine } from './adaptation/risk-assessment.js';
+import { FileStorage } from './storage/database.js';
 import * as fs from 'fs/promises';
 import path from 'path';
 const SERVER_INFO = {
-    name: "ai-protocols",
-    version: "2.3.2"
+    name: 'ai-protocols',
+    version: '2.3.2'
 };
 const SERVER_CAPABILITIES = {
     tools: {},
@@ -71,20 +75,35 @@ async function main() {
         }
         indexer.buildIndex(protocols, contentMap);
         console.error(`Indexed ${protocols.length} protocols`);
+        // Initialize Phase 2 services
+        console.error('Initializing Phase 2 intelligence services...');
+        const dependencyResolver = new DependencyResolver(protocols);
+        const intentRefinement = new IntentRefinement();
+        const storage = new FileStorage();
+        await storage.connect();
+        const metricsCollector = new MetricsCollector(storage);
+        await metricsCollector.initialize();
+        console.error('Phase 2 services initialized');
+        // Initialize Phase 3 adaptation services
+        console.error('Initializing Phase 3 adaptation services...');
+        const workflowEngine = new WorkflowEngine(protocols);
+        const errorRecoverySystem = new ErrorRecoverySystem(protocols);
+        const riskAssessmentEngine = new RiskAssessmentEngine();
+        console.error('Phase 3 adaptation services initialized');
         // Handle initialization
         server.setRequestHandler(InitializeRequestSchema, async () => {
             return {
-                protocolVersion: "2024-11-05",
+                protocolVersion: '2024-11-05',
                 capabilities: SERVER_CAPABILITIES,
                 serverInfo: SERVER_INFO
             };
         });
-        // Register tools
-        registerProtocolTools(server, scanner, indexer, matcher, protocolsRoot, projectContext);
+        // Register tools with Phase 2 services
+        registerProtocolTools(server, scanner, indexer, matcher, protocolsRoot, undefined, dependencyResolver, intentRefinement, metricsCollector, workflowEngine, errorRecoverySystem, riskAssessmentEngine);
         // Start server
         const transport = new StdioServerTransport();
         await server.connect(transport);
-        console.error("AI Protocols MCP server v2.0 running on stdio");
+        console.error('AI Protocols MCP server v2.0 running on stdio');
     }
     catch (error) {
         console.error('Failed to start server:', error);
@@ -93,7 +112,7 @@ async function main() {
 }
 // Handle uncaught rejections from main()
 main().catch(err => {
-    console.error("Uncaught error in main:", err && err.stack ? err.stack : err);
+    console.error('Uncaught error in main:', err && err.stack ? err.stack : err);
     process.exit(1);
 });
 //# sourceMappingURL=index.js.map

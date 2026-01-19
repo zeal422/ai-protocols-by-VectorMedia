@@ -8,12 +8,15 @@ import { ProjectContext } from '../utils/project-context-detector.js';
  * Workflow step definition
  */
 export interface WorkflowStep {
+  stepId?: string;
   order: number;
   protocolName: string;
   trigger: string;
+  action?: string;
   reason: string;
   optional: boolean;
   prerequisite?: string;
+  estimatedEffort?: string;
 }
 
 /**
@@ -204,7 +207,7 @@ function getPrerequisiteForStep(protocolName: string): string | undefined {
 /**
  * Re-prioritize workflow steps based on project context
  */
-function prioritizeByContext(steps: WorkflowStep[], context: ProjectContext): WorkflowStep[] {
+function prioritizeByContext(steps: WorkflowStep[], _context: ProjectContext): WorkflowStep[] {
   // For now, just return as-is
   // In future, could reorder based on context-specific priorities
   return steps;

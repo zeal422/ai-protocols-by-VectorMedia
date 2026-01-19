@@ -2,7 +2,7 @@ export class ProtocolError extends Error {
   constructor(
     message: string,
     public code: string,
-    public details?: any
+    public details?: Record<string, unknown>
   ) {
     super(message);
     this.name = 'ProtocolError';
@@ -29,10 +29,10 @@ export function handleError(error: unknown, context: string): ProtocolError {
   );
 }
 
-export function createErrorResponse(error: ProtocolError) {
+export function createErrorResponse(error: ProtocolError): { content: Array<{ type: string; text: string }>; isError: boolean } {
   return {
     content: [{
-      type: "text",
+      type: 'text',
       text: `Error [${error.code}]: ${error.message}`
     }],
     isError: true

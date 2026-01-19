@@ -58,7 +58,7 @@ export class SearchMatcher {
   fuzzyMatch(index: SearchIndex, name: string): Array<{ protocol: string; similarity: number }> {
     const results: Array<{ protocol: string; similarity: number }> = [];
 
-    for (const [protocolName, searchable] of index.protocols) {
+    for (const [protocolName] of index.protocols) {
       const similarity = this.levenshteinSimilarity(
         name.toLowerCase(),
         protocolName.toLowerCase()
@@ -86,7 +86,6 @@ export class SearchMatcher {
       let contextBonus = 0;
       let languageMatched = false;
       let frameworkMatched = false;
-      let platformMatched = false;
       
       // Simple context matching based on protocol name patterns
       const lowerName = result.protocol.toLowerCase();
@@ -109,12 +108,10 @@ export class SearchMatcher {
       if (context.projectType === 'frontend') {
         if (lowerName.includes('frontend') || lowerName.includes('react') || lowerName.includes('accessibility') || lowerName.includes('aria')) {
           contextBonus += 3;
-          platformMatched = true;
         }
       } else if (context.projectType === 'backend') {
         if (lowerName.includes('backend') || lowerName.includes('api') || lowerName.includes('database') || lowerName.includes('performance')) {
           contextBonus += 3;
-          platformMatched = true;
         }
       }
 
@@ -150,7 +147,7 @@ export class SearchMatcher {
       }
 
       // Trigger match
-      if (searchable.metadata.triggers.some(t => t.toLowerCase().includes(token))) {
+      if (searchable.metadata.triggers.some((t: string) => t.toLowerCase().includes(token))) {
         score += 8;
       }
 

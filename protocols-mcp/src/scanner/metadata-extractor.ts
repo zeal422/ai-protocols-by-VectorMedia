@@ -1,5 +1,4 @@
-import { ProtocolMetadata } from '../types/index.js';
-import { ExtendedProtocolMetadata, validateFrontmatter, hasFrontmatter } from '../types/protocol-frontmatter.js';
+import { ExtendedProtocolMetadata, hasFrontmatter, Category, Difficulty } from '../types/protocol-frontmatter.js';
 import * as yaml from 'js-yaml';
 
 /**
@@ -11,15 +10,18 @@ export function extractMetadata(fileName: string, content: string): ExtendedProt
   const name = fileName.replace(/\.md$/, '');
   
   // Try to extract YAML front-matter first
-  let frontmatterData: any = null;
+  let frontmatterData: Record<string, unknown> | null = null;
   let hasFrontmatterBlock = false;
   // Support both Unix (LF) and Windows (CRLF) line endings
   const frontmatterMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   
   if (frontmatterMatch) {
     try {
-      frontmatterData = yaml.load(frontmatterMatch[1]);
-      hasFrontmatterBlock = hasFrontmatter(frontmatterData);
+      const loaded = yaml.load(frontmatterMatch[1]);
+      if (loaded !== null && typeof loaded === 'object') {
+        frontmatterData = loaded as Record<string, unknown>;
+        hasFrontmatterBlock = hasFrontmatter(frontmatterData);
+      }
     } catch (error) {
       // Invalid YAML, fall back to inferred
       console.warn(`Warning: Invalid YAML front-matter in ${fileName}:`, error);
@@ -31,31 +33,34 @@ export function extractMetadata(fileName: string, content: string): ExtendedProt
   const title = titleMatch ? titleMatch[1] : name;
 
   // Extract triggers - use frontmatter or infer
-  const triggers = frontmatterData?.triggers || extractTriggers(content);
+  const triggers: string[] = (Array.isArray(frontmatterData?.triggers) ? (frontmatterData.triggers as string[]) : extractTriggers(content));
 
   // Extract category - use frontmatter or infer
-  const category = frontmatterData?.category || inferCategory(name, content);
+  const inferredCategory = inferCategory(name, content);
+  const category: Category = (typeof frontmatterData?.category === 'string' ? frontmatterData.category : inferredCategory) as Category;
 
   // Extract purpose/description (first paragraph after title)
   const purpose = extractPurpose(content);
 
+  const difficulty: Difficulty = (frontmatterData?.difficulty === 'beginner' || frontmatterData?.difficulty === 'intermediate' || frontmatterData?.difficulty === 'advanced' ? frontmatterData.difficulty : 'intermediate');
+  
   return {
-    id: frontmatterData?.id || name,
+    id: (typeof frontmatterData?.id === 'string' ? frontmatterData.id : name),
     fileName,
     name,
     title,
     triggers,
     category,
-    tags: frontmatterData?.tags || extractTags(name, title),
-    difficulty: frontmatterData?.difficulty || 'intermediate',
-    timeEstimate: frontmatterData?.timeEstimate,
+    tags: (Array.isArray(frontmatterData?.tags) ? (frontmatterData.tags as string[]) : extractTags(name, title)),
+    difficulty,
+    timeEstimate: (typeof frontmatterData?.timeEstimate === 'string' ? frontmatterData.timeEstimate : undefined),
     purpose,
     filePath: 'BRAIN/',
-    version: frontmatterData?.version || '1.0.0',
-    prerequisites: frontmatterData?.prerequisites || [],
-    worksWellWith: frontmatterData?.worksWellWith || [],
-    platformTags: frontmatterData?.platformTags || inferPlatformTags(name),
-    stackSpecific: frontmatterData?.stackSpecific || inferStackSpecific(name),
+    version: (typeof frontmatterData?.version === 'string' ? frontmatterData.version : '1.0.0'),
+    prerequisites: (Array.isArray(frontmatterData?.prerequisites) ? (frontmatterData.prerequisites as string[]) : []),
+    worksWellWith: (Array.isArray(frontmatterData?.worksWellWith) ? (frontmatterData.worksWellWith as string[]) : []),
+    platformTags: (Array.isArray(frontmatterData?.platformTags) ? (frontmatterData.platformTags as string[]) : inferPlatformTags(name)),
+    stackSpecific: (typeof frontmatterData?.stackSpecific === 'object' && frontmatterData.stackSpecific !== null ? (frontmatterData.stackSpecific as Record<string, boolean>) : inferStackSpecific(name)),
     hasFrontmatter: hasFrontmatterBlock
   };
 }
@@ -111,7 +116,7 @@ function extractTriggers(content: string): string[] {
   return [...new Set(triggers)];
 }
 
-function inferCategory(name: string, content: string): string {
+function inferCategory(name: string, _content: string): string {
   const categoryMap: Record<string, string> = {
     'code_review': 'Quality',
     'debug': 'Debugging',
@@ -145,7 +150,7 @@ function inferCategory(name: string, content: string): string {
 function extractPurpose(content: string): string {
   // Get first paragraph after title
   const lines = content.split('\n');
-  let purposeLines: string[] = [];
+  const purposeLines: string[] = [];
   let foundTitle = false;
 
   for (const line of lines) {

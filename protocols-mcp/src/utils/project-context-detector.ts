@@ -111,7 +111,7 @@ export async function detectProjectContext(rootPath: string): Promise<ProjectCon
         context.dependencies = Object.keys(pkg.dependencies || {});
         context.devDependencies = Object.keys(pkg.devDependencies || {});
         context.detected = true;
-      } catch (error) {
+      } catch {
         // Ignore parse errors
       }
     }

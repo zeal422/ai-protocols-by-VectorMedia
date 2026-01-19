@@ -1,13 +1,13 @@
 import * as fs from 'fs/promises';
 import fssync from 'fs';
 import path from 'path';
-import { ProtocolMetadata } from '../types/index.js';
+import { ExtendedProtocolMetadata } from '../types/index.js';
 import { extractMetadata } from './metadata-extractor.js';
 import { handleError } from '../utils/error-handler.js';
 
 export class ProtocolScanner {
   private brainPath: string;
-  private cache: ProtocolMetadata[] | null = null;
+  private cache: ExtendedProtocolMetadata[] | null = null;
 
   constructor(protocolsRootPath: string) {
     this.brainPath = path.join(protocolsRootPath, 'BRAIN');
@@ -37,12 +37,12 @@ export class ProtocolScanner {
    * Scan BRAIN/ directory and extract all protocol metadata
    * Implements caching for performance
    */
-  async scanProtocols(): Promise<ProtocolMetadata[]> {
+  async scanProtocols(): Promise<ExtendedProtocolMetadata[]> {
     if (this.cache) return this.cache;
 
     try {
       const files = await fs.readdir(this.brainPath);
-      const protocols: ProtocolMetadata[] = [];
+      const protocols: ExtendedProtocolMetadata[] = [];
 
       for (const file of files) {
         if (!file.endsWith('.md')) continue;
@@ -64,7 +64,7 @@ export class ProtocolScanner {
   /**
    * Get protocol by exact name
    */
-  async getProtocol(name: string): Promise<ProtocolMetadata | null> {
+  async getProtocol(name: string): Promise<ExtendedProtocolMetadata | null> {
     const protocols = await this.scanProtocols();
     const normalizedName = name.replace(/\.md$/, ''); // Only remove trailing .md
     return protocols.find(p => 
@@ -78,7 +78,7 @@ export class ProtocolScanner {
   /**
    * Find protocol by trigger command
    */
-  async getProtocolByTrigger(trigger: string): Promise<ProtocolMetadata | null> {
+  async getProtocolByTrigger(trigger: string): Promise<ExtendedProtocolMetadata | null> {
     const protocols = await this.scanProtocols();
     const normalizedTrigger = trigger.toUpperCase();
     return protocols.find(p => 

@@ -1,47 +1,59 @@
-```mermaid
-graph TB
-    Start([Developer Task]) --> Router["🎯 route_task Tool<br/>(NEW v2.3.5)<br/>Intelligent Routing"]
-    Router --> Decision{Task Type?}
-    
-    Decision -->|Bug/Error| Debug[🐛 DEEPDIVE<br/>Debug Protocol]
-    Decision -->|Code Review| Review[👁️ COMPREHENSIVE<br/>Review Protocol]
-    Decision -->|New Feature| Design[🎨 ULTRATHINK<br/>Frontend Protocol]
-    Decision -->|Testing| Test[🧪 FULLSPEC<br/>Test Protocol]
-    Decision -->|Security| Sec[🔐 SECAUDIT<br/>Security Protocol]
-    Decision -->|Performance| Perf[⚡ PERFAUDIT<br/>Performance Protocol]
-    Decision -->|Refactoring| Refactor[🔄 REFACTOR<br/>Refactor Protocol]
-    
-    Debug --> Workflows["📋 7 Guided Workflows<br/>(NEW v2.3.5)<br/>Refactor • Debug • Security<br/>Code Review • Feature<br/>Performance • Accessibility"]
-    Review --> Workflows
-    Design --> Workflows
-    Test --> Workflows
-    Sec --> Workflows
-    Perf --> Workflows
-    Refactor --> Workflows
-    
-    Workflows --> Context["🔍 Context Detection<br/>(NEW v2.3.5)<br/>React • Node • Python<br/>Go • Rust • Java<br/>Docker • CI/CD"]
-    
-    Context --> Result[✅ Solution<br/>with Personalized<br/>Recommendations]
-    
-    style Router fill:#06b6d4,color:#fff,stroke:#0891b2,stroke-width:3px
-    style Workflows fill:#8b5cf6,color:#fff,stroke:#7c3aed,stroke-width:3px
-    style Context fill:#10b981,color:#fff,stroke:#059669,stroke-width:3px
-    style Result fill:#10b981,color:#fff,stroke:#059669,stroke-width:3px
-    style Debug fill:#ef4444,color:#fff
-    style Review fill:#8b5cf6,color:#fff
-    style Design fill:#ec4899,color:#fff
-    style Test fill:#f59e0b,color:#fff
-    style Sec fill:#dc2626,color:#fff
-    style Perf fill:#06b6d4,color:#fff
-    style Refactor fill:#f97316,color:#fff
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    AI-PROTOCOLS v2.3.5                      │
+│              Standardized Development Protocols             │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────────┐     ┌─────────────────┐     ┌───────────────┐
+│   DEVELOPER  │────▶│  MCP SERVER     │────▶│   PROTOCOLS  │
+│              │     │  (23 Tools)     │     │   (19 Files)  │
+│              │     │  (8 Modules)    │     │ (7 Workflows) |
+└──────────────┘     └─────────────────┘     └───────────────┘
+                              │
+         ┌────────────────────┼────────────────────┐
+         │                    │                    │
+         ▼                    ▼                    ▼
+   ┌───────────┐      ┌──────────────┐      ┌─────────────┐
+   │  Core     │      │ Intelligence │      │  Resilience │
+   │ (6)       │      │ (3)          │      │ (3)         │
+   └───────────┘      └──────────────┘      └─────────────┘
+
+PROTOCOL CATEGORIES:
+┌────────────────────────────────────────────────────────────┐
+│ 🎯 Core        │ MASTER_PROTOCOL, MDAP, FULLINDEX          │
+│ 🐛 Debug       │ DEEPDIVE, AUTODEBUG                       │
+│ 👁️ Quality     │ COMPREHENSIVE, SAFEREFACTOR               │
+│ 🧪 Testing     │ FULLSPEC                                  │
+│ 🎨 Frontend    │ ULTRATHINK, ANTI-GENERIC                  │
+│ 🔐 Security    │ SECAUDIT, A11YCHECK, FULLARIA             │
+│ ⚡ Operations  │ PERFAUDIT, APIDESIGN, GITFLOW             │
+│ 📋 Review      │ BIGPAPPA, BESTPRACTICES                   │
+└────────────────────────────────────────────────────────────┘
+
+CONTEXT DETECTION:
+React · Node.js · Python · Go · Rust · Java · Docker · CI/CD
+
+MCP SERVER MODULES:
+┌────────────────────────────────────────────────────────────┐
+│ scanner/      │ ProtocolScanner, MetadataExtractor         │
+│ search/       │ ContentIndexer, SearchMatcher, TaskAnalyzer│
+│ tools/        │ 23 MCP Tools                               │
+│ adaptation/   │ Risk Assessment, Error Recovery, Workflow  │
+│ resilience/   │ Checkpoints, Multi-Agent, Parallel Engine  │
+│ intelligence/ │ Intent Refinement, Metrics, Dependencies   │
+│ execution/    │ Context, State, Result Management          │
+│ storage/      │ Database (SQLite)                          │
+└────────────────────────────────────────────────────────────┘
 ```
 
 # ai-protocols
-by me, VectorMedia
+by VectorMedia
 
 [![Version](https://img.shields.io/badge/version-2.3.5-blue.svg)](docs/CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Protocols](https://img.shields.io/badge/protocols-19-purple.svg)](#-protocol-files)
+[![MCP Tools](https://img.shields.io/badge/tools-23-orange.svg)](#-mcp-tools)
+[![Workflows](https://img.shields.io/badge/workflows-7-blue.svg)](#-workflows)
 [![AI Ready](https://img.shields.io/badge/AI-ready-orange.svg)](#-quick-start)
 [![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](#-documentation)
 [![WCAG](https://img.shields.io/badge/WCAG-2.2%20AA-green.svg)](BRAIN/accessibility_protocol.md)
@@ -247,6 +259,57 @@ The master protocol automatically routes to specialized protocols based on your 
 | [BRAIN/best_practices_protocol.md](BRAIN/best_practices_protocol.md) | Universal health check and stack detection | `BESTPRACTICES` |
 | [BRAIN/OPTIMIZED_LINT_SETUP.md](BRAIN/OPTIMIZED_LINT_SETUP.md) | Linting setup for modern stacks | — |
 
+## 🔧 MCP Tools (23 Total)
+
+The MCP server exposes 23 tools organized into 6 categories:
+
+### Core Tools (6)
+| Tool | Purpose |
+|------|---------|
+| `get_protocol` | Fetch protocol by exact name |
+| `list_protocols` | List all protocols with metadata |
+| `get_protocol_by_trigger` | Find by trigger (DEEPDIVE, etc.) |
+| `search_protocols` | Full-text search across protocols |
+| `fuzzy_match_protocol` | Typo-tolerant protocol lookup |
+| `route_task` | Intelligent task routing |
+
+### Dependencies & Intent (2)
+| Tool | Purpose |
+|------|---------|
+| `resolve_protocol_prerequisites` | Get dependency chains |
+| `refine_user_intent` | Detect ambiguities in requests |
+
+### Adaptation & Analytics (4)
+| Tool | Purpose |
+|------|---------|
+| `track_execution_metric` | Record execution metrics |
+| `get_workflow_optimization_suggestions` | Suggest improvements |
+| `get_protocol_effectiveness` | View success rates |
+| `build_adaptive_workflow` | Create adaptive workflows |
+
+### Risk & Error Handling (4)
+| Tool | Purpose |
+|------|---------|
+| `assess_modification_risk` | Evaluate code change risk |
+| `classify_error` | Categorize errors |
+| `attempt_error_recovery` | Recover from failures |
+| `get_execution_alerts` | View risk alerts |
+
+### Resilience & Checkpoints (3)
+| Tool | Purpose |
+|------|---------|
+| `create_execution_checkpoint` | Save execution state |
+| `resume_from_checkpoint` | Resume from saved state |
+| `list_checkpoints` | View all checkpoints |
+
+### Multi-Agent Orchestration (3)
+| Tool | Purpose |
+|------|---------|
+| `register_agent` | Register agent for coordination |
+| `assign_protocol_to_agent` | Assign protocol to agent |
+| `start_parallel_protocol_execution` | Run protocols in parallel |
+| `aggregate_parallel_results` | Merge parallel results |
+
 ## 🛡️ Core Principles
 
 - **Zero Hallucination** - Read actual code, verify library versions, follow existing patterns
@@ -337,6 +400,54 @@ User → MASTER_PROTOCOL → BRAIN/code_review_protocol.md (Four Pillars)
                        → BRAIN/test_automation_protocol.md (verify coverage)
 ```
 
+### MCP Tools Flow Examples
+
+**Example 1: Quick Protocol Lookup**
+```
+route_task("Fix the login bug")
+  └─> get_protocol("debug_protocol")
+  └─> get_protocol("error_fix_protocol")
+```
+
+**Example 2: Full Workflow with Risk Assessment**
+```
+route_task("Refactor auth module")
+  └─> get_protocol("refactor_protocol")
+  └─> assess_modification_risk(scope: "module")
+  └─> build_adaptive_workflow(previousResults: [...])
+  └─> create_checkpoint(sessionId: "session-123")
+```
+
+**Example 3: Multi-Agent Parallel Execution**
+```
+route_task("Security audit + Performance review")
+  └─> get_protocol("security_audit_protocol")
+  └─> get_protocol("performance_protocol")
+  └─> register_agent(name: "security-agent", role: "specialist")
+  └─> register_agent(name: "perf-agent", role: "specialist")
+  └─> start_parallel_protocol_execution(protocols: [...])
+  └─> aggregate_parallel_results(results: [...])
+```
+
+**Example 4: Error Recovery Flow**
+```
+route_task("Build new feature")
+  └─> get_protocol("FRONTandBACKend-PROTOCOL")
+  └─> classify_error(errorMessage: "Timeout", protocol: "...")
+  └─> attempt_error_recovery(strategyName: "retry_with_backoff")
+  └─> get_execution_alerts(level: "high")
+```
+
+**Example 5: Intelligent Discovery & Refinement**
+```
+User: "I need help with the code"
+  └─> search_protocols(query: "code review patterns")
+  └─> fuzzy_match_protocol(name: "codereview")
+  └─> list_protocols(category: "Quality")
+  └─> refine_user_intent(description: "Help with code")
+  └─> route_task("Review my code quality")
+```
+
 ## 📖 Documentation
 
 - **docs/UNIVERSAL_INTEGRATION.md** - Detailed instructions for ANY AI assistant (Gemini, Cline, RooCode, etc.)
@@ -414,15 +525,10 @@ Built on principles from:
 
 ---
 
-<<<<<<< HEAD
 **Version:** 2.3.5  
-**Last Updated:** 2025-12-29  
-=======
-**Version:** 2.3.2  
-**Last Updated:** 26.12.2025  
->>>>>>> cdb55ad4b45fb034ae0792a61abdf9d3fff85721
+**Last Updated:** 2026-01-14  
 **Status:** Active Development  
-**Maintained by:** Myself currently
+**Maintained by:** VectorMedia
 
 ---
 

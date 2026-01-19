@@ -14,8 +14,11 @@ export function extractMetadata(fileName, content) {
     const frontmatterMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
     if (frontmatterMatch) {
         try {
-            frontmatterData = yaml.load(frontmatterMatch[1]);
-            hasFrontmatterBlock = hasFrontmatter(frontmatterData);
+            const loaded = yaml.load(frontmatterMatch[1]);
+            if (loaded !== null && typeof loaded === 'object') {
+                frontmatterData = loaded;
+                hasFrontmatterBlock = hasFrontmatter(frontmatterData);
+            }
         }
         catch (error) {
             // Invalid YAML, fall back to inferred
@@ -26,28 +29,30 @@ export function extractMetadata(fileName, content) {
     const titleMatch = content.match(/^#\s+(.+)$/m);
     const title = titleMatch ? titleMatch[1] : name;
     // Extract triggers - use frontmatter or infer
-    const triggers = frontmatterData?.triggers || extractTriggers(content);
+    const triggers = (Array.isArray(frontmatterData?.triggers) ? frontmatterData.triggers : extractTriggers(content));
     // Extract category - use frontmatter or infer
-    const category = frontmatterData?.category || inferCategory(name, content);
+    const inferredCategory = inferCategory(name, content);
+    const category = (typeof frontmatterData?.category === 'string' ? frontmatterData.category : inferredCategory);
     // Extract purpose/description (first paragraph after title)
     const purpose = extractPurpose(content);
+    const difficulty = (frontmatterData?.difficulty === 'beginner' || frontmatterData?.difficulty === 'intermediate' || frontmatterData?.difficulty === 'advanced' ? frontmatterData.difficulty : 'intermediate');
     return {
-        id: frontmatterData?.id || name,
+        id: (typeof frontmatterData?.id === 'string' ? frontmatterData.id : name),
         fileName,
         name,
         title,
         triggers,
         category,
-        tags: frontmatterData?.tags || extractTags(name, title),
-        difficulty: frontmatterData?.difficulty || 'intermediate',
-        timeEstimate: frontmatterData?.timeEstimate,
+        tags: (Array.isArray(frontmatterData?.tags) ? frontmatterData.tags : extractTags(name, title)),
+        difficulty,
+        timeEstimate: (typeof frontmatterData?.timeEstimate === 'string' ? frontmatterData.timeEstimate : undefined),
         purpose,
         filePath: 'BRAIN/',
-        version: frontmatterData?.version || '1.0.0',
-        prerequisites: frontmatterData?.prerequisites || [],
-        worksWellWith: frontmatterData?.worksWellWith || [],
-        platformTags: frontmatterData?.platformTags || inferPlatformTags(name),
-        stackSpecific: frontmatterData?.stackSpecific || inferStackSpecific(name),
+        version: (typeof frontmatterData?.version === 'string' ? frontmatterData.version : '1.0.0'),
+        prerequisites: (Array.isArray(frontmatterData?.prerequisites) ? frontmatterData.prerequisites : []),
+        worksWellWith: (Array.isArray(frontmatterData?.worksWellWith) ? frontmatterData.worksWellWith : []),
+        platformTags: (Array.isArray(frontmatterData?.platformTags) ? frontmatterData.platformTags : inferPlatformTags(name)),
+        stackSpecific: (typeof frontmatterData?.stackSpecific === 'object' && frontmatterData.stackSpecific !== null ? frontmatterData.stackSpecific : inferStackSpecific(name)),
         hasFrontmatter: hasFrontmatterBlock
     };
 }
@@ -94,7 +99,7 @@ function extractTriggers(content) {
     }
     return [...new Set(triggers)];
 }
-function inferCategory(name, content) {
+function inferCategory(name, _content) {
     const categoryMap = {
         'code_review': 'Quality',
         'debug': 'Debugging',
@@ -125,7 +130,7 @@ function inferCategory(name, content) {
 function extractPurpose(content) {
     // Get first paragraph after title
     const lines = content.split('\n');
-    let purposeLines = [];
+    const purposeLines = [];
     let foundTitle = false;
     for (const line of lines) {
         // Only detect H1 (exactly "# " at start of line)

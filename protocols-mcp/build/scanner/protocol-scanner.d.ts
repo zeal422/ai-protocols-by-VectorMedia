@@ -1,4 +1,4 @@
-import { ProtocolMetadata } from '../types/index.js';
+import { ExtendedProtocolMetadata } from '../types/index.js';
 export declare class ProtocolScanner {
     private brainPath;
     private cache;
@@ -11,15 +11,15 @@ export declare class ProtocolScanner {
      * Scan BRAIN/ directory and extract all protocol metadata
      * Implements caching for performance
      */
-    scanProtocols(): Promise<ProtocolMetadata[]>;
+    scanProtocols(): Promise<ExtendedProtocolMetadata[]>;
     /**
      * Get protocol by exact name
      */
-    getProtocol(name: string): Promise<ProtocolMetadata | null>;
+    getProtocol(name: string): Promise<ExtendedProtocolMetadata | null>;
     /**
      * Find protocol by trigger command
      */
-    getProtocolByTrigger(trigger: string): Promise<ProtocolMetadata | null>;
+    getProtocolByTrigger(trigger: string): Promise<ExtendedProtocolMetadata | null>;
     /**
      * Clear cache (for testing)
      */

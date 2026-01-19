@@ -1,0 +1,3402 @@
+[
+  {
+    "sessionId": "session-1",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:43:49.794Z",
+    "updatedAt": "2026-01-08T07:43:49.794Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "session-1",
+      "metrics": [],
+      "startTime": "2026-01-08T07:43:49.794Z"
+    }
+  },
+  {
+    "sessionId": "session-2",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:43:49.813Z",
+    "updatedAt": "2026-01-08T07:43:49.813Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "session-2",
+      "metrics": [],
+      "startTime": "2026-01-08T07:43:49.813Z"
+    }
+  },
+  {
+    "sessionId": "session-3",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:43:49.831Z",
+    "updatedAt": "2026-01-08T07:43:49.836Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "session-3",
+      "metrics": [],
+      "startTime": "2026-01-08T07:43:49.831Z"
+    }
+  },
+  {
+    "sessionId": "s1",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:43:49.879Z",
+    "updatedAt": "2026-01-08T07:43:49.879Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "s1",
+      "metrics": [],
+      "startTime": "2026-01-08T07:43:49.879Z"
+    }
+  },
+  {
+    "sessionId": "s2",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:43:49.882Z",
+    "updatedAt": "2026-01-08T07:43:49.882Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "s2",
+      "metrics": [],
+      "startTime": "2026-01-08T07:43:49.882Z"
+    }
+  },
+  {
+    "sessionId": "s3",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:43:49.866Z",
+    "updatedAt": "2026-01-08T07:43:49.866Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "s3",
+      "metrics": [],
+      "startTime": "2026-01-08T07:43:49.866Z"
+    }
+  },
+  {
+    "sessionId": "068a53de-64b0-45fe-b508-1e2ca50e9c43",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:47:31.529Z",
+    "updatedAt": "2026-01-08T07:47:31.529Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "068a53de-64b0-45fe-b508-1e2ca50e9c43",
+      "metrics": [],
+      "startTime": "2026-01-08T07:47:31.529Z"
+    }
+  },
+  {
+    "sessionId": "fa276c23-7f1a-44d8-bd4a-428f40cdf9d3",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:47:31.545Z",
+    "updatedAt": "2026-01-08T07:47:31.548Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "fa276c23-7f1a-44d8-bd4a-428f40cdf9d3",
+      "metrics": [],
+      "startTime": "2026-01-08T07:47:31.545Z"
+    }
+  },
+  {
+    "sessionId": "bcd2e6db-6caf-41fc-a7f8-efd4138209b8",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:47:31.559Z",
+    "updatedAt": "2026-01-08T07:47:31.559Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "bcd2e6db-6caf-41fc-a7f8-efd4138209b8",
+      "metrics": [],
+      "startTime": "2026-01-08T07:47:31.559Z"
+    }
+  },
+  {
+    "sessionId": "7b548a9e-eaca-4fca-9b0b-e11d5f84b04e",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:47:31.561Z",
+    "updatedAt": "2026-01-08T07:47:31.561Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "7b548a9e-eaca-4fca-9b0b-e11d5f84b04e",
+      "metrics": [],
+      "startTime": "2026-01-08T07:47:31.561Z"
+    }
+  },
+  {
+    "sessionId": "124ea36d-4850-460c-8561-7381834261a7",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:49:35.260Z",
+    "updatedAt": "2026-01-08T07:49:35.260Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "124ea36d-4850-460c-8561-7381834261a7",
+      "metrics": [],
+      "startTime": "2026-01-08T07:49:35.260Z"
+    }
+  },
+  {
+    "sessionId": "d38af7fe-ee94-4e2b-9077-7fb6f3215dd5",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:49:35.289Z",
+    "updatedAt": "2026-01-08T07:49:35.291Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "d38af7fe-ee94-4e2b-9077-7fb6f3215dd5",
+      "metrics": [],
+      "startTime": "2026-01-08T07:49:35.289Z"
+    }
+  },
+  {
+    "sessionId": "eb72cb60-7256-4084-bbbf-82f28e39f00a",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:49:35.311Z",
+    "updatedAt": "2026-01-08T07:49:35.311Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "eb72cb60-7256-4084-bbbf-82f28e39f00a",
+      "metrics": [],
+      "startTime": "2026-01-08T07:49:35.311Z"
+    }
+  },
+  {
+    "sessionId": "e6a94483-746e-49aa-a457-64aae7c123e2",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:49:35.316Z",
+    "updatedAt": "2026-01-08T07:49:35.316Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "e6a94483-746e-49aa-a457-64aae7c123e2",
+      "metrics": [],
+      "startTime": "2026-01-08T07:49:35.316Z"
+    }
+  },
+  {
+    "sessionId": "e6922976-e86a-4041-94e1-7d8b55cd22f5",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:50:39.345Z",
+    "updatedAt": "2026-01-08T07:50:39.345Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "e6922976-e86a-4041-94e1-7d8b55cd22f5",
+      "metrics": [],
+      "startTime": "2026-01-08T07:50:39.345Z"
+    }
+  },
+  {
+    "sessionId": "68a1788b-9a7e-4d64-ae94-0c1991795161",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:50:39.366Z",
+    "updatedAt": "2026-01-08T07:50:39.376Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "68a1788b-9a7e-4d64-ae94-0c1991795161",
+      "metrics": [],
+      "startTime": "2026-01-08T07:50:39.366Z"
+    }
+  },
+  {
+    "sessionId": "d4573c6f-14f0-4b8c-8186-74715d1ec12e",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:51:07.906Z",
+    "updatedAt": "2026-01-08T07:51:07.906Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "d4573c6f-14f0-4b8c-8186-74715d1ec12e",
+      "metrics": [],
+      "startTime": "2026-01-08T07:51:07.906Z"
+    }
+  },
+  {
+    "sessionId": "11e62298-4a71-4fc7-9909-dc26ab179221",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:51:07.930Z",
+    "updatedAt": "2026-01-08T07:51:07.932Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "11e62298-4a71-4fc7-9909-dc26ab179221",
+      "metrics": [],
+      "startTime": "2026-01-08T07:51:07.930Z"
+    }
+  },
+  {
+    "sessionId": "66945c3a-a757-4980-803e-8401f2a3cb7d",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:51:24.615Z",
+    "updatedAt": "2026-01-08T07:51:24.615Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "66945c3a-a757-4980-803e-8401f2a3cb7d",
+      "metrics": [],
+      "startTime": "2026-01-08T07:51:24.615Z"
+    }
+  },
+  {
+    "sessionId": "877b1e1a-6ca7-4492-bb36-66c3971ce257",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T07:51:24.671Z",
+    "updatedAt": "2026-01-08T07:51:24.673Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "877b1e1a-6ca7-4492-bb36-66c3971ce257",
+      "metrics": [],
+      "startTime": "2026-01-08T07:51:24.671Z"
+    }
+  },
+  {
+    "sessionId": "582b294a-49a0-4a6d-985c-be15773dfa98",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T08:39:44.153Z",
+    "updatedAt": "2026-01-08T08:39:44.153Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "582b294a-49a0-4a6d-985c-be15773dfa98",
+      "metrics": [],
+      "startTime": "2026-01-08T08:39:44.153Z"
+    }
+  },
+  {
+    "sessionId": "30f71687-4c05-49d2-96fe-cc640af2316a",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T08:39:44.168Z",
+    "updatedAt": "2026-01-08T08:39:44.170Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "30f71687-4c05-49d2-96fe-cc640af2316a",
+      "metrics": [],
+      "startTime": "2026-01-08T08:39:44.168Z"
+    }
+  },
+  {
+    "sessionId": "9673cb3a-5c0b-4b27-8303-d46d81965cf3",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T08:40:30.460Z",
+    "updatedAt": "2026-01-08T08:40:30.460Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "9673cb3a-5c0b-4b27-8303-d46d81965cf3",
+      "metrics": [],
+      "startTime": "2026-01-08T08:40:30.460Z"
+    }
+  },
+  {
+    "sessionId": "cd9f4cc3-3c0c-4a99-98af-23a8c8aa25f9",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T08:40:30.474Z",
+    "updatedAt": "2026-01-08T08:40:30.476Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "cd9f4cc3-3c0c-4a99-98af-23a8c8aa25f9",
+      "metrics": [],
+      "startTime": "2026-01-08T08:40:30.474Z"
+    }
+  },
+  {
+    "sessionId": "8ab1880d-7932-4756-84f8-0209f35603a2",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T08:42:43.183Z",
+    "updatedAt": "2026-01-08T08:42:43.183Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "8ab1880d-7932-4756-84f8-0209f35603a2",
+      "metrics": [],
+      "startTime": "2026-01-08T08:42:43.183Z"
+    }
+  },
+  {
+    "sessionId": "48e0b924-874d-44ce-8d97-e688e72960db",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T08:42:43.203Z",
+    "updatedAt": "2026-01-08T08:42:43.204Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "48e0b924-874d-44ce-8d97-e688e72960db",
+      "metrics": [],
+      "startTime": "2026-01-08T08:42:43.203Z"
+    }
+  },
+  {
+    "sessionId": "4f44915e-d8f2-4811-bd49-0a972dea12bb",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T08:43:24.385Z",
+    "updatedAt": "2026-01-08T08:43:24.385Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "4f44915e-d8f2-4811-bd49-0a972dea12bb",
+      "metrics": [],
+      "startTime": "2026-01-08T08:43:24.385Z"
+    }
+  },
+  {
+    "sessionId": "4c0f6e4a-e003-4ff7-921d-0e68cdb8446e",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T08:43:24.405Z",
+    "updatedAt": "2026-01-08T08:43:24.407Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "4c0f6e4a-e003-4ff7-921d-0e68cdb8446e",
+      "metrics": [],
+      "startTime": "2026-01-08T08:43:24.405Z"
+    }
+  },
+  {
+    "sessionId": "ca6b8246-3f39-43d9-856a-073888d99c47",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T09:33:00.179Z",
+    "updatedAt": "2026-01-08T09:33:00.179Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "ca6b8246-3f39-43d9-856a-073888d99c47",
+      "metrics": [],
+      "startTime": "2026-01-08T09:33:00.179Z"
+    }
+  },
+  {
+    "sessionId": "013ed39e-9a9e-4316-bbab-9e93348a4314",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T09:33:00.196Z",
+    "updatedAt": "2026-01-08T09:33:00.198Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "013ed39e-9a9e-4316-bbab-9e93348a4314",
+      "metrics": [],
+      "startTime": "2026-01-08T09:33:00.196Z"
+    }
+  },
+  {
+    "sessionId": "8b22d2da-df49-48b9-9638-3418940c800c",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T09:34:01.670Z",
+    "updatedAt": "2026-01-08T09:34:01.670Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "8b22d2da-df49-48b9-9638-3418940c800c",
+      "metrics": [],
+      "startTime": "2026-01-08T09:34:01.670Z"
+    }
+  },
+  {
+    "sessionId": "31c7deb4-8b22-4c7e-98a5-34b109613166",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T09:34:01.684Z",
+    "updatedAt": "2026-01-08T09:34:01.685Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "31c7deb4-8b22-4c7e-98a5-34b109613166",
+      "metrics": [],
+      "startTime": "2026-01-08T09:34:01.684Z"
+    }
+  },
+  {
+    "sessionId": "ea00c159-929e-4922-afa3-4fd95538b61a",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T09:49:53.562Z",
+    "updatedAt": "2026-01-08T09:49:53.562Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "ea00c159-929e-4922-afa3-4fd95538b61a",
+      "metrics": [],
+      "startTime": "2026-01-08T09:49:53.562Z"
+    }
+  },
+  {
+    "sessionId": "e46b484e-ce82-4425-af01-2f082719a91a",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T09:49:53.575Z",
+    "updatedAt": "2026-01-08T09:49:53.577Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "e46b484e-ce82-4425-af01-2f082719a91a",
+      "metrics": [],
+      "startTime": "2026-01-08T09:49:53.575Z"
+    }
+  },
+  {
+    "sessionId": "91c84018-4e7d-409b-8053-e78248f48471",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:47:44.500Z",
+    "updatedAt": "2026-01-08T10:47:44.500Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "91c84018-4e7d-409b-8053-e78248f48471",
+      "metrics": [],
+      "startTime": "2026-01-08T10:47:44.500Z"
+    }
+  },
+  {
+    "sessionId": "6d3f0931-e01a-48d7-8f4d-df3f71711d98",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:47:44.514Z",
+    "updatedAt": "2026-01-08T10:47:44.515Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "6d3f0931-e01a-48d7-8f4d-df3f71711d98",
+      "metrics": [],
+      "startTime": "2026-01-08T10:47:44.514Z"
+    }
+  },
+  {
+    "sessionId": "3cdf458a-5c38-4bf1-8d2b-4ff4812339d3",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:47:52.764Z",
+    "updatedAt": "2026-01-08T10:47:52.764Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "3cdf458a-5c38-4bf1-8d2b-4ff4812339d3",
+      "metrics": [],
+      "startTime": "2026-01-08T10:47:52.764Z"
+    }
+  },
+  {
+    "sessionId": "98535402-8166-45ee-b695-d1e1e48d22eb",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:47:52.778Z",
+    "updatedAt": "2026-01-08T10:47:52.780Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "98535402-8166-45ee-b695-d1e1e48d22eb",
+      "metrics": [],
+      "startTime": "2026-01-08T10:47:52.778Z"
+    }
+  },
+  {
+    "sessionId": "4558ca14-d07c-474b-8869-b27c6a1f8595",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:48:51.759Z",
+    "updatedAt": "2026-01-08T10:48:51.759Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "4558ca14-d07c-474b-8869-b27c6a1f8595",
+      "metrics": [],
+      "startTime": "2026-01-08T10:48:51.759Z"
+    }
+  },
+  {
+    "sessionId": "b01f4d72-6f1a-4cac-8b2f-f843c29c6ef0",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:48:51.778Z",
+    "updatedAt": "2026-01-08T10:48:51.780Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "b01f4d72-6f1a-4cac-8b2f-f843c29c6ef0",
+      "metrics": [],
+      "startTime": "2026-01-08T10:48:51.778Z"
+    }
+  },
+  {
+    "sessionId": "7253500b-0ce7-4f22-9e97-d938e59a0e8d",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:49:00.337Z",
+    "updatedAt": "2026-01-08T10:49:00.337Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "7253500b-0ce7-4f22-9e97-d938e59a0e8d",
+      "metrics": [],
+      "startTime": "2026-01-08T10:49:00.337Z"
+    }
+  },
+  {
+    "sessionId": "2e4eab9a-2f1d-4fab-a2b1-99ff11f7aea7",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:49:00.352Z",
+    "updatedAt": "2026-01-08T10:49:00.354Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "2e4eab9a-2f1d-4fab-a2b1-99ff11f7aea7",
+      "metrics": [],
+      "startTime": "2026-01-08T10:49:00.352Z"
+    }
+  },
+  {
+    "sessionId": "b2120f41-6651-495d-802b-9997a1fa65a2",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:49:55.309Z",
+    "updatedAt": "2026-01-08T10:49:55.309Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "b2120f41-6651-495d-802b-9997a1fa65a2",
+      "metrics": [],
+      "startTime": "2026-01-08T10:49:55.309Z"
+    }
+  },
+  {
+    "sessionId": "34b30914-9438-46fc-abc0-0422e126d89b",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:49:55.322Z",
+    "updatedAt": "2026-01-08T10:49:55.323Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "34b30914-9438-46fc-abc0-0422e126d89b",
+      "metrics": [],
+      "startTime": "2026-01-08T10:49:55.322Z"
+    }
+  },
+  {
+    "sessionId": "980f692d-e7de-4615-a55b-001f162337f9",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:50:04.331Z",
+    "updatedAt": "2026-01-08T10:50:04.331Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "980f692d-e7de-4615-a55b-001f162337f9",
+      "metrics": [],
+      "startTime": "2026-01-08T10:50:04.331Z"
+    }
+  },
+  {
+    "sessionId": "38445812-c8f8-413c-afed-90bd38ed1df1",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:50:04.345Z",
+    "updatedAt": "2026-01-08T10:50:04.347Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "38445812-c8f8-413c-afed-90bd38ed1df1",
+      "metrics": [],
+      "startTime": "2026-01-08T10:50:04.345Z"
+    }
+  },
+  {
+    "sessionId": "c8b2a1d0-ecd5-4c1e-8274-bdcf88e51dc0",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:50:40.337Z",
+    "updatedAt": "2026-01-08T10:50:40.337Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "c8b2a1d0-ecd5-4c1e-8274-bdcf88e51dc0",
+      "metrics": [],
+      "startTime": "2026-01-08T10:50:40.337Z"
+    }
+  },
+  {
+    "sessionId": "771055a0-c3ee-4a44-965a-24736c06c166",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T10:50:40.351Z",
+    "updatedAt": "2026-01-08T10:50:40.352Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "771055a0-c3ee-4a44-965a-24736c06c166",
+      "metrics": [],
+      "startTime": "2026-01-08T10:50:40.351Z"
+    }
+  },
+  {
+    "sessionId": "66b3f57c-1826-4ed0-a845-058420292393",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T12:50:43.673Z",
+    "updatedAt": "2026-01-08T12:50:43.673Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "66b3f57c-1826-4ed0-a845-058420292393",
+      "metrics": [],
+      "startTime": "2026-01-08T12:50:43.673Z"
+    }
+  },
+  {
+    "sessionId": "5715d0c7-28b8-422d-bc93-bcb8593d9f37",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T12:50:43.690Z",
+    "updatedAt": "2026-01-08T12:50:43.691Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "5715d0c7-28b8-422d-bc93-bcb8593d9f37",
+      "metrics": [],
+      "startTime": "2026-01-08T12:50:43.690Z"
+    }
+  },
+  {
+    "sessionId": "02a16839-7ee8-44bf-920b-bc58f9634af3",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:00:51.579Z",
+    "updatedAt": "2026-01-08T13:00:51.579Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "02a16839-7ee8-44bf-920b-bc58f9634af3",
+      "metrics": [],
+      "startTime": "2026-01-08T13:00:51.579Z"
+    }
+  },
+  {
+    "sessionId": "97a534da-51db-43b3-a20e-9d1dd93ccf6c",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:00:51.596Z",
+    "updatedAt": "2026-01-08T13:00:51.598Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "97a534da-51db-43b3-a20e-9d1dd93ccf6c",
+      "metrics": [],
+      "startTime": "2026-01-08T13:00:51.596Z"
+    }
+  },
+  {
+    "sessionId": "c3a37358-910e-4edf-be50-09e3df995163",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:01:23.765Z",
+    "updatedAt": "2026-01-08T13:01:23.765Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "c3a37358-910e-4edf-be50-09e3df995163",
+      "metrics": [],
+      "startTime": "2026-01-08T13:01:23.765Z"
+    }
+  },
+  {
+    "sessionId": "c5a0b3dd-d37f-4678-9fca-74ea050f35f8",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:01:23.780Z",
+    "updatedAt": "2026-01-08T13:01:23.782Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "c5a0b3dd-d37f-4678-9fca-74ea050f35f8",
+      "metrics": [],
+      "startTime": "2026-01-08T13:01:23.780Z"
+    }
+  },
+  {
+    "sessionId": "5772bde6-82fe-42c5-ac38-46749416ba31",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:06:55.814Z",
+    "updatedAt": "2026-01-08T13:06:55.814Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "5772bde6-82fe-42c5-ac38-46749416ba31",
+      "metrics": [],
+      "startTime": "2026-01-08T13:06:55.814Z"
+    }
+  },
+  {
+    "sessionId": "eb76dbbf-d5a4-4726-8857-451ef1e90d47",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:06:55.833Z",
+    "updatedAt": "2026-01-08T13:06:55.834Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "eb76dbbf-d5a4-4726-8857-451ef1e90d47",
+      "metrics": [],
+      "startTime": "2026-01-08T13:06:55.833Z"
+    }
+  },
+  {
+    "sessionId": "17dc7115-f2cb-480b-8810-8f7f28a6282f",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:21:42.651Z",
+    "updatedAt": "2026-01-08T13:21:42.651Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "17dc7115-f2cb-480b-8810-8f7f28a6282f",
+      "metrics": [],
+      "startTime": "2026-01-08T13:21:42.651Z"
+    }
+  },
+  {
+    "sessionId": "de0e3a07-f947-4a33-80b4-5aa8d13a53de",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:21:42.670Z",
+    "updatedAt": "2026-01-08T13:21:42.672Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "de0e3a07-f947-4a33-80b4-5aa8d13a53de",
+      "metrics": [],
+      "startTime": "2026-01-08T13:21:42.670Z"
+    }
+  },
+  {
+    "sessionId": "8f9ca0de-26e6-4728-9117-0167b54bb4f7",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:33:55.144Z",
+    "updatedAt": "2026-01-08T13:33:55.144Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "8f9ca0de-26e6-4728-9117-0167b54bb4f7",
+      "metrics": [],
+      "startTime": "2026-01-08T13:33:55.144Z"
+    }
+  },
+  {
+    "sessionId": "fffb812b-6282-4d86-922b-56b0781780de",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:33:55.169Z",
+    "updatedAt": "2026-01-08T13:33:55.173Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "fffb812b-6282-4d86-922b-56b0781780de",
+      "metrics": [],
+      "startTime": "2026-01-08T13:33:55.169Z"
+    }
+  },
+  {
+    "sessionId": "b601d037-81ec-4c6f-a3b9-cb979593c4a0",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:39:45.780Z",
+    "updatedAt": "2026-01-08T13:39:45.780Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "b601d037-81ec-4c6f-a3b9-cb979593c4a0",
+      "metrics": [],
+      "startTime": "2026-01-08T13:39:45.780Z"
+    }
+  },
+  {
+    "sessionId": "6b0cb14f-e660-4e6a-9596-10c2af9d04d5",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:39:45.802Z",
+    "updatedAt": "2026-01-08T13:39:45.805Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "6b0cb14f-e660-4e6a-9596-10c2af9d04d5",
+      "metrics": [],
+      "startTime": "2026-01-08T13:39:45.802Z"
+    }
+  },
+  {
+    "sessionId": "83e65348-8e27-4337-bfcc-b43acbce40df",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:40:00.662Z",
+    "updatedAt": "2026-01-08T13:40:00.662Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "83e65348-8e27-4337-bfcc-b43acbce40df",
+      "metrics": [],
+      "startTime": "2026-01-08T13:40:00.662Z"
+    }
+  },
+  {
+    "sessionId": "936160ed-ac77-4140-9896-fd10d92ac7f9",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:40:00.684Z",
+    "updatedAt": "2026-01-08T13:40:00.687Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "936160ed-ac77-4140-9896-fd10d92ac7f9",
+      "metrics": [],
+      "startTime": "2026-01-08T13:40:00.684Z"
+    }
+  },
+  {
+    "sessionId": "d3888206-7baf-4098-8a32-a8087093b3f0",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:40:56.568Z",
+    "updatedAt": "2026-01-08T13:40:56.568Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "d3888206-7baf-4098-8a32-a8087093b3f0",
+      "metrics": [],
+      "startTime": "2026-01-08T13:40:56.568Z"
+    }
+  },
+  {
+    "sessionId": "ecf8c637-594b-4439-bc2a-b227c889e3fc",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:40:56.591Z",
+    "updatedAt": "2026-01-08T13:40:56.594Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "ecf8c637-594b-4439-bc2a-b227c889e3fc",
+      "metrics": [],
+      "startTime": "2026-01-08T13:40:56.591Z"
+    }
+  },
+  {
+    "sessionId": "b3a8d345-a172-49d8-9092-114b55f2386b",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:41:43.983Z",
+    "updatedAt": "2026-01-08T13:41:43.983Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "b3a8d345-a172-49d8-9092-114b55f2386b",
+      "metrics": [],
+      "startTime": "2026-01-08T13:41:43.983Z"
+    }
+  },
+  {
+    "sessionId": "89c52d9d-1cb9-4d19-8577-edf3acae31af",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:41:44.007Z",
+    "updatedAt": "2026-01-08T13:41:44.012Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "89c52d9d-1cb9-4d19-8577-edf3acae31af",
+      "metrics": [],
+      "startTime": "2026-01-08T13:41:44.007Z"
+    }
+  },
+  {
+    "sessionId": "ba6c0bd2-ac00-4ac0-91fd-b706004c310b",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:42:03.474Z",
+    "updatedAt": "2026-01-08T13:42:03.474Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "ba6c0bd2-ac00-4ac0-91fd-b706004c310b",
+      "metrics": [],
+      "startTime": "2026-01-08T13:42:03.474Z"
+    }
+  },
+  {
+    "sessionId": "27188e93-79b0-4dbb-8299-bf29a91a8855",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:42:03.493Z",
+    "updatedAt": "2026-01-08T13:42:03.495Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "27188e93-79b0-4dbb-8299-bf29a91a8855",
+      "metrics": [],
+      "startTime": "2026-01-08T13:42:03.493Z"
+    }
+  },
+  {
+    "sessionId": "b8878606-ffbe-44ac-bab7-a83c1fa07ee9",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:58:06.271Z",
+    "updatedAt": "2026-01-08T13:58:06.271Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "b8878606-ffbe-44ac-bab7-a83c1fa07ee9",
+      "metrics": [],
+      "startTime": "2026-01-08T13:58:06.271Z"
+    }
+  },
+  {
+    "sessionId": "2f58d47a-ec2c-46bf-bea3-9d7014d78c52",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:58:06.288Z",
+    "updatedAt": "2026-01-08T13:58:06.291Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "2f58d47a-ec2c-46bf-bea3-9d7014d78c52",
+      "metrics": [],
+      "startTime": "2026-01-08T13:58:06.288Z"
+    }
+  },
+  {
+    "sessionId": "9a554975-405b-4dc6-bd63-e95bcfe424e3",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:58:32.148Z",
+    "updatedAt": "2026-01-08T13:58:32.148Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "9a554975-405b-4dc6-bd63-e95bcfe424e3",
+      "metrics": [],
+      "startTime": "2026-01-08T13:58:32.148Z"
+    }
+  },
+  {
+    "sessionId": "91b8f05f-1fab-4936-86c7-6e9389ec89a7",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T13:58:32.171Z",
+    "updatedAt": "2026-01-08T13:58:32.174Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "91b8f05f-1fab-4936-86c7-6e9389ec89a7",
+      "metrics": [],
+      "startTime": "2026-01-08T13:58:32.171Z"
+    }
+  },
+  {
+    "sessionId": "f8455221-a1d8-4c3b-8c59-497f9fc35cc2",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T14:02:10.958Z",
+    "updatedAt": "2026-01-08T14:02:10.958Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "f8455221-a1d8-4c3b-8c59-497f9fc35cc2",
+      "metrics": [],
+      "startTime": "2026-01-08T14:02:10.958Z"
+    }
+  },
+  {
+    "sessionId": "216b8372-e73c-4247-b225-d832a2f57abf",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T14:02:10.990Z",
+    "updatedAt": "2026-01-08T14:02:10.994Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "216b8372-e73c-4247-b225-d832a2f57abf",
+      "metrics": [],
+      "startTime": "2026-01-08T14:02:10.990Z"
+    }
+  },
+  {
+    "sessionId": "e2379795-f1ba-4a88-b902-b621714ce1db",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T14:14:09.815Z",
+    "updatedAt": "2026-01-08T14:14:09.815Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "e2379795-f1ba-4a88-b902-b621714ce1db",
+      "metrics": [],
+      "startTime": "2026-01-08T14:14:09.815Z"
+    }
+  },
+  {
+    "sessionId": "abf2232c-a387-45ad-955a-d9bf5c152d70",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T14:14:09.847Z",
+    "updatedAt": "2026-01-08T14:14:09.851Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "abf2232c-a387-45ad-955a-d9bf5c152d70",
+      "metrics": [],
+      "startTime": "2026-01-08T14:14:09.847Z"
+    }
+  },
+  {
+    "sessionId": "aa3a34fd-2aa5-420e-9dda-9f73fb8556b2",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T14:14:23.062Z",
+    "updatedAt": "2026-01-08T14:14:23.062Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "aa3a34fd-2aa5-420e-9dda-9f73fb8556b2",
+      "metrics": [],
+      "startTime": "2026-01-08T14:14:23.062Z"
+    }
+  },
+  {
+    "sessionId": "80db5383-b6cd-425d-aa22-cf193a96bdd6",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T14:14:23.081Z",
+    "updatedAt": "2026-01-08T14:14:23.084Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "80db5383-b6cd-425d-aa22-cf193a96bdd6",
+      "metrics": [],
+      "startTime": "2026-01-08T14:14:23.081Z"
+    }
+  },
+  {
+    "sessionId": "35b4c9e3-c924-43e8-bc05-93d18161e13a",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T14:17:14.542Z",
+    "updatedAt": "2026-01-08T14:17:14.542Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "35b4c9e3-c924-43e8-bc05-93d18161e13a",
+      "metrics": [],
+      "startTime": "2026-01-08T14:17:14.542Z"
+    }
+  },
+  {
+    "sessionId": "713721bb-4791-49a4-bf09-f3cd82cf1ff2",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T14:17:14.566Z",
+    "updatedAt": "2026-01-08T14:17:14.569Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "713721bb-4791-49a4-bf09-f3cd82cf1ff2",
+      "metrics": [],
+      "startTime": "2026-01-08T14:17:14.566Z"
+    }
+  },
+  {
+    "sessionId": "13a064c5-444a-4c66-b5df-4e727d295671",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T14:24:02.473Z",
+    "updatedAt": "2026-01-08T14:24:02.473Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "13a064c5-444a-4c66-b5df-4e727d295671",
+      "metrics": [],
+      "startTime": "2026-01-08T14:24:02.473Z"
+    }
+  },
+  {
+    "sessionId": "4f7d0ea1-f532-43f4-8060-a5c0585777d2",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T14:24:02.516Z",
+    "updatedAt": "2026-01-08T14:24:02.521Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "4f7d0ea1-f532-43f4-8060-a5c0585777d2",
+      "metrics": [],
+      "startTime": "2026-01-08T14:24:02.516Z"
+    }
+  },
+  {
+    "sessionId": "1ebdd722-1741-4657-a3ae-fbb6fe27194a",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:21:14.844Z",
+    "updatedAt": "2026-01-08T15:21:14.844Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "1ebdd722-1741-4657-a3ae-fbb6fe27194a",
+      "metrics": [],
+      "startTime": "2026-01-08T15:21:14.844Z"
+    }
+  },
+  {
+    "sessionId": "717b5a78-8210-4328-89d8-e318148d0f46",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:21:14.872Z",
+    "updatedAt": "2026-01-08T15:21:14.875Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "717b5a78-8210-4328-89d8-e318148d0f46",
+      "metrics": [],
+      "startTime": "2026-01-08T15:21:14.872Z"
+    }
+  },
+  {
+    "sessionId": "80fc9ea1-d91b-4198-a043-35a11a04feab",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:23:48.724Z",
+    "updatedAt": "2026-01-08T15:23:48.724Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "80fc9ea1-d91b-4198-a043-35a11a04feab",
+      "metrics": [],
+      "startTime": "2026-01-08T15:23:48.724Z"
+    }
+  },
+  {
+    "sessionId": "62a778b7-8551-45a6-867c-b309f9493d68",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:23:48.752Z",
+    "updatedAt": "2026-01-08T15:23:48.759Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "62a778b7-8551-45a6-867c-b309f9493d68",
+      "metrics": [],
+      "startTime": "2026-01-08T15:23:48.752Z"
+    }
+  },
+  {
+    "sessionId": "cc0c91cc-2d12-42d2-9675-898cb0ac5eb2",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:24:31.542Z",
+    "updatedAt": "2026-01-08T15:24:31.542Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "cc0c91cc-2d12-42d2-9675-898cb0ac5eb2",
+      "metrics": [],
+      "startTime": "2026-01-08T15:24:31.542Z"
+    }
+  },
+  {
+    "sessionId": "32940ac7-fafe-405e-b164-c97908aa1510",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:24:31.572Z",
+    "updatedAt": "2026-01-08T15:24:31.576Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "32940ac7-fafe-405e-b164-c97908aa1510",
+      "metrics": [],
+      "startTime": "2026-01-08T15:24:31.572Z"
+    }
+  },
+  {
+    "sessionId": "58bf29e2-57ca-4412-b79a-f2b69f08a47f",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:25:07.060Z",
+    "updatedAt": "2026-01-08T15:25:07.060Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "58bf29e2-57ca-4412-b79a-f2b69f08a47f",
+      "metrics": [],
+      "startTime": "2026-01-08T15:25:07.060Z"
+    }
+  },
+  {
+    "sessionId": "65d7e262-62c5-4b78-99a0-2f3a162ff9b8",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:25:07.087Z",
+    "updatedAt": "2026-01-08T15:25:07.092Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "65d7e262-62c5-4b78-99a0-2f3a162ff9b8",
+      "metrics": [],
+      "startTime": "2026-01-08T15:25:07.087Z"
+    }
+  },
+  {
+    "sessionId": "2d6cdb9c-468d-4fdd-85ac-fcb110c1d171",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:26:34.647Z",
+    "updatedAt": "2026-01-08T15:26:34.647Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "2d6cdb9c-468d-4fdd-85ac-fcb110c1d171",
+      "metrics": [],
+      "startTime": "2026-01-08T15:26:34.647Z"
+    }
+  },
+  {
+    "sessionId": "91d6d406-9ed2-42a6-b137-0e3f3b65f57c",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:26:34.675Z",
+    "updatedAt": "2026-01-08T15:26:34.684Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "91d6d406-9ed2-42a6-b137-0e3f3b65f57c",
+      "metrics": [],
+      "startTime": "2026-01-08T15:26:34.675Z"
+    }
+  },
+  {
+    "sessionId": "25119c40-5992-487f-b8a8-92c0ffd99ae2",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:27:26.474Z",
+    "updatedAt": "2026-01-08T15:27:26.474Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "25119c40-5992-487f-b8a8-92c0ffd99ae2",
+      "metrics": [],
+      "startTime": "2026-01-08T15:27:26.474Z"
+    }
+  },
+  {
+    "sessionId": "c8a387e2-30cf-4f93-8c2e-d566a00f1edb",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:27:26.507Z",
+    "updatedAt": "2026-01-08T15:27:26.512Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "c8a387e2-30cf-4f93-8c2e-d566a00f1edb",
+      "metrics": [],
+      "startTime": "2026-01-08T15:27:26.507Z"
+    }
+  },
+  {
+    "sessionId": "b5551e75-55c2-4fdb-bccc-5adae166e16e",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:31:19.762Z",
+    "updatedAt": "2026-01-08T15:31:19.762Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "b5551e75-55c2-4fdb-bccc-5adae166e16e",
+      "metrics": [],
+      "startTime": "2026-01-08T15:31:19.762Z"
+    }
+  },
+  {
+    "sessionId": "2873b3b9-57fb-4f45-8887-24f9d8675861",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:31:19.787Z",
+    "updatedAt": "2026-01-08T15:31:19.790Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "2873b3b9-57fb-4f45-8887-24f9d8675861",
+      "metrics": [],
+      "startTime": "2026-01-08T15:31:19.787Z"
+    }
+  },
+  {
+    "sessionId": "b302e784-7790-4f26-a0d9-b8264d312669",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:45:37.755Z",
+    "updatedAt": "2026-01-08T15:45:37.755Z",
+    "status": "active",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "b302e784-7790-4f26-a0d9-b8264d312669",
+      "metrics": [],
+      "startTime": "2026-01-08T15:45:37.755Z"
+    }
+  },
+  {
+    "sessionId": "4b11c844-4a4b-4169-9a08-90f1d65fefea",
+    "taskDescription": "Test session",
+    "projectContext": {
+      "language": "typescript",
+      "framework": "express",
+      "projectType": "backend",
+      "testFramework": "jest",
+      "packageManager": "npm",
+      "hasDocker": false,
+      "hasCI": false,
+      "hasGit": true,
+      "dependencies": [
+        "express"
+      ],
+      "devDependencies": [
+        "jest"
+      ],
+      "detected": true
+    },
+    "createdAt": "2026-01-08T15:45:37.809Z",
+    "updatedAt": "2026-01-08T15:45:37.826Z",
+    "status": "completed",
+    "metadata": {},
+    "executionStack": [],
+    "sharedContext": {},
+    "artifacts": {},
+    "checkpoints": [],
+    "metrics": {
+      "sessionId": "4b11c844-4a4b-4169-9a08-90f1d65fefea",
+      "metrics": [],
+      "startTime": "2026-01-08T15:45:37.809Z"
+    }
+  }
+]
